@@ -15,6 +15,7 @@ export const cultures = {
       [[20, 30], [26, 44]],
       [[26, 44], [30, 62]],
       [[12, 48], [26, 44]],
+      [[12, 48], [18, 58]],
     ],
   },
   Norse: {
@@ -99,6 +100,7 @@ export const skyPos = {
   churning: [89, 17],
   izanami: [76, 46],
   jormungandr: [70, 42],
+  hermes: [18, 58],
 };
 
 export const myths = [
@@ -568,6 +570,53 @@ export const myths = [
         paras: [
           'Thor raised the hammer. And Hymir — who was, remember, sitting in a small wooden boat between a god and the thing that circles the world — did the sensible, unforgivable thing: he leaned over with his bait-knife and cut the line. The serpent’s head went back under the sea like a mountain deciding against sunrise. The hammer flew anyway; some say it found the serpent among the waves, but the deep keeps no records. What is certain is that Thor knocked the giant overboard with a fist, waded ashore carrying the boat, and went home without the whales, the cauldron, or a word.',
           'It was not the end, and that is the point of the story. The serpent still lies down there with the world in the circle of its body, and Thor knows it, and it knows Thor. At Ragnarök — that door stands open in this hall, if you have the nerve for it — they will finish what the fishing trip started: the god will kill the serpent and walk nine steps and fall to its venom, and the sea will take back everything, including its secrets. Until then the tide rises and falls twice a day. Fishermen in the old times said that was the serpent, shifting its grip. They said it quietly, and rowed for home.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'hermes',
+    name: 'The First Day of Hermes',
+    short: 'Hermes',
+    culture: 'Greek',
+    realm: 'The Crossroads',
+    time: '6 min read',
+    accent: '#b8c8d9',
+    pageBg: '#0a0d18',
+    kicker: 'Greek · Told in three nights',
+    epigraph: 'Born at dawn. Invented the lyre by noon. Stole fifty cattle before dark.',
+    about:
+      'The Homeric Hymn to Hermes, composed around the sixth century BCE, tells the god’s entire first day: born in a cave on Mount Kyllene, he builds the first lyre from a tortoise shell by midday and steals fifty of Apollo’s cattle by nightfall, driving them backwards to confuse the trail. Judged before Zeus, he trades the lyre for the herd, and the rivals part as friends. Hermes became the god of roads, travelers, merchants, and thieves — his stone markers, called herms, stood at Greek crossroads, and a lucky find on the road is still a hermaion, a gift of Hermes.',
+    doorGrad: 'linear-gradient(180deg,#1a2030,#090b14)',
+    doorBorder: 'rgba(184,200,217,.28)',
+    emblem:
+      'width:28px;height:28px;background:linear-gradient(#b8c8d9,#b8c8d9) center/100% 3px no-repeat,linear-gradient(#b8c8d9,#b8c8d9) center/3px 100% no-repeat;opacity:.85;animation:drift 4.2s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#eef4f8 0%,#b8c8d9 50%,rgba(184,200,217,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0a0d18 0%,#1c2236 60%,#3a4a66 100%)',
+      'linear-gradient(180deg,#060810 0%,#10141f 60%,#1e2433 100%)',
+      'linear-gradient(180deg,#101426 0%,#2e3a56 55%,#6a7a96 85%,#c9b48a 100%)',
+    ],
+    nights: [
+      {
+        title: 'Born at Dawn',
+        paras: [
+          'He was born at dawn in a cave on Mount Kyllene, to Maia, a goddess so quiet the other gods kept forgetting she existed — which was, her son would soon demonstrate, an inheritable talent. By mid-morning Hermes had had enough of the cradle. He climbed out, toddled to the cave mouth, and met a tortoise ambling through the dew. He greeted it with enormous courtesy, told it that it would be far more useful indoors, and was carving it into something the world had never heard before within the hour.',
+          'Seven strings of sheep-gut across the hollow shell, and he struck them, and the first lyre sounded in a cave that had never expected to be famous. And what did the newest god sing about, with the first instrument, on the first morning of his life? Himself. His own birth, his mother’s cave, his splendid prospects. It was the world’s first song and its first autobiography, and when he finished, he set the lyre in his cradle and turned to the second item of business: he was hungry, and Apollo — his grown, golden, extremely important half-brother — kept cattle.',
+        ],
+      },
+      {
+        title: 'Fifty Cattle, Walking Backwards',
+        paras: [
+          'At sundown he came to the meadows of Pieria, where the immortal herd grazed, and cut fifty cows out of it with the calm of a professional. Then the trick that made him a god of something: he drove them backwards, tail-first, the whole way — so their hooves printed a story about fifty cattle arriving in a meadow they were in fact leaving — while he walked behind in sandals woven of myrtle twigs and tamarisk, which left tracks like nothing that walks. An old man tending vines saw him pass. “You saw nothing,” said the baby with fifty cows, and the old man mostly agreed.',
+          'By a river he stopped, built a fire — some say the first fire ever kindled from rubbing sticks — and slaughtered two cows, dividing the meat into twelve equal portions, one for each of the gods. Himself included; he was making a point about the shape of the family going forward. Then the god of appetite did the most impressive thing in the whole hymn: though the smell of the roasting meat nearly killed him, he ate none of it, because gods don’t, and he had decided to be one. He was home by dawn, through the keyhole like a wisp of mist, and in his cradle looking like the one thing in Greece that could not possibly have done it.',
+        ],
+      },
+      {
+        title: 'The Judgment of Zeus',
+        paras: [
+          'Apollo, who among his other offices was the god of finding things out, arrived at the cave by noon and hauled his day-old brother to Olympus. The defense was memorable. “I was born yesterday,” said Hermes, gazing up. “I care only for sleep, and warm milk.” Zeus looked from the sun god, rigid with fury, to the infant, wearing the blanket like a courtroom exhibit, and laughed until the mountain shook — then ordered the brothers to make peace, because that is what fathers are for.',
+          'At the cattle pens Hermes reached into the cradle-blanket and produced the lyre, and played, and Apollo — god of music, who had never heard music like this — stood transfixed. So the trade was made at the fence rail: the lyre for the herd, song for cattle, and each god walked away certain he had robbed the other, which is the definition of a good bargain. Apollo gave him a golden staff to seal it, and Zeus gave him the roads. Every traveler became his charge; every stone cairn at a fork in the road became his altar; even the dead go down behind his lamp, for he is the one god with a key to every door in this hall. The Greeks said that when you find luck lying in the road, it is his. Say thank you at the crossroads. He hears it there.',
         ],
       },
     ],
