@@ -50,6 +50,39 @@ export const cultures = {
       [[48, 74], [56, 62]],
     ],
   },
+  Aztec: {
+    color: '#ef6a4d',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 12, y: 90 },
+    minors: [[10, 66], [24, 86]],
+    lines: [
+      [[16, 76], [10, 66]],
+      [[16, 76], [24, 86]],
+    ],
+  },
+  'Māori': {
+    color: '#ec7d9e',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 44, y: 4 },
+    minors: [[36, 24], [52, 22]],
+    lines: [
+      [[44, 14], [36, 24]],
+      [[44, 14], [52, 22]],
+    ],
+  },
+  Hindu: {
+    color: '#7fd8e8',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 89, y: 34 },
+    minors: [[82, 9], [95, 27]],
+    lines: [
+      [[89, 17], [82, 9]],
+      [[89, 17], [95, 27]],
+    ],
+  },
 };
 
 // Star position of each myth on the sky canvas, in % of the canvas.
@@ -59,6 +92,9 @@ export const skyPos = {
   ragnarok: [68, 22],
   amaterasu: [84, 55],
   anansi: [48, 74],
+  fifthsun: [16, 76],
+  maui: [44, 14],
+  churning: [89, 17],
 };
 
 export const myths = [
@@ -73,6 +109,8 @@ export const myths = [
     pageBg: '#0b0e22',
     kicker: 'Greek · Told in three nights',
     epigraph: 'He was warned about the sun. He flew toward it anyway.',
+    about:
+      'A Greek myth best known from Ovid’s Metamorphoses, where the craftsman Daedalus builds wings of feathers and wax to escape King Minos of Crete. Icarus ignores his father’s warning to keep the middle way and falls when the sun melts the wax. The waters where he drowned were called the Icarian Sea, and the nearby island Icaria still carries his name.',
     doorGrad: 'linear-gradient(180deg,#1c1740,#080c20)',
     doorBorder: 'rgba(143,184,255,.28)',
     emblem:
@@ -118,6 +156,8 @@ export const myths = [
     pageBg: '#0d0c0a',
     kicker: 'Norse · Told in three nights',
     epigraph: 'The gods know exactly how they will die. They go anyway.',
+    about:
+      'The Norse doom of the gods, preserved in the Old Norse poem Völuspá in the Poetic Edda and retold by Snorri Sturluson in the Prose Edda. After the great winter Fimbulvetr, gods and monsters destroy each other and the world burns and drowns. Both sources end with rebirth: a green earth rises again, and two humans, Líf and Lífþrasir, survive to repeople it.',
     doorGrad: 'linear-gradient(180deg,#241207,#0f0703)',
     doorBorder: 'rgba(217,107,47,.32)',
     emblem:
@@ -163,6 +203,8 @@ export const myths = [
     pageBg: '#120c16',
     kicker: 'Japanese · Told in three nights',
     epigraph: 'They could not force the sun to come back. So they made her curious.',
+    about:
+      'A foundational Shinto myth recorded in Japan’s oldest chronicles, the Kojiki (712 CE) and the Nihon Shoki. The sun goddess Amaterasu hides in the heavenly rock cave Ame-no-Iwato after her brother Susanoo’s rampage, and is drawn out by Uzume’s dance and a mirror. That mirror is identified with Yata no Kagami, one of the three imperial regalia of Japan, and Uzume’s dance is remembered as the origin of kagura.',
     doorGrad: 'linear-gradient(180deg,#301636,#0f0512)',
     doorBorder: 'rgba(245,201,106,.3)',
     emblem:
@@ -208,6 +250,8 @@ export const myths = [
     pageBg: '#08130e',
     kicker: 'Akan · Told in three nights',
     epigraph: 'All the stories in the world once belonged to the sky god. A spider bought them.',
+    about:
+      'An Akan story from Ghana explaining why folktales are called anansesem — “spider stories.” Anansi wins the sky god Nyame’s story-box by capturing seemingly uncatchable creatures through cleverness; the price varies by telling and sometimes includes the fairy Mmoatia. Carried across the Atlantic by enslaved Africans, Anansi lives on in Caribbean and American traditions as Anancy and Aunt Nancy.',
     doorGrad: 'linear-gradient(180deg,#0d2b22,#04120c)',
     doorBorder: 'rgba(159,232,201,.28)',
     emblem:
@@ -253,6 +297,8 @@ export const myths = [
     pageBg: '#0d0a18',
     kicker: 'Greek · Told in three nights',
     epigraph: 'One rule. Do not look back.',
+    about:
+      'A Greek myth told most fully by Virgil in the Georgics and Ovid in the Metamorphoses: the musician Orpheus wins his wife Eurydice back from Hades on the condition that he not look back, and fails at the threshold. Variants disagree on details — Plato has him shown only a phantom — and later tradition places his lyre in the sky as the constellation Lyra.',
     doorGrad: 'linear-gradient(180deg,#241a3f,#0d0716)',
     doorBorder: 'rgba(201,162,255,.28)',
     emblem:
@@ -283,6 +329,147 @@ export const myths = [
         paras: [
           'The path up is long, and a footstep behind you is a faint thing to stake a life on. He listened for her breathing and heard only his own. What if they had tricked him? What if she had stumbled? He was three steps from the sunlight — some say one — when love did what love does, and turned to check.',
           'She was there. She had been there the whole time. She said a single word — some say it was “already,” some say his name — and the dark drew her back like a tide. When Orpheus died, the Muses set his lyre among the stars, where you can still find it on clear nights: Lyra, the constellation of looking back.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'fifthsun',
+    name: 'The Fifth Sun',
+    short: 'Fifth Sun',
+    culture: 'Aztec',
+    realm: 'Fire & Ending',
+    time: '6 min read',
+    accent: '#ef6a4d',
+    pageBg: '#140806',
+    kicker: 'Aztec · Told in three nights',
+    epigraph: 'Four worlds had already ended. To light the fifth, a god had to burn.',
+    about:
+      'The central Mexica creation myth, recorded in the sixteenth century in the Florentine Codex and the Leyenda de los Soles. Four earlier suns had each been destroyed, and the fifth was kindled at Teotihuacan by the sacrifice of the humble god Nanahuatzin, with the rabbit thrown at proud Tecciztecatl explaining the markings on the moon. This age — Nahui Ollin, “Four Movement” — was held to be destined to end in earthquakes.',
+    doorGrad: 'linear-gradient(180deg,#33110c,#120503)',
+    doorBorder: 'rgba(239,106,77,.3)',
+    emblem:
+      'width:30px;height:30px;border-radius:50%;border:3px solid #ef6a4d;box-sizing:border-box;box-shadow:0 0 0 6px rgba(239,106,77,.22),0 0 18px rgba(239,106,77,.5);animation:sunrise 5.5s ease-in-out infinite',
+    orb: 'radial-gradient(circle,#ffc08a 0%,#ef6a4d 52%,rgba(239,106,77,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0a0507 0%,#1a0b0d 60%,#2c1210 100%)',
+      'linear-gradient(180deg,#120705 0%,#331109 55%,#61200f 100%)',
+      'linear-gradient(180deg,#1c0c10 0%,#5a2413 55%,#b0512a 85%,#e88a4a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Council in the Dark',
+        paras: [
+          'When the fourth sun drowned, the gods gathered at Teotihuacan in a darkness with no edges and asked the only question that mattered: who will carry the light? Tecciztecatl stood at once — rich, splendid, already composing the story of his own courage. The gods waited politely for a second volunteer, and when none came, they looked at Nanahuatzin, the small pimpled god whom nobody looked at, and chose for him. He bowed. It is easy to be brave, he found, when no one expects anything else of you.',
+          'For four days the two did penance on twin pyramids. Tecciztecatl offered quetzal feathers, balls of gold, thorns carved from jade — precious things, offered precisely because they cost him nothing. Nanahuatzin offered green reeds, balls of grass, and maguey spines reddened with his own blood, which was all he had, and therefore everything.',
+        ],
+      },
+      {
+        title: 'The Fire',
+        paras: [
+          'The gods built a great fire and let it rage four days, until its heart was white and it made a sound like weather. Tecciztecatl went first, as befitted his splendor. He ran at the flames and his body refused him. Four times he ran; four times he stopped at the heat, and the fourth refusal is the one the fire remembered.',
+          'Then the gods called Nanahuatzin. He closed his eyes so he would not have to consult his fear, and walked in. The fire took him the way night takes a lamp — completely, and without ceremony. An eagle followed him into the blaze, which is why its feathers are scorched black at the tips; a jaguar leapt across the embers, which is why its coat is stamped with soot. And Tecciztecatl, ashamed at last into a kind of courage, threw himself onto the ashes that were left.',
+        ],
+      },
+      {
+        title: 'Four Movement',
+        paras: [
+          'Two suns rose that morning, equal and unbearable, and the gods saw that shame had made the second one too bright. One of them took a rabbit and flung it into Tecciztecatl’s face, dimming him into the moon — look up on a clear night and the rabbit is printed there still. But the true sun, who had been humble, hung at the horizon and did not move. He wanted what fire always wants: more. He would not cross the sky until every god had given blood.',
+          'So the gods died to set the day in motion, and Ehecatl, god of wind, blew until the sun consented to travel. This world is the Fifth Sun, called Four Movement — and it was born owing a debt, which is why the Mexica fed it, and why its priests watched the sky with the particular attention of people who have read the terms. The fifth age, the old books say, will end in earthquake. Every age ends. The point of the story is what it cost to begin one.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'maui',
+    name: 'How Māui Snared the Sun',
+    short: 'Māui',
+    culture: 'Māori',
+    realm: 'The Sky',
+    time: '6 min read',
+    accent: '#ec7d9e',
+    pageBg: '#150a13',
+    kicker: 'Māori · Told in three nights',
+    epigraph: 'The days were too short for living. So Māui went to have a word with the sun.',
+    about:
+      'A Māori telling of one of the most widespread stories in Polynesia — in Hawai‘i, Māui snares the sun atop the mountain Haleakalā. In the Māori version the trickster-hero and his brothers plait ropes of flax, wait at the pit where the sun rises, and Māui beats him with the enchanted jawbone of his ancestress Muri-ranga-whenua until he agrees to travel slowly. Some tellings add that ropes still trail from the sun, visible as its rays at dawn and dusk.',
+    doorGrad: 'linear-gradient(180deg,#2e1226,#10050e)',
+    doorBorder: 'rgba(236,125,158,.28)',
+    emblem:
+      'width:28px;height:28px;border-radius:50%;border:3px solid #ec7d9e;border-top-color:transparent;box-sizing:border-box;transform:rotate(45deg);opacity:.85;animation:drift 4.6s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#ffd2df 0%,#ec7d9e 50%,rgba(236,125,158,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0c060f 0%,#1e0c1c 60%,#341430 100%)',
+      'linear-gradient(180deg,#0e0710 0%,#2a1026 55%,#4a1a34 100%)',
+      'linear-gradient(180deg,#1c0c1e 0%,#54203c 55%,#a04a4e 85%,#e08a6a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Short Days',
+        paras: [
+          'In those days Tama-nui-te-rā, the great sun, crossed the sky at a sprint. He rose, glanced at the world, and was gone; and people ate in the dark, fished in the dark, and mended their nets by feel. The days were too short to cook a meal in, let alone live one.',
+          'It was Māui — youngest of his brothers, and the kind of hero who solves problems nobody had agreed were his — who announced that he would catch the sun and teach it patience. His brothers laughed: no rope could hold that heat. But Māui had the jawbone of his ancestress Muri-ranga-whenua, which was enchanted, and a plan, which was worse. He set the brothers to plaiting ropes of flax — flat ropes and round ropes, ropes like the ones that still hold canoes against a tide — until the pile of them looked like a sleeping taniwha.',
+        ],
+      },
+      {
+        title: 'The Pit of the Sun',
+        paras: [
+          'They traveled east by night and hid by day under brush and cloaks, so the sun would not look down and learn their errand. At the edge of the world they found the pit out of which the sun climbs each morning, and they built walls of clay to hide behind, and stretched the great noose across the mouth of it.',
+          '“Do not move until he is in to the shoulders,” Māui whispered. “Not at the light. Not at the heat. At the shoulders.” Dawn came up like a furnace door opening. The sun rose into the snare head first, magnificent and unsuspecting, and when his shoulders passed the rim Māui shouted, and the brothers hauled, and the ropes shut on the brightest thing in the world.',
+        ],
+      },
+      {
+        title: 'The Slow Sun',
+        paras: [
+          'The sun thrashed and the ropes smoked and held. Then Māui stepped out from the clay wall with the jawbone of his ancestress and beat the sun — soundly, thoroughly, without apology — while the sun roared and wept and finally cried out his own sacred name, Tama-nui-te-rā, which is how humans came to know it. “Why do you strike me?” he begged. “Because you run,” said Māui, “and the world cannot keep up.”',
+          'They let him go at last, and the sun pulled himself out of the snare and limped across the sky — slowly, the way he has gone ever since. Now there was time: to plant and to haul nets, to build, to argue, to sit by the fire while the evening lasted. And some say the ropes were never fully cut, that they trail from the sun still. Look at dusk, when he goes down streaming light in long lines toward the sea. Those are the ropes of Māui, paying out.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'churning',
+    name: 'The Churning of the Ocean',
+    short: 'The Churning',
+    culture: 'Hindu',
+    realm: 'The Deep',
+    time: '6 min read',
+    accent: '#7fd8e8',
+    pageBg: '#061018',
+    kicker: 'Hindu · Told in three nights',
+    epigraph: 'Gods and demons agreed on exactly one project. It nearly poisoned the world.',
+    about:
+      'The Samudra Manthana, told in the Bhagavata Purana, the Vishnu Purana, and the Mahabharata. Gods and asuras churn the cosmic ocean of milk with Mount Mandara as the rod and the serpent Vasuki as the rope, yielding first the world-poison halāhala — swallowed by Shiva, whose throat turns blue — then treasures, the goddess Lakshmi, and the nectar of immortality. Rahu’s severed, deathless head still swallows the sun and moon from time to time, which is how the tradition explains eclipses.',
+    doorGrad: 'linear-gradient(180deg,#0a2230,#04101a)',
+    doorBorder: 'rgba(127,216,232,.28)',
+    emblem:
+      'width:34px;height:22px;background:repeating-linear-gradient(180deg,#7fd8e8 0 2px,transparent 2px 7px);border-radius:3px;opacity:.85;animation:drift 4.8s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#e8fbff 0%,#7fd8e8 48%,rgba(127,216,232,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#050a12 0%,#0a1a28 60%,#12303e 100%)',
+      'linear-gradient(180deg,#04101a 0%,#0e2836 55%,#1a4a52 100%)',
+      'linear-gradient(180deg,#0a1c26 0%,#1e5060 55%,#3e8a90 85%,#7fc8c0 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Bargain',
+        paras: [
+          'It began with a garland. The sage Durvasa offered one to Indra, king of the gods, who draped it on his elephant, who threw it on the ground — and the sage’s curse drained the fortune of heaven like water from a cracked jar. The gods weakened. Their old enemies the asuras pressed in. So Vishnu proposed the unthinkable: a joint venture. At the bottom of the ocean of milk lay amrita, the nectar of immortality, and churning it up would take every hand in creation — including the enemy’s.',
+          'They uprooted Mount Mandara for a churning rod and persuaded Vasuki, king of serpents, to serve as the rope. The asuras, being proud, demanded the head end, and got it, along with the smoke of the serpent’s breath. The gods took the tail. And when the mountain began to sink through the sea floor, Vishnu became Kurma, a turtle the size of a continent, and slid his shell beneath it. On his back the whole enterprise turned.',
+        ],
+      },
+      {
+        title: 'The Poison',
+        paras: [
+          'The first thing the ocean gave up was not treasure. It was halāhala, the poison of everything, a smoke that withered whatever it touched, and both armies dropped the serpent and fled. It was Shiva who walked toward it — someone had to, and it is the nature of Shiva to be the one — and gathered the poison in his cupped palm and drank it. Parvati caught his throat in her two hands to keep it from going down, and there it stays; his throat is blue with it, and they call him Nīlakaṇṭha for it, the blue-throated one.',
+          'After that the sea began to pay. Up came Kamadhenu, the cow who grants wishes; Ucchaihshravas, the white horse of seven heads; Airavata the elephant; the jewel Kaustubha, which Vishnu took for his chest. Up came Lakshmi herself, fortune walking on the waves, who surveyed all three worlds and chose Vishnu. And last came Dhanvantari, physician of the gods, holding the pot everyone had been churning for.',
+        ],
+      },
+      {
+        title: 'The Nectar',
+        paras: [
+          'The asuras did what anyone would do and grabbed the pot. Then a woman was suddenly among them — Mohini, beautiful past argument, who was Vishnu wearing a smile — and she offered, sweetly, to pour. The asuras, each certain the enchantress favored him, sat down in a row to wait their turn. She served the gods first. She was still serving the gods when the pot ran dry.',
+          'One asura, Rahu, had seen the trick coming and sat disguised among the gods; the sun and the moon, who miss nothing, pointed him out just as the nectar touched his lips. Vishnu’s discus took his head off in the same instant — too late by a swallow. The head lives forever. It hunts the two who betrayed it across the sky, and now and then it catches one and swallows it, and the world goes briefly dark. Then the sun or the moon slides out of the severed throat, as it must, and shines on. Eclipses pass. Grudges, the story observes, do not.',
         ],
       },
     ],

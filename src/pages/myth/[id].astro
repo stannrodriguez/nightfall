@@ -85,6 +85,16 @@ const nightStarFields = myth.nights.map((_, i) => starField(40 + i, 14));
         <a class="return-hall" id="return-hall" href={hallUrl} hidden>Return to the Hall ✦</a>
       </div>
     </div>
+
+    {
+      myth.about && (
+        <footer class="about-myth">
+          <hr class="about-rule" />
+          <div class="about-kicker">About this myth</div>
+          <p>{myth.about}</p>
+        </footer>
+      )
+    }
   </main>
 
   <script is:inline define:vars={{ nightCount: myth.nights.length, romans: roman }}>
