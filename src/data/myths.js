@@ -37,6 +37,7 @@ export const cultures = {
     lines: [
       [[84, 55], [76, 66]],
       [[84, 55], [90, 44]],
+      [[84, 55], [76, 46]],
     ],
   },
   Akan: {
@@ -95,6 +96,7 @@ export const skyPos = {
   fifthsun: [16, 76],
   maui: [44, 14],
   churning: [89, 17],
+  izanami: [76, 46],
 };
 
 export const myths = [
@@ -470,6 +472,53 @@ export const myths = [
         paras: [
           'The asuras did what anyone would do and grabbed the pot. Then a woman was suddenly among them — Mohini, beautiful past argument, who was Vishnu wearing a smile — and she offered, sweetly, to pour. The asuras, each certain the enchantress favored him, sat down in a row to wait their turn. She served the gods first. She was still serving the gods when the pot ran dry.',
           'One asura, Rahu, had seen the trick coming and sat disguised among the gods; the sun and the moon, who miss nothing, pointed him out just as the nectar touched his lips. Vishnu’s discus took his head off in the same instant — too late by a swallow. The head lives forever. It hunts the two who betrayed it across the sky, and now and then it catches one and swallows it, and the world goes briefly dark. Then the sun or the moon slides out of the severed throat, as it must, and shines on. Eclipses pass. Grudges, the story observes, do not.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'izanami',
+    name: 'Izanami and Izanagi',
+    short: 'Izanami',
+    culture: 'Japanese',
+    realm: 'The Underworld',
+    time: '6 min read',
+    accent: '#adb8e6',
+    pageBg: '#0c0b15',
+    kicker: 'Japanese · Told in three nights',
+    epigraph: 'He followed his wife into the land of the dead. She asked him not to look.',
+    about:
+      'A foundational myth from the opening books of the Kojiki (712 CE) and the Nihon Shoki. The creator pair Izanagi and Izanami stir the first island out of the sea and give birth to the land of Japan; when Izanami dies bearing the fire god Kagutsuchi, Izanagi follows her into Yomi, the land of the dead, and breaks his promise not to look at her. Their parting at the blocked pass of Yomotsu Hirasaka is the tradition’s account of why people die — and Izanagi’s purification afterward brings Amaterasu, Tsukuyomi, and Susanoo into the world, which is why this door stands a few steps from the door of the cave.',
+    doorGrad: 'linear-gradient(180deg,#1d1b33,#0a0912)',
+    doorBorder: 'rgba(173,184,230,.28)',
+    emblem:
+      'width:22px;height:22px;border-radius:0 50% 50% 50%;background:#adb8e6;opacity:.8;transform:rotate(45deg);animation:drift 4.4s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#dfe4ff 0%,#adb8e6 50%,rgba(173,184,230,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0d0a16 0%,#1e1430 60%,#4a2333 100%)',
+      'linear-gradient(180deg,#050408 0%,#0b0a14 60%,#161226 100%)',
+      'linear-gradient(180deg,#0c1018 0%,#1c2a3e 55%,#3e5a72 85%,#8fb0c9 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Fire Child',
+        paras: [
+          'Before there was a Japan there were two gods on the floating bridge of heaven, dipping a jeweled spear into the sea below. The brine that dripped from its point piled up into the first island, and Izanagi and Izanami went down onto it together and made the rest by hand: island after island, then rivers, mountains, wind — a world assembled by a married couple, each birth a place you can still stand on.',
+          'The last child was fire. Kagutsuchi came into the world burning, as fire does, and Izanami did not survive him. Izanagi wept until his tears became gods, and then he did the thing this hall keeps a whole realm for: he refused. His wife had gone down to Yomi, the land of the dead. Very well. He knew the road, and he went.',
+        ],
+      },
+      {
+        title: 'The Land of Yomi',
+        paras: [
+          'Yomi is not a punishment. It is only dark, and downhill, and easier to enter than to leave. Izanagi felt his way along its halls calling her name, and her voice came back to him from the shadows — close, familiar, and wrong in a way he chose not to hear. “You are late,” she said. “I have already eaten the food of this land.” Those who eat in the dark country belong to it; every underworld in this hall agrees on that one law. Still, she said, she would go and ask the lords of Yomi to release her. “Wait for me. And do not look at me. Whatever else you do, do not put a light to the dark.”',
+          'He waited. The dark went on being dark, and waiting in it went on being unbearable — and Izanagi did what Orpheus did, what the loving always do, which is to trust his fear instead of his instructions. He broke a tooth from the comb in his hair, lit it, and held the little flame up. What lay before him was not his wife. It was what death actually is when the flattering dark is taken away: ruin, and crawling things, and eight thunders coiled asleep in the body he had loved. He dropped the light and ran.',
+        ],
+      },
+      {
+        title: 'The Boulder',
+        paras: [
+          'All Yomi came after him. He threw down his headdress and it burst into wild grapes; the hags of the dead stopped to eat them, because hunger outranks orders even in hell. He threw his comb and it sprang up as bamboo shoots, and bought a few steps more. At the mouth of the pass he seized three peaches from a tree that grows at the border of every world and hurled them into the dark, and the dead broke like a wave. Then he rolled a boulder it would take a thousand men to lift across the pass of Yomotsu Hirasaka, and the road between the living and the dead was closed forever.',
+          'She came to the far side of the stone. “Beloved,” said Izanami, “if you leave me here, I will strangle a thousand of your people every day.” And Izanagi answered, “Then every day I will raise one thousand five hundred to be born.” That is the arithmetic of the world you live in — more cradles than graves, by a margin set in an argument between two people who loved each other. Afterward Izanagi washed the death from his skin in a river, and gods poured off him like water: from his left eye the sun, from his right the moon, from his nose the storm. The sun was Amaterasu. Her door stands open in this hall, a few steps from this one — which is the way of myths, and of families.',
         ],
       },
     ],
