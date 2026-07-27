@@ -1,0 +1,657 @@
+/* ===== Nightfall global styles ===== */
+
+body {
+  margin: 0;
+  background: #070d1a;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+a {
+  color: #8fb8ff;
+}
+a:hover {
+  color: #c9d9ff;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 2px solid #8fb8ff;
+  outline-offset: 3px;
+}
+
+/* ===== Keyframes ===== */
+@keyframes twk {
+  0%, 100% { opacity: 0.15; }
+  50% { opacity: 0.95; }
+}
+@keyframes drift {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-14px); }
+}
+@keyframes sunrise {
+  0%, 100% { transform: translateY(0); opacity: 0.8; }
+  50% { transform: translateY(-8px); opacity: 1; }
+}
+@keyframes glowline {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.9; }
+}
+@keyframes rise {
+  0% { opacity: 0; transform: translateY(18px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Ambient motion is decoration — disable all of it for users who ask. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+  }
+}
+
+/* ===== The Hall ===== */
+.hall {
+  position: relative;
+  min-height: 100vh;
+  background: radial-gradient(ellipse at 50% -10%, #101a38 0%, #070d1a 60%);
+  overflow: hidden;
+  padding: 72px 40px 90px;
+  box-sizing: border-box;
+}
+
+.hall-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hall-header {
+  position: relative;
+  text-align: center;
+}
+
+.kicker {
+  font: 500 11px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.42em;
+  color: #5a6c8f;
+  text-transform: uppercase;
+}
+
+.hall-title {
+  margin: 20px 0 0;
+  font: 700 60px/1.05 Cinzel, serif;
+  color: #e8eefc;
+  text-shadow: 0 4px 60px rgba(143, 184, 255, 0.25);
+}
+
+.hall-subtitle {
+  margin: 18px auto 0;
+  max-width: 460px;
+  font: italic 400 18px/1.55 'Cormorant Garamond', serif;
+  color: #8a94b8;
+}
+
+.tonight-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 26px;
+  padding: 12px 20px;
+  border: 1px solid rgba(255, 217, 143, 0.35);
+  border-radius: 24px;
+  cursor: pointer;
+  background: rgba(255, 217, 143, 0.05);
+  transition: background 0.3s;
+  text-decoration: none;
+}
+.tonight-pill:hover {
+  background: rgba(255, 217, 143, 0.14);
+}
+.tonight-pill .pill-label {
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.28em;
+  color: #ffd98f;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.tonight-pill .pill-name {
+  font: italic 600 15px/1 'Cormorant Garamond', serif;
+  color: #f3e6c4;
+  white-space: nowrap;
+}
+
+/* Lens toggle */
+.lens-toggle-row {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-top: 36px;
+}
+.lens-toggle {
+  display: flex;
+  border: 1px solid rgba(143, 184, 255, 0.3);
+  border-radius: 22px;
+  overflow: hidden;
+}
+.lens-btn {
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  padding: 12px 18px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s, color 0.3s;
+  background: transparent;
+  color: #8fb8ff;
+  border-radius: 0;
+}
+.lens-btn:focus-visible {
+  outline-offset: -2px;
+}
+html:not([data-lens='sky']) .lens-btn[data-lens-btn='doors'],
+html[data-lens='sky'] .lens-btn[data-lens-btn='sky'] {
+  background: #8fb8ff;
+  color: #070d1a;
+}
+
+/* Lens visibility */
+.sky-view { display: none; }
+html[data-lens='sky'] .sky-view { display: block; }
+html[data-lens='sky'] .doors-view { display: none; }
+
+/* Filter chips */
+.chips {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px 30px;
+  margin: 40px 0 36px;
+}
+.chip {
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.26em;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px 2px 6px;
+  white-space: nowrap;
+  transition: color 0.3s;
+  color: #5a6c8f;
+  border-bottom: 1px solid transparent;
+}
+.chip.is-active {
+  color: #e8eefc;
+  border-bottom: 1px solid #8fb8ff;
+}
+
+/* Doors grid */
+.doors-grid {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 22px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.door {
+  position: relative;
+  width: 186px;
+  height: 236px;
+  border-radius: 93px 93px 0 0;
+  border: 1px solid var(--door-border);
+  background: var(--door-grad);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 18px 14px;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  text-decoration: none;
+}
+.door:hover {
+  transform: translateY(-8px);
+}
+.door[hidden] {
+  display: none;
+}
+.door.is-tonight {
+  border-color: rgba(255, 217, 143, 0.55);
+  box-shadow: 0 0 40px rgba(255, 217, 143, 0.12);
+}
+.door .tonight-badge {
+  display: none;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  font: 600 8.5px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.26em;
+  color: #ffd98f;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 217, 143, 0.4);
+  border-radius: 12px;
+  padding: 5px 9px;
+  white-space: nowrap;
+  background: rgba(7, 13, 26, 0.5);
+}
+.door.is-tonight .tonight-badge {
+  display: block;
+}
+.door .door-emblem-wrap {
+  position: absolute;
+  left: 50%;
+  top: 27%;
+  transform: translateX(-50%);
+}
+.door .door-text {
+  position: relative;
+  text-align: center;
+  display: block;
+}
+.door .door-name {
+  display: block;
+  font: 600 17px/1.25 'Cormorant Garamond', serif;
+  color: #eef0fa;
+}
+.door .door-meta {
+  display: block;
+  font: 500 8.5px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.22em;
+  color: #7a82a3;
+  text-transform: uppercase;
+  margin-top: 7px;
+  white-space: nowrap;
+}
+.door .door-time {
+  display: block;
+  font: 400 10px/1 'Space Grotesk', sans-serif;
+  color: #4d557a;
+  margin-top: 6px;
+}
+
+.hall-footer {
+  position: relative;
+  text-align: center;
+  margin-top: 56px;
+  font: italic 400 14px/1.5 'Cormorant Garamond', serif;
+  color: #4d557a;
+}
+
+/* ===== Sky lens ===== */
+.sky-canvas {
+  position: relative;
+  max-width: 1080px;
+  height: 540px;
+  margin: 20px auto 0;
+}
+.sky-lines {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.sky-star {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  cursor: pointer;
+  padding: 12px;
+  transition: transform 0.3s;
+  text-decoration: none;
+  display: block;
+}
+.sky-star:hover {
+  transform: translate(-50%, -50%) scale(1.1);
+}
+.sky-star .star-dot {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent);
+  margin: 0 auto;
+  box-shadow: 0 0 16px var(--accent);
+}
+.sky-star.is-tonight .star-dot {
+  box-shadow: 0 0 0 6px rgba(255, 217, 143, 0.18), 0 0 22px var(--accent);
+}
+.sky-star .star-name {
+  display: block;
+  font: 600 14px/1.2 'Cormorant Garamond', serif;
+  color: #e8eefc;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+.sky-star .star-meta {
+  display: block;
+  font: 500 8.5px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.2em;
+  color: #7a82a3;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+.sky-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  opacity: 0.75;
+  white-space: nowrap;
+}
+.sky-caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  font: italic 400 14px/1.5 'Cormorant Garamond', serif;
+  color: #4d557a;
+}
+
+/* Mobile sky: stacked per-culture constellations */
+.sky-stack {
+  display: none;
+}
+.sky-cluster {
+  position: relative;
+  height: 210px;
+  margin: 26px auto 0;
+  max-width: 420px;
+}
+.sky-cluster .sky-label {
+  transform: none;
+}
+.sky-stack .sky-caption {
+  position: static;
+  margin-top: 34px;
+}
+
+@media (max-width: 700px) {
+  .sky-canvas { display: none; }
+  .sky-stack { display: block; }
+}
+
+/* ===== Story page ===== */
+.story {
+  min-height: 100vh;
+  background: var(--page-bg);
+  animation: rise 0.6s ease-out both;
+}
+
+.story-hero {
+  position: relative;
+  height: 440px;
+  overflow: hidden;
+  transition: background 0.3s;
+}
+.hero-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.hero-stars[hidden] {
+  display: none;
+}
+.story-orb {
+  position: absolute;
+  left: 50%;
+  bottom: -64px;
+  width: 150px;
+  height: 150px;
+  margin-left: -75px;
+  border-radius: 50%;
+  animation: sunrise 6s ease-in-out infinite;
+}
+.back-link {
+  position: absolute;
+  z-index: 2;
+  left: 26px;
+  top: 22px;
+  padding: 12px 16px;
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.26em;
+  color: rgba(255, 255, 255, 0.65);
+  text-transform: uppercase;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+.back-link:hover {
+  color: #ffffff;
+}
+.hero-center {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  text-align: center;
+  padding: 0 32px;
+}
+.hero-kicker {
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.hero-title {
+  margin: 0;
+  font: 700 52px/1.12 Cinzel, serif;
+  color: #f6f1ff;
+  text-shadow: 0 2px 50px rgba(0, 0, 0, 0.4);
+}
+.hero-epigraph {
+  max-width: 440px;
+  font: italic 400 17px/1.5 'Cormorant Garamond', serif;
+  color: rgba(235, 230, 248, 0.78);
+}
+.hero-fade {
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 70px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0), var(--page-bg));
+}
+
+/* Night tabs */
+.night-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  padding: 22px 0 2px;
+}
+.night-tab {
+  padding: 12px 5px;
+  cursor: pointer;
+}
+.night-tab .bar {
+  display: block;
+  width: 36px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.14);
+}
+.night-tab.is-active .bar {
+  background: var(--accent);
+  animation: glowline 3s ease-in-out infinite;
+}
+
+/* Prose */
+.night-section[hidden] {
+  display: none;
+}
+.prose {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 30px 32px 0;
+  box-sizing: border-box;
+}
+.chapter-kicker {
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color: var(--accent);
+}
+.prose p {
+  margin: 0 0 18px;
+  font: 400 18px/1.85 'Cormorant Garamond', serif;
+  color: #d9d3ea;
+}
+.dropcap {
+  float: left;
+  font: 700 50px/0.82 Cinzel, serif;
+  padding: 7px 10px 0 0;
+  color: var(--accent);
+}
+
+/* Chapter nav */
+.chapter-nav {
+  max-width: 620px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 32px 70px;
+  box-sizing: border-box;
+}
+.prev-night {
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: #6a6f92;
+  cursor: pointer;
+  padding: 12px 0;
+  white-space: nowrap;
+  transition: color 0.3s;
+}
+.prev-night:hover {
+  color: #b9bede;
+}
+.prev-night[hidden] {
+  display: none;
+}
+.next-night,
+.return-hall {
+  font: 500 11px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent);
+  border: 1px solid var(--accent-border);
+  border-radius: 3px;
+  padding: 13px 18px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.3s;
+  text-decoration: none;
+  display: inline-block;
+}
+.next-night:hover,
+.return-hall:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--accent);
+}
+.next-night[hidden],
+.return-hall[hidden] {
+  display: none;
+}
+
+/* About the myth */
+.about-myth {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 0 32px 70px;
+  box-sizing: border-box;
+}
+.about-myth .about-rule {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin: 0 0 26px;
+}
+.about-myth .about-kicker {
+  font: 500 10px/1 'Space Grotesk', sans-serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  color: #6a6f92;
+}
+.about-myth p {
+  margin: 0;
+  font: italic 400 15px/1.75 'Cormorant Garamond', serif;
+  color: #8a94b8;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 640px) {
+  .hall {
+    padding: 52px 20px 70px;
+  }
+  .hall-title {
+    font-size: 44px;
+  }
+  .hall-subtitle {
+    font-size: 16px;
+  }
+  .story-hero {
+    height: 400px;
+  }
+  .hero-title {
+    font-size: clamp(30px, 9.5vw, 44px);
+  }
+  .hero-epigraph {
+    font-size: 16px;
+  }
+  .back-link {
+    left: 8px;
+    top: 12px;
+  }
+  .prose {
+    padding: 26px 22px 0;
+  }
+  .chapter-nav {
+    padding: 20px 22px 60px;
+  }
+  .about-myth {
+    padding: 0 22px 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .doors-grid {
+    gap: 16px;
+  }
+  .door {
+    width: 150px;
+    height: 200px;
+    border-radius: 75px 75px 0 0;
+    padding: 14px 10px;
+  }
+  .door .door-name {
+    font-size: 15px;
+  }
+  .door .door-meta {
+    font-size: 8px;
+    letter-spacing: 0.1em;
+  }
+  .chips {
+    gap: 4px 20px;
+    margin: 32px 0 28px;
+  }
+}

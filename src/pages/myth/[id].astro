@@ -1,0 +1,131 @@
+---
+import Base from '../../layouts/Base.astro';
+import { myths, roman, starField } from '../../data/myths.js';
+
+export function getStaticPaths() {
+  return myths.map((m) => ({ params: { id: m.id }, props: { myth: m } }));
+}
+
+const { myth } = Astro.props;
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const hallUrl = `${base}/`;
+
+const description = `${myth.epigraph} ${myth.name} — a ${myth.culture} myth from Nightfall, retold across three nights.`;
+
+// One star field per night (the prototype reseeds the hero stars each night).
+const nightStarFields = myth.nights.map((_, i) => starField(40 + i, 14));
+---
+
+<Base title={`${myth.name} — Nightfall`} description={description}>
+  <main
+    class="story"
+    id="story"
+    data-hero-grads={JSON.stringify(myth.heroGrads)}
+    style={`--page-bg:${myth.pageBg};--accent:${myth.accent};--accent-border:${myth.accent}66`}
+  >
+    <div class="story-hero" id="story-hero" style={`background:${myth.heroGrads[0]}`}>
+      {nightStarFields.map((stars, i) => (
+        <div class="hero-stars" data-night-stars={i} hidden={i !== 0} aria-hidden="true">
+          {stars.map((s) => (
+            <div style={s}></div>
+          ))}
+        </div>
+      ))}
+      <div class="story-orb" style={`background:${myth.orb}`} aria-hidden="true"></div>
+      <a class="back-link" href={hallUrl}>← The Hall</a>
+      <div class="hero-center">
+        <div class="hero-kicker">{myth.kicker.toUpperCase()}</div>
+        <h1 class="hero-title">{myth.name}</h1>
+        <div class="hero-epigraph">{myth.epigraph}</div>
+      </div>
+      <div class="hero-fade"></div>
+    </div>
+
+    <nav class="night-tabs" aria-label="Nights">
+      {myth.nights.map((n, i) => (
+        <button
+          type="button"
+          class:list={['night-tab', { 'is-active': i === 0 }]}
+          data-night-tab={i}
+          aria-label={`Night ${roman[i]} · ${n.title}`}
+        >
+          <span class="bar"></span>
+        </button>
+      ))}
+    </nav>
+
+    {
+      myth.nights.map((night, i) => (
+        <section class="night-section" data-night={i} hidden={i !== 0}>
+          <div class="prose">
+            <div class="chapter-kicker">
+              Night {roman[i]} · {night.title}
+            </div>
+            {night.paras.map((p, pi) =>
+              pi === 0 ? (
+                <p>
+                  <span class="dropcap">{p[0]}</span>
+                  {p.slice(1)}
+                </p>
+              ) : (
+                <p>{p}</p>
+              )
+            )}
+          </div>
+        </section>
+      ))
+    }
+
+    <div class="chapter-nav">
+      <div>
+        <button type="button" class="prev-night" id="prev-night" hidden>← Night I</button>
+      </div>
+      <div>
+        <button type="button" class="next-night" id="next-night">Night II →</button>
+        <a class="return-hall" id="return-hall" href={hallUrl} hidden>Return to the Hall ✦</a>
+      </div>
+    </div>
+  </main>
+
+  <script is:inline define:vars={{ nightCount: myth.nights.length, romans: roman }}>
+    // Night navigation is client state — no /night/:n routes.
+    var night = 0;
+    var hero = document.getElementById('story-hero');
+    var grads = JSON.parse(document.getElementById('story').getAttribute('data-hero-grads'));
+
+    function show(n) {
+      night = n;
+      hero.style.background = grads[n];
+      document.querySelectorAll('[data-night-stars]').forEach(function (el) {
+        el.hidden = Number(el.getAttribute('data-night-stars')) !== n;
+      });
+      document.querySelectorAll('.night-section').forEach(function (el) {
+        el.hidden = Number(el.getAttribute('data-night')) !== n;
+      });
+      document.querySelectorAll('[data-night-tab]').forEach(function (tab) {
+        tab.classList.toggle('is-active', Number(tab.getAttribute('data-night-tab')) === n);
+      });
+      var prev = document.getElementById('prev-night');
+      prev.hidden = n === 0;
+      if (n > 0) prev.textContent = '← Night ' + romans[n - 1];
+      var next = document.getElementById('next-night');
+      var last = n === nightCount - 1;
+      next.hidden = last;
+      document.getElementById('return-hall').hidden = !last;
+      if (!last) next.textContent = 'Night ' + romans[n + 1] + ' →';
+      window.scrollTo(0, 0);
+    }
+
+    document.querySelectorAll('[data-night-tab]').forEach(function (tab) {
+      tab.addEventListener('click', function () {
+        show(Number(tab.getAttribute('data-night-tab')));
+      });
+    });
+    document.getElementById('prev-night').addEventListener('click', function () {
+      show(night - 1);
+    });
+    document.getElementById('next-night').addEventListener('click', function () {
+      show(night + 1);
+    });
+  </script>
+</Base>

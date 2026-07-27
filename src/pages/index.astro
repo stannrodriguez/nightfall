@@ -1,0 +1,237 @@
+---
+import Base from '../layouts/Base.astro';
+import { myths, cultures, skyPos, numberWord, starField, realmGroups } from '../data/myths.js';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const mythUrl = (id) => `${base}/myth/${id}/`;
+
+const hallStars = starField(5, 18);
+const groups = realmGroups();
+const countWord = numberWord(myths.length);
+
+// Desktop sky canvas: % coordinates map onto a 1000x520 viewBox.
+const toVB = ([x, y]) => [Math.round(x * 10), Math.round(y * 5.2)];
+const desktopSky = Object.entries(cultures).map(([name, c]) => ({
+  name,
+  ...c,
+  vbLines: c.lines.map(([a, b]) => [toVB(a), toVB(b)]),
+  vbMinors: c.minors.map(toVB),
+}));
+
+// Mobile sky: each culture becomes a compact stacked cluster. Star and line
+// positions are normalized to the cluster's own bounding box.
+function clusterFor(name, c) {
+  const cultureMyths = myths.filter((m) => m.culture === name);
+  const pts = [...cultureMyths.map((m) => skyPos[m.id]), ...c.minors];
+  const xs = pts.map((p) => p[0]);
+  const ys = pts.map((p) => p[1]);
+  const min = [Math.min(...xs), Math.min(...ys)];
+  const span = [Math.max(...xs) - min[0] || 1, Math.max(...ys) - min[1] || 1];
+  const pad = 24;
+  const norm = ([x, y]) => [
+    pad + ((x - min[0]) / span[0]) * (100 - pad * 2),
+    pad + ((y - min[1]) / span[1]) * (100 - pad * 2),
+  ];
+  return {
+    name,
+    color: c.color,
+    lineAlpha: c.lineAlpha,
+    minorAlpha: c.minorAlpha,
+    stars: cultureMyths.map((m) => ({ myth: m, pos: norm(skyPos[m.id]) })),
+    minors: c.minors.map(norm),
+    lines: c.lines.map(([a, b]) => [norm(a), norm(b)]),
+  };
+}
+const clusters = Object.entries(cultures).map(([name, c]) => clusterFor(name, c));
+
+const tonightIds = myths.map((m) => m.id);
+const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
+---
+
+<Base
+  title="Nightfall — A World Tour of Myth & Fable"
+  description={`World myths and fables retold in three nights each. ${countWord} doors hang open tonight — step through one.`}
+>
+  <script is:inline>
+    // Restore the persisted Doors/Sky lens before the hall paints.
+    try {
+      var lens = localStorage.getItem('nightfall-lens');
+      if (lens === 'sky' || lens === 'doors') {
+        document.documentElement.setAttribute('data-lens', lens);
+      }
+    } catch (e) {}
+  </script>
+
+  <main class="hall">
+    <div class="hall-stars" aria-hidden="true">
+      {hallStars.map((s) => <div style={s}></div>)}
+    </div>
+
+    <header class="hall-header">
+      <div class="kicker">A world tour of myth &amp; fable</div>
+      <h1 class="hall-title">Nightfall</h1>
+      <p class="hall-subtitle">
+        {countWord} doors hang open tonight.<br />New ones are carved with every moon.
+      </p>
+      <a class="tonight-pill" id="tonight-pill" href={mythUrl(myths[0].id)}>
+        <span class="pill-label">✦ Tonight's door</span>
+        <span class="pill-name" id="tonight-name">{myths[0].short}</span>
+      </a>
+    </header>
+
+    <div class="lens-toggle-row">
+      <div class="lens-toggle" role="group" aria-label="Hall lens">
+        <button type="button" class="lens-btn" data-lens-btn="doors" aria-pressed="true">⌂ Doors</button>
+        <button type="button" class="lens-btn" data-lens-btn="sky" aria-pressed="false">✦ Sky</button>
+      </div>
+    </div>
+
+    <section class="sky-view" aria-label="The sky">
+      <div class="sky-canvas">
+        <svg class="sky-lines" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
+          {desktopSky.map((c) => (
+            <>
+              {c.vbLines.map(([[x1, y1], [x2, y2]]) => (
+                <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={`color-mix(in srgb, ${c.color} ${c.lineAlpha * 100}%, transparent)`} stroke-width="1" />
+              ))}
+              {c.vbMinors.map(([cx, cy]) => (
+                <circle cx={cx} cy={cy} r="2.5" fill={`color-mix(in srgb, ${c.color} ${c.minorAlpha * 100}%, transparent)`} />
+              ))}
+            </>
+          ))}
+        </svg>
+        {myths.map((m) => (
+          <a
+            class="sky-star"
+            data-sky-star={m.id}
+            href={mythUrl(m.id)}
+            style={`left:${skyPos[m.id][0]}%;top:${skyPos[m.id][1]}%;--accent:${m.accent}`}
+          >
+            <span class="star-dot"></span>
+            <span class="star-name">{m.short}</span>
+            <span class="star-meta">{(m.culture + ' · ' + m.time).toUpperCase()}</span>
+          </a>
+        ))}
+        {Object.entries(cultures).map(([name, c]) => (
+          <div class="sky-label" style={`left:${c.label.x}%;top:${c.label.y}%;color:${c.color}`}>
+            {name.toUpperCase()}
+          </div>
+        ))}
+        <div class="sky-caption">
+          Each culture keeps its own constellation — touch a star to open its story.
+        </div>
+      </div>
+
+      <div class="sky-stack">
+        {clusters.map((c) => (
+          <div class="sky-cluster">
+            <svg class="sky-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+              {c.lines.map(([[x1, y1], [x2, y2]]) => (
+                <line x1={x1} y1={y1} x2={x2} y2={y2} stroke={`color-mix(in srgb, ${c.color} ${c.lineAlpha * 100}%, transparent)`} stroke-width="0.35" />
+              ))}
+              {c.minors.map(([cx, cy]) => (
+                <circle cx={cx} cy={cy} r="0.9" fill={`color-mix(in srgb, ${c.color} ${c.minorAlpha * 100}%, transparent)`} />
+              ))}
+            </svg>
+            {c.stars.map(({ myth, pos }) => (
+              <a
+                class="sky-star"
+                data-sky-star={myth.id}
+                href={mythUrl(myth.id)}
+                style={`left:${pos[0]}%;top:${pos[1]}%;--accent:${myth.accent}`}
+              >
+                <span class="star-dot"></span>
+                <span class="star-name">{myth.short}</span>
+                <span class="star-meta">{(myth.culture + ' · ' + myth.time).toUpperCase()}</span>
+              </a>
+            ))}
+            <div class="sky-label" style={`left:0;top:4px;color:${c.color}`}>{c.name.toUpperCase()}</div>
+          </div>
+        ))}
+        <div class="sky-caption">
+          Each culture keeps its own constellation — touch a star to open its story.
+        </div>
+      </div>
+    </section>
+
+    <section class="doors-view" aria-label="The doors">
+      <div class="chips" role="group" aria-label="Filter doors">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All doors</button>
+        {groups.map((g) => (
+          <button type="button" class="chip" data-filter={g} aria-pressed="false">{g}</button>
+        ))}
+      </div>
+
+      <div class="doors-grid">
+        {myths.map((m) => (
+          <a
+            class="door"
+            data-door={m.id}
+            data-group={m.realm}
+            href={mythUrl(m.id)}
+            style={`--door-grad:${m.doorGrad};--door-border:${m.doorBorder}`}
+          >
+            <span class="tonight-badge">✦ Tonight</span>
+            <span class="door-emblem-wrap"><span style={`display:block;${m.emblem}`}></span></span>
+            <span class="door-text">
+              <span class="door-name">{m.name}</span>
+              <span class="door-meta">{(m.culture + ' · ' + m.realm).toUpperCase()}</span>
+              <span class="door-time">{m.time}</span>
+            </span>
+          </a>
+        ))}
+      </div>
+
+      <div class="hall-footer">The hall is longer than it looks.</div>
+    </section>
+  </main>
+
+  <script is:inline define:vars={{ tonightIds, tonightShorts, base }}>
+    // Tonight's door — computed on the client from the UTC date so every
+    // visitor sees today's pick, not the deploy day's.
+    var tonightId = tonightIds[Math.floor(Date.now() / 864e5) % tonightIds.length];
+    var pill = document.getElementById('tonight-pill');
+    pill.href = base + '/myth/' + tonightId + '/';
+    document.getElementById('tonight-name').textContent = tonightShorts[tonightId];
+    document.querySelectorAll('[data-door="' + tonightId + '"], [data-sky-star="' + tonightId + '"]').forEach(function (el) {
+      el.classList.add('is-tonight');
+    });
+
+    // Doors/Sky lens toggle, persisted in localStorage.
+    function currentLens() {
+      return document.documentElement.getAttribute('data-lens') === 'sky' ? 'sky' : 'doors';
+    }
+    function syncLensButtons() {
+      var lens = currentLens();
+      document.querySelectorAll('[data-lens-btn]').forEach(function (btn) {
+        btn.setAttribute('aria-pressed', String(btn.getAttribute('data-lens-btn') === lens));
+      });
+    }
+    document.querySelectorAll('[data-lens-btn]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var lens = btn.getAttribute('data-lens-btn');
+        document.documentElement.setAttribute('data-lens', lens);
+        try {
+          localStorage.setItem('nightfall-lens', lens);
+        } catch (e) {}
+        syncLensButtons();
+      });
+    });
+    syncLensButtons();
+
+    // Realm filter chips.
+    document.querySelectorAll('.chip').forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var filter = chip.getAttribute('data-filter');
+        document.querySelectorAll('.chip').forEach(function (c) {
+          var active = c === chip;
+          c.classList.toggle('is-active', active);
+          c.setAttribute('aria-pressed', String(active));
+        });
+        document.querySelectorAll('.door').forEach(function (door) {
+          door.hidden = filter !== 'all' && door.getAttribute('data-group') !== filter;
+        });
+      });
+    });
+  </script>
+</Base>
