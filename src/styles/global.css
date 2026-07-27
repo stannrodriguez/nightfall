@@ -159,16 +159,16 @@ button:focus-visible {
 .lens-btn:focus-visible {
   outline-offset: -2px;
 }
-html:not([data-lens='sky']) .lens-btn[data-lens-btn='doors'],
-html[data-lens='sky'] .lens-btn[data-lens-btn='sky'] {
+html[data-lens='doors'] .lens-btn[data-lens-btn='doors'],
+html:not([data-lens='doors']) .lens-btn[data-lens-btn='sky'] {
   background: #8fb8ff;
   color: #070d1a;
 }
 
-/* Lens visibility */
-.sky-view { display: none; }
-html[data-lens='sky'] .sky-view { display: block; }
-html[data-lens='sky'] .doors-view { display: none; }
+/* Lens visibility — the sky is the default lens; doors show when chosen. */
+.doors-view { display: none; }
+html[data-lens='doors'] .doors-view { display: block; }
+html[data-lens='doors'] .sky-view { display: none; }
 
 /* Filter chips */
 .chips {
