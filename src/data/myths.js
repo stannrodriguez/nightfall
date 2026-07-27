@@ -30,12 +30,12 @@ export const cultures = {
     lineAlpha: 0.35,
     minorAlpha: 0.55,
     label: { x: 70, y: 9 },
-    minors: [[70, 30], [64, 38]],
+    minors: [[63, 42]],
     lines: [
       [[62, 16], [56, 30]],
       [[62, 16], [70, 30]],
-      [[56, 30], [64, 38]],
-      [[70, 30], [64, 38]],
+      [[56, 30], [63, 42]],
+      [[70, 30], [63, 42]],
     ],
   },
   Japanese: {
@@ -55,11 +55,12 @@ export const cultures = {
     lineAlpha: 0.32,
     minorAlpha: 0.55,
     label: { x: 36, y: 86 },
-    minors: [[38, 74], [54, 54], [58, 78]],
+    minors: [[38, 74], [54, 54]],
     lines: [
       [[46, 64], [38, 74]],
       [[46, 64], [54, 54]],
       [[38, 74], [58, 78]],
+      [[54, 54], [58, 78]],
     ],
   },
   Aztec: {
@@ -78,23 +79,23 @@ export const cultures = {
     lineAlpha: 0.32,
     minorAlpha: 0.55,
     label: { x: 24, y: 8 },
-    minors: [[26, 20], [54, 16], [46, 26]],
+    minors: [[26, 20], [54, 16]],
     lines: [
       [[34, 12], [26, 20]],
       [[34, 12], [54, 16]],
-      [[54, 16], [46, 26]],
+      [[54, 16], [42, 26]],
     ],
   },
   Hindu: {
     color: '#7fd8e8',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 92, y: 40 },
-    minors: [[94, 26], [82, 32]],
+    label: { x: 93, y: 42 },
+    minors: [[94, 26]],
     lines: [
       [[88, 16], [94, 26]],
-      [[88, 16], [82, 32]],
-      [[82, 32], [94, 26]],
+      [[88, 16], [83, 32]],
+      [[83, 32], [94, 26]],
     ],
   },
 };
@@ -112,6 +113,10 @@ export const skyPos = {
   izanami: [73, 70],
   jormungandr: [56, 30],
   hermes: [12, 46],
+  baldr: [70, 30],
+  savitri: [83, 32],
+  mauifish: [42, 26],
+  wisdompot: [58, 78],
 };
 
 export const myths = [
@@ -628,6 +633,194 @@ export const myths = [
         paras: [
           'Apollo, who among his other offices was the god of finding things out, arrived at the cave by noon and hauled his day-old brother to Olympus. The defense was memorable. “I was born yesterday,” said Hermes, gazing up. “I care only for sleep, and warm milk.” Zeus looked from the sun god, rigid with fury, to the infant, wearing the blanket like a courtroom exhibit, and laughed until the mountain shook — then ordered the brothers to make peace, because that is what fathers are for.',
           'At the cattle pens Hermes reached into the cradle-blanket and produced the lyre, and played, and Apollo — god of music, who had never heard music like this — stood transfixed. So the trade was made at the fence rail: the lyre for the herd, song for cattle, and each god walked away certain he had robbed the other, which is the definition of a good bargain. Apollo gave him a golden staff to seal it, and Zeus gave him the roads. Every traveler became his charge; every stone cairn at a fork in the road became his altar; even the dead go down behind his lamp, for he is the one god with a key to every door in this hall. The Greeks said that when you find luck lying in the road, it is his. Say thank you at the crossroads. He hears it there.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'baldr',
+    name: 'The Death of Baldr',
+    short: 'Baldr',
+    culture: 'Norse',
+    realm: 'Fire & Ending',
+    time: '6 min read',
+    accent: '#e8d9a3',
+    pageBg: '#0d0c12',
+    kicker: 'Norse · Told in three nights',
+    epigraph: 'Everything in the world swore never to hurt him. Almost everything.',
+    about:
+      'The death of Baldr is told in Snorri Sturluson’s Prose Edda and foretold in the Old Norse poem Völuspá; the Danish historian Saxo Grammaticus preserves a stranger, older-feeling variant. Frigg takes oaths from all things not to harm her shining son, overlooking the mistletoe, and Loki guides the blind god Höðr’s throw. Hermóðr’s ride to Hel wins one condition — Baldr may return if all things weep for him — and a single giantess refuses. Both Eddas agree on the ending after the ending: when Ragnarök has burned itself out, Baldr comes back into the green world that follows.',
+    doorGrad: 'linear-gradient(180deg,#26221a,#0e0c08)',
+    doorBorder: 'rgba(232,217,163,.3)',
+    emblem:
+      'width:28px;height:28px;border-radius:50%;background:radial-gradient(circle,#fff6d8,rgba(232,217,163,0) 70%);animation:sunrise 5.2s ease-in-out infinite',
+    orb: 'radial-gradient(circle,#fff6d8 0%,#e8d9a3 50%,rgba(232,217,163,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0d0e14 0%,#1e2030 60%,#3a3c52 100%)',
+      'linear-gradient(180deg,#0a0a0e 0%,#16141e 60%,#262032 100%)',
+      'linear-gradient(180deg,#140e0e 0%,#33201a 55%,#71422a 85%,#c98a4a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Oaths',
+        paras: [
+          'Baldr was the god it did not hurt to look at. Where the others were storms and bargains and appetites, he was simply light in the shape of a person, and even the frost giants found it difficult to want him dead. So when Baldr began to dream of his own death, night after night, the whole of Asgard took it personally.',
+          'His mother Frigg did what mothers do, only at scale. She went out into the nine worlds and took an oath from every thing in them — from fire and water, iron and every ore, stones, earth, trees, sicknesses, beasts, birds, and serpents — that none of them would harm her son. She was thorough the way only terror makes you thorough. One small plant west of Valhalla she passed over: the mistletoe, too young, she judged, to swear anything. Remember that it was mercy. It will not look like mercy later.',
+        ],
+      },
+      {
+        title: 'The Game',
+        paras: [
+          'What the gods did with Baldr’s new invulnerability tells you everything about gods. They made it a game. Baldr stood in the middle of the assembly while everything in creation was thrown at him — axes, spears, whole boulders — and glanced off like rain off a roof, and the halls rang with laughter. Only one person at the edge of the field was not laughing. Loki had counted the oaths, and found the arithmetic imperfect.',
+          'An old woman visited Frigg that afternoon — polite, curious, wearing Loki the way Loki wore everything — and asked whether it was true that all things had sworn. Nearly all, said Frigg, who had kept the secret from everyone but her own relief. There was one sprig too young to swear. By evening Loki stood at the shoulder of blind Höðr, Baldr’s own brother, who alone had no way to join the game. “I will guide your hand,” said Loki kindly, and set in it a dart of mistletoe. Höðr threw, because his brother was beloved and he wished to honor him. It is the cruelest throw in any story: made entirely of love, aimed entirely by spite.',
+        ],
+      },
+      {
+        title: 'The Weeping',
+        paras: [
+          'The dart went through Baldr and the light went out of him, and the gods stood in a silence none of them had rehearsed. They laid him in his ship Hringhorni and burned it on the tide. And his brother Hermóðr took Odin’s own horse and rode nine nights down roads dark and deep to the hall of Hel, to ask death to make an exception. Hel considered. Let all things weep for Baldr, she said — every thing, as once every thing swore — and I will send him back.',
+          'And all things did weep: fire wept, iron wept, the stones wept as stones do when they pass from frost into thaw. All things but one. In a cave sat a giantess called Þökk, who said, dry-eyed: let Hel hold what she has. Most agree it was Loki, wearing his last disguise. So Baldr stayed — but hear the ending under the ending. When Ragnarök comes and the fire has taken gods, wolf, serpent, and sea — that door stands open a few steps from this one — the world rises green again, and up from Hel, blinking in the new light, comes Baldr, with Höðr beside him, forgiven. The Norse knew a secret the end of the world keeps badly: the brightest things are only ever lent to the dark.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'savitri',
+    name: 'Savitri and the Lord of Death',
+    short: 'Savitri',
+    culture: 'Hindu',
+    realm: 'The Underworld',
+    time: '6 min read',
+    accent: '#f0a878',
+    pageBg: '#100b12',
+    kicker: 'Hindu · Told in three nights',
+    epigraph: 'Death carried her husband’s soul away at noon. She followed, making conversation.',
+    about:
+      'Told in the Vana Parva, the forest book of the Mahabharata, where the sage Markandeya recounts it to comfort the exiled Pandavas. Princess Savitri chooses the doomed prince Satyavan knowing he has a year to live, and when Yama, the lord of death, comes for his soul, she follows and wins him back boon by boon. The tale is still honored across India in the Vat Savitri festival, when married women tie threads around banyan trees — the tree under which Satyavan laid down his head.',
+    doorGrad: 'linear-gradient(180deg,#2b1a10,#100804)',
+    doorBorder: 'rgba(240,168,120,.3)',
+    emblem:
+      'width:30px;height:15px;border-radius:0 0 30px 30px;background:#f0a878;opacity:.85;animation:drift 4.4s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#ffd9b8 0%,#f0a878 50%,rgba(240,168,120,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0f0a10 0%,#241426 60%,#48263e 100%)',
+      'linear-gradient(180deg,#0c0810 0%,#1e1224 55%,#3a1e30 100%)',
+      'linear-gradient(180deg,#160e14 0%,#48232a 55%,#9c5432 85%,#e8a05a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Choosing',
+        paras: [
+          'Savitri was born of a king’s long prayer, and grew so radiant and so exact of mind that the princes who should have courted her found excuses to be elsewhere; it is uncomfortable, being seen clearly. So her father sent her out to choose for herself. She crossed kingdoms and passed over crowns, and in a forest hermitage she found Satyavan — a king’s son raised in exile, splitting wood for a blind father, singing while he worked. Him, she said, in the way of people who have only ever needed to say a thing once.',
+          'The sage Narada, who knows everything and arrives precisely when the knowledge will hurt most, told her father what the stars had written: Satyavan was faultless, gentle, true — and had exactly one year to live. Choose again, said her father. And Savitri gave the answer the tradition has kept polished for more than two thousand years: a heart chooses once. She married Satyavan, put away her silks for bark cloth, and served the hermitage — and counted, privately, in the place where she kept her arithmetic, the days.',
+        ],
+      },
+      {
+        title: 'The Appointed Day',
+        paras: [
+          'For three days before the day, she fasted and stood vigil, and on the morning itself she asked to walk with her husband into the forest. He swung his axe; the trees dropped their shadows; and at noon Satyavan set it down, said the light hurt his eyes, and laid his head in her lap. She watched the forest go quiet in the wrong way. And then she saw, standing among the trees where no path was, a figure in red with skin like a monsoon sky, a noose of bright cord in his hand — and she knew him, and did not look away. That was the first strange thing Yama noticed about her.',
+          'The lord of death does not usually come in person; he keeps messengers for the ordinary dead. For Satyavan he had come himself, out of respect. He drew the soul out — thumb-sized, struggling like a caught bird — bound it, and turned south, which is death’s direction. Behind him he heard footsteps keeping pace with his own. “Turn back, daughter,” said Yama, not unkindly. “This road is not walked by the living.” “The scriptures say seven steps together make a friendship,” said Savitri, walking. “I have walked many more than seven with you now. Shall we talk, as friends do?”',
+        ],
+      },
+      {
+        title: 'The Boons',
+        paras: [
+          'She talked. She talked about dharma, about the duties of kings and the courtesies owed by gods, and she talked well — so well that Yama, who administers the consequences of every word ever spoken, found himself enjoying the conversation. “Ask a boon,” he said at last. “Anything but the life I carry.” She asked sight for her blind father-in-law, and got it; his kingdom restored, and got it; a hundred sons for her own father, and got them. Still the footsteps followed. “You have come further than any living soul,” said death, now genuinely curious. “One boon more, then. Anything but this life.” “Then grant me a hundred sons,” said Savitri, “born of Satyavan and of me.”',
+          'Yama stopped walking. He reviewed the terms; he was, after all, the god of them. A faithful wife; a hundred sons; a dead husband: two of the three were not compatible, and it was not in him to unsay a granted word. And here the story does the thing that makes it immortal: death laughed. He unbound the little soul, set it in her hands like something returned to its rightful shelf, and blessed the both of them with four hundred years. She walked back north to the banyan tree and Satyavan woke in her lap, saying he had dreamed a dark figure carried him away. “You are not wrong,” said Savitri. In another hall of this house, Orpheus lost everything by looking back. Savitri never once looked away — she looked death in the eye and out-argued him, which is why the women of India tie threads around banyan trees to this day, and why Yama, they say, does not entirely mind losing that particular argument.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'mauifish',
+    name: 'How Māui Fished Up the Land',
+    short: 'The Great Fish',
+    culture: 'Māori',
+    realm: 'The Deep',
+    time: '6 min read',
+    accent: '#83cdb0',
+    pageBg: '#061410',
+    kicker: 'Māori · Told in three nights',
+    epigraph: 'His brothers would not take him fishing. So Māui brought up an island.',
+    about:
+      'One of the great traditions of Aotearoa New Zealand, told wherever Māori genealogies are told: Māui stows away in his brothers’ canoe and, with a hook pointed with the jawbone of his ancestress Muri-ranga-whenua and his own blood for bait, hauls up Te Ika-a-Māui — the great fish that is the North Island. The South Island is remembered as his canoe, Te Waka-a-Māui. His impatient brothers carved at the catch without the proper rites, which is why the land is ridged with mountains and gullies — and the fish’s name is still on the map.',
+    doorGrad: 'linear-gradient(180deg,#0c2620,#04100c)',
+    doorBorder: 'rgba(131,205,176,.28)',
+    emblem:
+      'width:26px;height:26px;border-radius:50%;border:3px solid #83cdb0;border-top-color:transparent;border-right-color:transparent;box-sizing:border-box;transform:rotate(20deg);opacity:.85;animation:drift 4.4s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#d6f2e6 0%,#83cdb0 50%,rgba(131,205,176,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#04100c 0%,#0a231c 60%,#123a2e 100%)',
+      'linear-gradient(180deg,#03100e 0%,#062622 55%,#0c4a40 100%)',
+      'linear-gradient(180deg,#062018 0%,#14503c 55%,#2e8a62 85%,#6ac296 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Stowaway',
+        paras: [
+          'After the business with the sun — that door stands open at the other end of this hall — Māui’s brothers made a rule, and the rule was: no Māui in the canoe. A fishing trip with Māui aboard had a way of becoming an errand of cosmic significance, and they only wanted fish. So they hid the paddles. They left before light. And when they were far from shore and congratulating themselves, the floorboards of the canoe moved, and their youngest brother climbed out from under them, stretching, remarking that it was a fine morning for it.',
+          'Turn back, they said. It is a long way to swim, said Māui, who had been aboard since midnight. And besides — he pointed his chin at the horizon — the fish you want are further out. They paddled, because there was nothing else to do with him, past their usual grounds, past the grounds of their boldest stories, until the land behind them folded itself under the sea and the water turned the color that has no name on shore. Here, said Māui. And his brothers, looking around at all that emptiness, understood that they had, once again, gone fishing for one thing and caught an entirely different story.',
+        ],
+      },
+      {
+        title: 'The Hook and the Blood',
+        paras: [
+          'They would not give him bait. It was the last small meanness available to them, and they enjoyed it. Māui did not argue. From under his cloak he brought out his hook — and the brothers stopped paddling, because the hook was pointed with the jawbone of Muri-ranga-whenua, their ancestress, the same enchanted bone that had beaten the sun into obedience. A hook like that is not for fish. A hook like that is for whatever the world is keeping at the bottom of itself.',
+          'Then, quite calmly, Māui struck his own nose and baited the hook with his blood — for the old things below do not rise for borrowed bait; they rise for what is offered from the self. He paid the line out into the dark and began the chant that makes heavy things light. Far below, the hook caught fast — in the carved doorway, the stories say, of the house of Tonganui, grandson of the sea. The line went taut as a tendon. The canoe heeled until the sea looked in over the side. Haul, said Māui, and hauled — and the ocean began to boil not with a fish but with a country coming up.',
+        ],
+      },
+      {
+        title: 'The Carving',
+        paras: [
+          'It rose the way dawn rises: too large to watch all of at once. A back like a range of hills broke the surface and kept coming — a fish broad as a horizon, with slopes and rivers on it, with houses on it, with cooking fires burning, the stories insist, and the smoke still standing in the morning air. The canoe was aground on it before the brothers remembered how to speak. Te Ika-a-Māui, the fish of Māui: the greatest catch in the world, and you may stand on it today, for it is the North Island of Aotearoa.',
+          'Māui knew what a catch of that size required. Wait, he said. Touch nothing. He set off to find a priest and make the offerings that turn taking into receiving — and the moment he was over the ridge, his brothers took out their knives. They carved greedily, arguing over portions, and the great fish writhed under the blades; and that is why the land is not smooth. Every mountain is a welt of that carving, every gorge a knife-mark, every cliff the fish flinching. The South Island is the canoe they stood in; the far north is the tail; and Wellington sits at the mouth of the fish, which is fitting, for capitals also swallow things. The brothers got their portions. The fish kept its name. On any map you care to open, Māui’s catch is still recorded — which is more than your fishing trips can say.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'wisdompot',
+    name: 'Anansi and the Pot of Wisdom',
+    short: 'The Wisdom Pot',
+    culture: 'Akan',
+    realm: 'The Crossroads',
+    time: '6 min read',
+    accent: '#dcc27a',
+    pageBg: '#100e07',
+    kicker: 'Akan · Told in three nights',
+    epigraph: 'He gathered all the wisdom in the world into one pot. The pot had one lesson left.',
+    about:
+      'A widely told Akan dilemma tale from Ghana, companion to the story of the story-box. Anansi collects the world’s wisdom in a gourd or clay pot to keep for himself, and cannot climb the tree where he means to hide it, because the pot slung at his belly bumps against the trunk; his young son Ntikuma points out the obvious. In his fury at being out-thought, Anansi lets the pot fall, and the scattering of wisdom explains why sense belongs to everyone and no one entirely — and why even the wise do well to listen to children.',
+    doorGrad: 'linear-gradient(180deg,#292311,#0f0d05)',
+    doorBorder: 'rgba(220,194,122,.3)',
+    emblem:
+      'width:26px;height:20px;border-radius:0 0 13px 13px;background:#dcc27a;opacity:.85;animation:drift 4.6s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#f5e8c0 0%,#dcc27a 48%,rgba(220,194,122,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0f0d06 0%,#221c0c 60%,#3c3014 100%)',
+      'linear-gradient(180deg,#0c0a05 0%,#1c160a 55%,#342812 100%)',
+      'linear-gradient(180deg,#141006 0%,#3c2e10 55%,#7a5c22 85%,#c9a04a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Collecting',
+        paras: [
+          'After Anansi bought the stories — you have heard how; that door stands beside this one — a new thought began to itch in him, the way thoughts do when they are half wisdom and half appetite. Stories were his. But wisdom, the thing that makes stories worth anything, still lay scattered through the world like seed after a harvest: a pinch in this old woman’s proverb, a grain in that farmer’s knack for rain, a spoonful in the way a ferryman reads a river. Scattered things can be gathered. Anansi found a great clay pot.',
+          'He went everywhere. He listened at doorways and drank up advice; he asked elders foolish questions and pocketed the wise corrections; he sat at the crossroads, where all knowledge eventually walks past, and swept up what travelers dropped. Every scrap went into the pot. And the beautiful, terrible thing was: it worked. Village by village the world grew a little duller, a little easier to swindle, and the pot grew heavy as a chief’s heart. When at last he could walk no road without hearing his own borrowed cleverness echoed back stupidly, Anansi judged the work complete. All the wisdom in the world, in one pot, under one lid, his.',
+        ],
+      },
+      {
+        title: 'The Tree',
+        paras: [
+          'Now, a treasure is only as good as its hiding place. Anansi chose the tallest palm at the edge of the village — a tree no thief could climb quietly and no gossip could reach — and he meant to lodge the pot at the very top, where only he could visit it. He tied the pot with a cord and slung it in front of him, against his belly, where he could watch it, for he trusted no one, least of all anyone who had recently acquired all the wisdom in the world.',
+          'Then he began to climb. You have seen a spider climb; it is his whole profession. But with the pot at his belly he embraced the trunk like a man hugging a drum, arms wide, knees wider, scraping and sliding and gaining a handsbreadth an hour. The sun moved. Anansi did not, much. And at the foot of the tree, small and patient, stood his son Ntikuma, watching his father wrestle the palm with a pot where his stomach should be, and being, as children are, unable to bear it a moment longer.',
+        ],
+      },
+      {
+        title: 'The Scattering',
+        paras: [
+          '“Father,” said Ntikuma, in the voice children use when they are about to be right, “would it not go easier with the pot on your back?” Anansi stopped. He looked at the trunk. He looked at the pot. He looked down at the small boy in possession of the one useful thought in the entire world that had somehow escaped the collection — and the fury that took him was not at the child. It was at the arithmetic. He had gathered all the wisdom there was, and it had not been all there was. It would never be all there was. Wisdom was not a harvest; it was a weather.',
+          'What happened next depends on who is telling it. Some say his grip failed; some say he flung the pot down himself, which is wiser and worse. The pot struck the roots and broke like a promise, and wisdom went everywhere — into the stream, which carried it to other villages; into the wind, which owes no one; into the market dust where anyone might pick some up, and everyone has: which is why no fool is entirely a fool, and no sage entirely a sage, and why the sharpest correction you will ever receive will arrive from someone half your size. Anansi climbed down and walked home with his son, lighter. He had lost everything and kept the story — and he, better than anyone, knew which of the two spends better at the crossroads.',
         ],
       },
     ],
