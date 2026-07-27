@@ -81,8 +81,8 @@ const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
 
     <div class="lens-toggle-row">
       <div class="lens-toggle" role="group" aria-label="Hall lens">
-        <button type="button" class="lens-btn" data-lens-btn="doors" aria-pressed="true">⌂ Doors</button>
-        <button type="button" class="lens-btn" data-lens-btn="sky" aria-pressed="false">✦ Sky</button>
+        <button type="button" class="lens-btn" data-lens-btn="doors" aria-pressed="false">⌂ Doors</button>
+        <button type="button" class="lens-btn" data-lens-btn="sky" aria-pressed="true">✦ Sky</button>
       </div>
     </div>
 
@@ -197,9 +197,9 @@ const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
       el.classList.add('is-tonight');
     });
 
-    // Doors/Sky lens toggle, persisted in localStorage.
+    // Doors/Sky lens toggle, persisted in localStorage. The sky is the default.
     function currentLens() {
-      return document.documentElement.getAttribute('data-lens') === 'sky' ? 'sky' : 'doors';
+      return document.documentElement.getAttribute('data-lens') === 'doors' ? 'doors' : 'sky';
     }
     function syncLensButtons() {
       var lens = currentLens();
