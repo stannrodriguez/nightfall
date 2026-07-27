@@ -4,86 +4,97 @@
 // object here and give it a sky position; a new culture also needs an entry
 // in `cultures`, and a new realm becomes a filter chip automatically.
 
+// Sky layout notes: every named star draws its title + meta caption below the
+// dot, roughly 13% of the canvas wide and 10% tall. Keep named stars ~12% apart
+// on at least one axis, and keep minors/labels out of that caption box, so no
+// text ever collides. Each culture owns a region of the canvas: Māori top-left,
+// Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
+// bottom-center, Aztec bottom-left. Minors lean toward the middle so the
+// center of the sky never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
     lineAlpha: 0.3,
     minorAlpha: 0.5,
-    label: { x: 12, y: 38 },
-    minors: [[26, 44], [12, 48]],
+    label: { x: 9, y: 34 },
+    minors: [[26, 42], [36, 48]],
     lines: [
-      [[20, 30], [26, 44]],
-      [[26, 44], [30, 62]],
-      [[12, 48], [26, 44]],
-      [[12, 48], [18, 58]],
+      [[20, 30], [26, 42]],
+      [[26, 42], [28, 58]],
+      [[12, 46], [26, 42]],
+      [[26, 42], [36, 48]],
     ],
   },
   Norse: {
     color: '#d96b2f',
     lineAlpha: 0.35,
     minorAlpha: 0.55,
-    label: { x: 68, y: 8 },
-    minors: [[76, 34], [60, 32]],
+    label: { x: 70, y: 9 },
+    minors: [[70, 30], [64, 38]],
     lines: [
-      [[68, 22], [76, 34]],
-      [[68, 22], [60, 32]],
-      [[76, 34], [70, 42]],
+      [[62, 16], [56, 30]],
+      [[62, 16], [70, 30]],
+      [[56, 30], [64, 38]],
+      [[70, 30], [64, 38]],
     ],
   },
   Japanese: {
     color: '#f5c96a',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 88, y: 69 },
-    minors: [[76, 66], [90, 44]],
+    label: { x: 88, y: 74 },
+    minors: [[93, 64], [76, 56]],
     lines: [
-      [[84, 55], [76, 66]],
-      [[84, 55], [90, 44]],
-      [[84, 55], [76, 46]],
+      [[85, 56], [93, 64]],
+      [[85, 56], [76, 56]],
+      [[76, 56], [73, 70]],
     ],
   },
   Akan: {
     color: '#9fe8c9',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 48, y: 88 },
-    minors: [[40, 64], [56, 62]],
+    label: { x: 36, y: 86 },
+    minors: [[38, 74], [54, 54], [58, 78]],
     lines: [
-      [[48, 74], [40, 64]],
-      [[48, 74], [56, 62]],
+      [[46, 64], [38, 74]],
+      [[46, 64], [54, 54]],
+      [[38, 74], [58, 78]],
     ],
   },
   Aztec: {
     color: '#ef6a4d',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 12, y: 90 },
-    minors: [[10, 66], [24, 86]],
+    label: { x: 9, y: 90 },
+    minors: [[10, 68], [26, 88]],
     lines: [
-      [[16, 76], [10, 66]],
-      [[16, 76], [24, 86]],
+      [[16, 78], [10, 68]],
+      [[16, 78], [26, 88]],
     ],
   },
   'Māori': {
     color: '#ec7d9e',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 44, y: 4 },
-    minors: [[36, 24], [52, 22]],
+    label: { x: 24, y: 8 },
+    minors: [[26, 20], [54, 16], [46, 26]],
     lines: [
-      [[44, 14], [36, 24]],
-      [[44, 14], [52, 22]],
+      [[34, 12], [26, 20]],
+      [[34, 12], [54, 16]],
+      [[54, 16], [46, 26]],
     ],
   },
   Hindu: {
     color: '#7fd8e8',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 89, y: 34 },
-    minors: [[82, 9], [95, 27]],
+    label: { x: 92, y: 40 },
+    minors: [[94, 26], [82, 32]],
     lines: [
-      [[89, 17], [82, 9]],
-      [[89, 17], [95, 27]],
+      [[88, 16], [94, 26]],
+      [[88, 16], [82, 32]],
+      [[82, 32], [94, 26]],
     ],
   },
 };
@@ -91,16 +102,16 @@ export const cultures = {
 // Star position of each myth on the sky canvas, in % of the canvas.
 export const skyPos = {
   icarus: [20, 30],
-  orpheus: [30, 62],
-  ragnarok: [68, 22],
-  amaterasu: [84, 55],
-  anansi: [48, 74],
-  fifthsun: [16, 76],
-  maui: [44, 14],
-  churning: [89, 17],
-  izanami: [76, 46],
-  jormungandr: [70, 42],
-  hermes: [18, 58],
+  orpheus: [28, 58],
+  ragnarok: [62, 16],
+  amaterasu: [85, 56],
+  anansi: [46, 64],
+  fifthsun: [16, 78],
+  maui: [34, 12],
+  churning: [88, 16],
+  izanami: [73, 70],
+  jormungandr: [56, 30],
+  hermes: [12, 46],
 };
 
 export const myths = [
