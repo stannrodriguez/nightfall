@@ -26,6 +26,7 @@ export const cultures = {
     lines: [
       [[68, 22], [76, 34]],
       [[68, 22], [60, 32]],
+      [[76, 34], [70, 42]],
     ],
   },
   Japanese: {
@@ -97,6 +98,7 @@ export const skyPos = {
   maui: [44, 14],
   churning: [89, 17],
   izanami: [76, 46],
+  jormungandr: [70, 42],
 };
 
 export const myths = [
@@ -519,6 +521,53 @@ export const myths = [
         paras: [
           'All Yomi came after him. He threw down his headdress and it burst into wild grapes; the hags of the dead stopped to eat them, because hunger outranks orders even in hell. He threw his comb and it sprang up as bamboo shoots, and bought a few steps more. At the mouth of the pass he seized three peaches from a tree that grows at the border of every world and hurled them into the dark, and the dead broke like a wave. Then he rolled a boulder it would take a thousand men to lift across the pass of Yomotsu Hirasaka, and the road between the living and the dead was closed forever.',
           'She came to the far side of the stone. “Beloved,” said Izanami, “if you leave me here, I will strangle a thousand of your people every day.” And Izanagi answered, “Then every day I will raise one thousand five hundred to be born.” That is the arithmetic of the world you live in — more cradles than graves, by a margin set in an argument between two people who loved each other. Afterward Izanagi washed the death from his skin in a river, and gods poured off him like water: from his left eye the sun, from his right the moon, from his nose the storm. The sun was Amaterasu. Her door stands open in this hall, a few steps from this one — which is the way of myths, and of families.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'jormungandr',
+    name: 'Thor Goes Fishing',
+    short: 'The Serpent',
+    culture: 'Norse',
+    realm: 'The Deep',
+    time: '6 min read',
+    accent: '#84aec6',
+    pageBg: '#070d12',
+    kicker: 'Norse · Told in three nights',
+    epigraph: 'A serpent circles the world with its tail in its teeth. Thor rowed out to catch it.',
+    about:
+      'One of the best-loved Norse myths, told in the poem Hymiskviða in the Poetic Edda and retold by Snorri Sturluson in the Prose Edda — and carved, centuries earlier, on picture stones like the Altuna stone in Sweden, which shows Thor’s foot punched through the bottom of the boat. Fishing with the giant Hymir, Thor baits his hook with an ox head and pulls up Jörmungandr, the Midgard Serpent, before the line is cut. Serpent and god are fated to meet once more at Ragnarök, and to kill each other there.',
+    doorGrad: 'linear-gradient(180deg,#0e1e2a,#050b10)',
+    doorBorder: 'rgba(132,174,198,.28)',
+    emblem:
+      'width:28px;height:28px;border-radius:50%;border:3px solid #84aec6;border-left-color:transparent;box-sizing:border-box;opacity:.85;animation:drift 4.6s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#d2e8f2 0%,#84aec6 50%,rgba(132,174,198,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#070b10 0%,#122230 60%,#204050 100%)',
+      'linear-gradient(180deg,#04080c 0%,#0a1a26 55%,#123a4a 100%)',
+      'linear-gradient(180deg,#081018 0%,#16303e 55%,#2e5a66 85%,#6a9aa0 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Giant’s Table',
+        paras: [
+          'The gods wanted to brew ale for a feast, and the only cauldron deep enough belonged to the giant Hymir, who lived at the edge of the sky where the sea gives up pretending to have a floor. So Thor went visiting. He arrived as a guest and behaved like weather: at dinner he ate two of Hymir’s oxen by himself, and the giant, doing grim arithmetic at the head of his own table, announced that tomorrow they would have to fish, or go hungry.',
+          '“Then we fish,” said Thor, delighted, for he had his own reasons for wanting a day on deep water. Hymir told him to find his own bait, meaning it as an insult. Thor walked into the pasture, took the giant’s best ox — Himinhrjóð, Sky-Bellower, a beast the size of a hillside — and twisted its head off. He came down to the boat carrying it under one arm. Hymir said nothing. There is a kind of guest it is wisest to simply row with.',
+        ],
+      },
+      {
+        title: 'Beyond the Fishing Grounds',
+        paras: [
+          'Hymir’s usual grounds came and went. “Here,” said the giant. “The whales are here.” Thor kept rowing. The water under them went from green to gray to a black that light has never bothered visiting, and Hymir began to talk, too casually, about turning back — because every giant knew what lay in the deepest water. Long ago Odin had taken one of Loki’s children, a serpent no bigger than a worry, and thrown it into the sea. And the sea had fed it, as the sea feeds everything, until the serpent lay coiled around the whole world with its tail held in its teeth, and sailors called it Jörmungandr, and did not call it anything else, quietly.',
+          'Thor shipped the oars, threaded the ox head onto a hook forged to hold what cannot be held, and paid the line out into the dark. What happened next happened to the whole ocean at once. The line snapped taut, the boat lurched, and Thor braced — so hard his feet went through the planking and found the sea floor itself, and he stood on the bottom of the ocean and hauled. Up out of the black came the head of the Midgard Serpent, venom running off it like rain off a roof, and the god and the serpent looked at each other. It is said no two beings ever understood one another faster.',
+        ],
+      },
+      {
+        title: 'The Line',
+        paras: [
+          'Thor raised the hammer. And Hymir — who was, remember, sitting in a small wooden boat between a god and the thing that circles the world — did the sensible, unforgivable thing: he leaned over with his bait-knife and cut the line. The serpent’s head went back under the sea like a mountain deciding against sunrise. The hammer flew anyway; some say it found the serpent among the waves, but the deep keeps no records. What is certain is that Thor knocked the giant overboard with a fist, waded ashore carrying the boat, and went home without the whales, the cauldron, or a word.',
+          'It was not the end, and that is the point of the story. The serpent still lies down there with the world in the circle of its body, and Thor knows it, and it knows Thor. At Ragnarök — that door stands open in this hall, if you have the nerve for it — they will finish what the fishing trip started: the god will kill the serpent and walk nine steps and fall to its venom, and the sea will take back everything, including its secrets. Until then the tide rises and falls twice a day. Fishermen in the old times said that was the serpent, shifting its grip. They said it quietly, and rowed for home.',
         ],
       },
     ],
