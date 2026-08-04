@@ -107,6 +107,7 @@ export const cultures = {
     lines: [
       [[74, 84], [82, 72]],
       [[82, 72], [96, 68]],
+      [[74, 84], [88, 82]],
     ],
   },
   Hindu: {
@@ -145,6 +146,7 @@ export const skyPos = {
   nuwa: [70, 44],
   osiris: [74, 84],
   secretname: [96, 68],
+  eyeofra: [88, 82],
 };
 
 export const myths = [
@@ -1084,6 +1086,53 @@ export const myths = [
         paras: [
           'He tried to pay in the public coin first. I am the maker of heaven and earth, he said; I knotted the mountains; I made the bull for the cow; I am he at whose rising the river rises. Morning I am Khepri, noon I am Ra, evening I am Atum. It was all true, and the venom was not interested. Titles are what a name looks like from outside; the snake had been built from the inside, and only the inside would answer it. Isis waited — patient, correct, terrifying in the way of someone who has already won and is merely letting the fact arrive — and said again, gently: that is not your name.',
           'So Ra sent his court away, and the name passed out of his breast into hers — not spoken, the tellings insist, but moved, the way a coal is moved between two vessels without ever touching the air. Even the story does not hear it. The papyrus that preserves all this was written as a cure for snakebite, and at the place where the name should stand, it keeps the secret it is about — which may be the most Egyptian sentence in this hall. Isis drew the venom out, and the sun rose whole the next day, minus exactly one possession. She was permitted to pass the name to Horus, and no further; it is in that family still. Other tricksters at this crossroads caught pythons, cattle, the sun itself. Isis caught the only thing the gods actually run on — and if you want to know what it was, the door closes politely in your face, as it has for three thousand years.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'eyeofra',
+    name: 'The Eye of Ra',
+    short: 'The Eye',
+    culture: 'Egyptian',
+    realm: 'Fire & Ending',
+    time: '6 min read',
+    accent: '#e35d6a',
+    pageBg: '#130608',
+    kicker: 'Egyptian · Told in three nights',
+    epigraph: 'Humanity plotted against the sun, and the sun sent his Eye. What stopped her was beer.',
+    about:
+      'The Destruction of Mankind opens the Book of the Heavenly Cow, a text inscribed in New Kingdom royal tombs — on the outermost golden shrine of Tutankhamun, and in the tombs of Seti I and the Ramesside kings. The aging Ra, hearing mankind plot against him, sends out his Eye, which walks the earth as Hathor and rages as the lioness Sekhmet; when Ra relents and the Eye will not, the slaughter is stopped with seven thousand jars of beer dyed red with ochre. Hathor’s festival of drunkenness was kept in her honor ever after, and the myth ends with Ra withdrawing to the sky on the back of the heavenly cow — the tradition’s answer to why the gods now govern from a distance.',
+    doorGrad: 'linear-gradient(180deg,#33101a,#100407)',
+    doorBorder: 'rgba(227,93,106,.3)',
+    emblem:
+      'width:32px;height:16px;border-radius:50%;border:3px solid #e35d6a;box-sizing:border-box;background:radial-gradient(circle,#e35d6a 0 3.5px,transparent 4.5px);opacity:.9;animation:drift 4.4s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#f7c9c2 0%,#e35d6a 50%,rgba(227,93,106,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0f0a06 0%,#2c1c0a 55%,#553a10 100%)',
+      'linear-gradient(180deg,#120507 0%,#33090e 55%,#611018 100%)',
+      'linear-gradient(180deg,#160a0c 0%,#48181e 55%,#a04438 85%,#e08a5a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Plot',
+        paras: [
+          'Mankind was made from the tears of Ra — that is the pun the whole tragedy stands on, for in his language the words for tears and for people were nearly the same, and Egypt never made a pun by accident. So when the sun god grew old, and his bones turned to silver and his flesh to gold and his hair to true lapis, it was his own salt water, walking around on legs, that looked up at the slow old light and began to murmur that perhaps the world could be better managed. The murmur became a plan. The plan headed for the desert to arm itself.',
+          'Ra heard — the sun hears everything said in daylight, which the plotters might have considered — and called a council so secret it was held in the dark, before creation’s own witnesses. He summoned the eldest gods, and eldest of all he summoned Nun, the flood that everything floated on before there was anything, the way you call your oldest parent when the children have turned. What do I do, asked the light of the world, with people who were my own weeping? And the old water answered like old water: your throne is safe while your Eye is on it. Turn your Eye upon them. There is a sentence in every language that means unleash, and dresses it as observation. That is Egypt’s.',
+        ],
+      },
+      {
+        title: 'Sekhmet',
+        paras: [
+          'The Eye of Ra was not a metaphor. It was a she: the portion of the sun that could be sent, the heat that could be aimed, and it went out from his face wearing the form of Hathor — lady of music, of turquoise, of love, which is the detail the story sharpens to a point, because when love is aimed it comes down as something else. She landed among the plotters in the desert as Sekhmet, the lioness, the Powerful One, and the texts stop being coy: she waded. She drank what she waded in. She found it good.',
+          'By the first evening the plotters were finished, and that would have been that — except that a loosed weapon obeys its release, not its owner. Ra looked down at a red country and said, it is enough; I am satisfied; and discovered the sentence had no one to land on. Sekhmet was not listening. Sekhmet was planning tomorrow, and tomorrow was everyone. She slept that night the way tools sleep, without dreams, mid-task; and the gods stood around the oldest problem there is, which this hall keeps a whole realm for: how do you put out a fire you lit on purpose, once it has decided it is the arsonist?',
+        ],
+      },
+      {
+        title: 'The Red Beer',
+        paras: [
+          'You do not fight your own eye. Ra, who had been clever before mankind existed, became clever again. Runners went south through the night to Elephantine, where the red ochre is, and the brewers of Heliopolis were turned out of bed and set to work, and by darkest morning there stood seven thousand jars of beer dyed the exact, considered color of what the lioness loved. They poured it out over the fields in her path, three hands deep — a lake of it, red as the day’s work she had planned — and the gods stepped back the way brewers step back from a trap made of hospitality.',
+          'She came at dawn, saw a country already flooded with what she came to spill, and stooped to drink. And drank. And her face, the texts say gently, grew glad. The Powerful One sat down in the red shallows, sang something, forgot the schedule, forgot the assignment, and slept where she sat; and what woke, hungover, in the wet gold morning was Hathor — love again, with a headache. Egypt kept the anniversary honestly: a festival of drunkenness, music, and lamps, held on the day mercy was engineered, because it could not be felt. And Ra, weary of ruling what he had nearly unmade, mounted the back of the heavenly cow and rose — the sky itself is her belly, the stars her freight — putting one cow’s height of distance between the sun and the tears he was made of. The gods have governed from up there ever since. This door’s lesson is the softest thing in the fire realm, and the hardest: the world was not saved by repentance. It was saved by seven thousand jars of good brewing, delivered on time.',
         ],
       },
     ],
