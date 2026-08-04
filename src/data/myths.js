@@ -55,12 +55,12 @@ export const cultures = {
     lineAlpha: 0.32,
     minorAlpha: 0.55,
     label: { x: 36, y: 86 },
-    minors: [[38, 74], [54, 54]],
+    minors: [[38, 74], [48, 58]],
     lines: [
       [[46, 64], [38, 74]],
-      [[46, 64], [54, 54]],
+      [[46, 64], [48, 58]],
       [[38, 74], [58, 78]],
-      [[54, 54], [58, 78]],
+      [[48, 58], [58, 78]],
     ],
   },
   Aztec: {
@@ -94,6 +94,7 @@ export const cultures = {
     minors: [[54, 42]],
     lines: [
       [[46, 42], [54, 42]],
+      [[46, 42], [58, 48]],
     ],
   },
   Hindu: {
@@ -128,6 +129,7 @@ export const skyPos = {
   mauifish: [42, 26],
   wisdompot: [58, 78],
   'chang-e': [46, 42],
+  weavergirl: [58, 48],
 };
 
 export const myths = [
@@ -879,6 +881,53 @@ export const myths = [
         paras: [
           'What were her choices? Hand a man with a knife the one thing that would make him permanent — or drink. She drank. The floor let go of her feet, courteously, like a host seeing off a guest, and Chang’e rose through the roof of her own house, past the geese, past the weather, growing lighter as the earth grew smaller — and the moon, the nearest lit doorway in all that dark, took her in. There is a palace there called Vast Cold, and a jade rabbit who pounds elixir in a mortar without ever finishing, and an osmanthus tree that drops its flowers on no wind at all. It is beautiful, the tellings agree, in the way of guest rooms: perfectly, and for no one.',
           'Yi came home to an open door and an empty rafter, and did not curse her. That is the detail the story insists on. He set a table in the courtyard with her favorite fruits and little round cakes, and looked up — and she looked down, if the roundest nights are to be believed, each of them keeping their half of a broken elixir. The table is still set: every autumn, when the moon comes full, the cakes are round for her sake. And when, in our own age, her country sent its landers to walk that cold garden at last, it did not have to search for a name. The machines are called Chang’e. The moon is the one door every culture can see from its own yard; she is why this hall keeps it open.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'weavergirl',
+    name: 'The Weaver Girl and the Cowherd',
+    short: 'The Weaver Girl',
+    culture: 'Chinese',
+    realm: 'The Sky',
+    time: '6 min read',
+    accent: '#a8c4f2',
+    pageBg: '#0a0d1c',
+    kicker: 'Chinese · Told in three nights',
+    epigraph: 'The sky drew a river between two people. Once a year, the birds overrule it.',
+    about:
+      'The story of Zhinü, the weaver girl who is the star Vega, and Niulang, the cowherd who is Altair, parted by the Silver River — the Milky Way. The two stars are named as a parted pair as early as the Classic of Poetry, and the tale was told in full by the Han dynasty. It is celebrated at the Qixi festival on the seventh night of the seventh lunar month, when the world’s magpies are said to bridge the river; Japan keeps the same night as Tanabata, and Korea as Chilseok.',
+    doorGrad: 'linear-gradient(180deg,#181f3d,#080b18)',
+    doorBorder: 'rgba(168,196,242,.28)',
+    emblem:
+      'width:34px;height:20px;background:radial-gradient(circle at 12% 78%,#a8c4f2 0 3.5px,transparent 4.5px),radial-gradient(circle at 88% 22%,#a8c4f2 0 3.5px,transparent 4.5px),linear-gradient(115deg,transparent 0 42%,rgba(168,196,242,.45) 42% 58%,transparent 58%);opacity:.9;animation:drift 4.8s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#e2ecff 0%,#a8c4f2 50%,rgba(168,196,242,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0a0c1a 0%,#1a2140 60%,#2e3a66 100%)',
+      'linear-gradient(180deg,#070a14 0%,#141c33 55%,#28355c 100%)',
+      'linear-gradient(180deg,#0c101f 0%,#28304f 55%,#5c5a80 85%,#b088a0 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Loom of Heaven',
+        paras: [
+          'Zhinü wove the sky. That was not a title; it was a job. Granddaughter of the Emperor of Heaven, she sat at her loom on the far bank of the Silver River and turned out cloud-brocade by the bolt — the pink silk of dawns, the bruised violet of storm-light, the long grey bolts of ordinary weather that nobody praises and everybody wears. She was very good, and she had never once been asked whether she liked it, which are two facts that live closer together than heaven supposed.',
+          'On the earth below lived Niulang, a cowherd poor in everything but one respect: his old ox could talk, and chose its moments. Go to the river, the ox said one evening, where the weaver girl comes down to bathe with her sisters. The tellings differ on what exactly he did there, and some of them make you wince on his behalf; the versions worth keeping agree on what matters, which is that they talked until the stars came out, and that when the sisters flew home, Zhinü stayed. She traded the loom of heaven for a farmhouse, two children, and weather she could feel on her own skin. For a while — the tellings all agree on this too — nobody anywhere was happier.',
+        ],
+      },
+      {
+        title: 'The Silver River',
+        paras: [
+          'But heaven runs on schedule, and its sunsets had gone shabby. The Queen Mother of Heaven looked down, found her cloud-weaver bent over a vegetable garden, and did not send a letter. She came herself. Zhinü was taken back up the way weather moves — irresistibly, without cruelty, without appeal — and Niulang stood in his doorway holding two children and nothing else. It was the ox, dying, who gave him the road: when I am gone, it said, wear my hide, and it will carry you anywhere. Grief on top of grief, and no time for either; he slung a basket-pole across his shoulders, a child in each basket, and flew.',
+          'He gained on her. That is the terrible, necessary detail: he was close enough to call her name, and she had turned in the air to answer, when the Queen Mother drew the pin from her hair and scratched a line across the sky. The line filled with stars the way a cut fills, and widened into a river — the Silver River, which your people may call the Milky Way — deep, bright, and unswimmable. It runs there still. On one bank burns the weaver girl, the star others call Vega; on the far side the cowherd, Altair, with two small stars beside him that are the baskets; and between them the current that heaven made out of one hairpin and one rule.',
+        ],
+      },
+      {
+        title: 'The Bridge of Magpies',
+        paras: [
+          'Heaven can draw a river, but it cannot make a rule the whole world signs. The magpies did not sign. On the seventh night of the seventh month, every magpie alive — scruffy, quarrelsome, unsentimental birds; understand that this is not their kind of gesture — rises into the dark at once, and they build a bridge of themselves across the Silver River, wing to wing, and hold. One night a year, the weaver and the cowherd cross toward each other on the backs of birds and meet in the middle of the sky.',
+          'That night is called Qixi, and it is kept still: lovers keep it, and the skilled keep it too, for Zhinü is the patroness of everyone whose craft sits in their hands. If it rains that night, the old people say, the rain is the two of them weeping — either the joy of the meeting or the arithmetic of the parting, and the old people decline to rule on which. You are standing in a hall whose other lens is a star chart; step through it on a clear night and find the river running corner to corner, one bright star on either bank. Every constellation in this sky keeps a story. Theirs is the only one the sky is still actively enforcing.',
         ],
       },
     ],
