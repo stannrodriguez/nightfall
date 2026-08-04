@@ -10,8 +10,8 @@
 // text ever collides. Each culture owns a region of the canvas: Māori top-left,
 // Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
 // bottom-center, Aztec bottom-left, Chinese center, Egyptian bottom-right,
-// Sumerian lower-left edge, Irish top-left corner. Minors lean toward the
-// middle so the center of the sky never reads as empty.
+// Sumerian lower-left edge, Irish top-left corner, Yoruba lower-center-right.
+// Minors lean toward the middle so the center of the sky never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
@@ -99,6 +99,16 @@ export const cultures = {
       [[58, 48], [70, 44]],
     ],
   },
+  Yoruba: {
+    color: '#e8798a',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 68, y: 64 },
+    minors: [[66, 78]],
+    lines: [
+      [[60, 66], [66, 78]],
+    ],
+  },
   Irish: {
     color: '#7fd98a',
     lineAlpha: 0.32,
@@ -174,6 +184,7 @@ export const skyPos = {
   gilgamesh: [4, 72],
   lir: [8, 8],
   oisin: [4, 22],
+  oshun: [60, 66],
 };
 
 export const myths = [
@@ -1348,6 +1359,53 @@ export const myths = [
         paras: [
           'Ireland came up over the horizon wearing the wrong face. The hall of Almu was a green mound with sheep on it. The forts of the Fianna were grass; the people he hailed on the roads were smaller than the men he remembered, and when he asked after Fionn mac Cumhaill they said — kindly, the way you speak to the confused — that Fionn was a name in the old stories, dead these three hundred years. The poet sat his horse in the middle of his own country like a man reading his own headstone, and everything he had crossed the sea to touch turned out to be behind him, in the one direction the white horse could not ride.',
           'On the road home to the coast he passed men straining to move a great stone into a cart — small men, many of them, failing at what any one of the Fianna would have done alone before breakfast. Pity is the trap the old stories set for their best people. Oisín leaned from the saddle to shift the stone with one hand, and the saddle-girth — three hundred years old, whatever it looked like — snapped. He did not even fall grandly; he slid, and his foot touched Ireland, and Ireland collected. The horse was gone before he finished falling. What the men lifted from the road was not a warrior but a blind white-haired man older than the stone; and they carried him, the tradition says, to Patrick — the new faith’s doorkeeper, as another door in this hall was carried to a hermit’s bell. And there is the bargain this crossroads was cut for: everything he lost by touching the ground, we inherited by his losing it. The old man told the saint the whole world of the Fianna, story by story, arguing all the way — and the monks wrote it down. Stay in the saddle and you keep paradise; touch the ground and you become a book. No one is saying he chose wrong.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'oshun',
+    name: 'Oshun’s Flight',
+    short: 'Oshun',
+    culture: 'Yoruba',
+    realm: 'The Sky',
+    time: '6 min read',
+    accent: '#f2bd6d',
+    pageBg: '#120c06',
+    kicker: 'Yoruba · Told in three nights',
+    epigraph: 'Seventeen powers were sent to build the world. Sixteen forgot to invite the one who was a woman.',
+    about:
+      'From the Yoruba oral tradition of southwestern Nigeria, preserved in the verses of the Ifa divination corpus. Olodumare, the source of all being, sends seventeen orisha to prepare the world, and Oshun — power of fresh water, sweetness, and fertility — is the only woman among them; when the sixteen exclude her from their councils, nothing they build will hold. A related strand tells how, when heaven fell silent, it was Oshun in the form of a peacock who flew up to plead, scorched by the sun into a vulture — which is why the vulture carries offerings to heaven. She is honored at the sacred grove of Osun-Osogbo on her river, a UNESCO World Heritage site, where her festival is kept every year.',
+    doorGrad: 'linear-gradient(180deg,#2e1c0e,#100a05)',
+    doorBorder: 'rgba(242,189,109,.3)',
+    emblem:
+      'width:16px;height:28px;border-radius:50%/60% 60% 40% 40%;border:3px solid #f2bd6d;box-sizing:border-box;background:radial-gradient(circle at 50% 35%,#f2bd6d 0 3px,transparent 4px);opacity:.85;animation:drift 4.6s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#fae5c2 0%,#f2bd6d 50%,rgba(242,189,109,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0e0a06 0%,#2a1c0a 55%,#54380f 100%)',
+      'linear-gradient(180deg,#100b08 0%,#261408 55%,#48250c 100%)',
+      'linear-gradient(180deg,#140d08 0%,#3c220c 55%,#8a4e14 85%,#e09a3a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Seventeenth',
+        paras: [
+          'When Olodumare, the source of everything, sent powers down to prepare the world for people, the count was seventeen. Sixteen were male orisha, and they arrived with the confidence of a committee: they parceled out the work, raised the framing of the world, and held their councils under a tree — and did not send for the seventeenth, who was Oshun. Perhaps because she was the youngest. Perhaps because her portfolio — fresh water, sweetness, the shine on a thing that makes you love it — sounded to them like decoration. The verses of Ifa do not soften what happened next; they were composed by diviners, whose profession is watching plans meet reality.',
+          'Nothing held. The rains missed their appointments. The crops came up and changed their minds; the tools broke on soft wood; the councils met more and more often and accomplished less and less, in the way of committees everywhere. Because here is what the sixteen had misfiled under decoration: Oshun’s river was the water in everything they were building. She did not curse them — the tellings are particular on this point. She simply sat by her own water with her own sweetness and let the world demonstrate, at its own pace, what it was made of without her. It is the quietest strike in myth, and the most complete.',
+        ],
+      },
+      {
+        title: 'The Question',
+        paras: [
+          'The sixteen went back up to Olodumare, as failed committees eventually go back to the source, and laid out the situation with the careful passive grammar of the responsible: the world is not holding. Rains have been missed. Difficulties have arisen. And Olodumare, who had counted to seventeen the first time and had not forgotten how, asked one question. It is four words in most tellings, and it has never needed a fifth: Where is the seventeenth?',
+          'There was, the verses report, a silence. It is the same silence you have heard in rooms where this exact thing has happened, because it has happened in every room; this door is one of the oldest in the hall to describe a meeting, and the meeting has not improved. The sixteen went back down and asked Oshun — properly, this time; the tellings enjoy the word beg — to join the work. And she, who could have set any price, set the only one that matters: nothing built without me. Not homage; inclusion. She took her place, the rains remembered their appointments, and the world clicked shut around her river like a clasp. To this day her verse in Ifa carries the ruling like case law: no matter how many powers gather, if the one who is missing is the woman with the water, you have gathered nothing.',
+        ],
+      },
+      {
+        title: 'The Peacock',
+        paras: [
+          'But this door stands in the realm of the sky for the other story, the one her river people tell when the first is finished. An age later, the world and heaven fell out of speaking. The rains stopped again — not sulking this time, but silence: Olodumare had withdrawn beyond asking, and the earth cracked like old paint. The orisha resolved to send a messenger up, and the birds of the world volunteered one by one, and one by one the sky sent them back down, scorched or exhausted or lost. The sun sits between here and heaven like a toll no feather can pay.',
+          'Then Oshun rose from her river as a peacock — the most beautiful bird there is, which the tellings mention not as praise but as inventory, because beauty was what she was about to spend. She flew up. The sun took the colors off her feather by feather, the way fire reads a book; it blackened her wings and bared her head, and what arrived at the gate of Olodumare was not a peacock. It was a vulture — burnt bald, plain past plainness, and standing in front of the source of everything with the message still in its beak. Olodumare looked at what the flight had cost and did not need the message read aloud. The rains were released; and the vulture was made the one bird whose flight heaven always accepts, which is why offerings go up on those dark wings to this day. Every sky door in this hall is about the distance between up there and down here. This one is about what it charges — and about a goddess who paid it in beauty, without haggling, and called it a fair price for the rain.',
         ],
       },
     ],
