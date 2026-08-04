@@ -10,8 +10,9 @@
 // text ever collides. Each culture owns a region of the canvas: Māori top-left,
 // Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
 // bottom-center, Aztec bottom-left, Chinese center, Egyptian bottom-right,
-// Sumerian lower-left edge, Irish top-left corner, Yoruba lower-center-right.
-// Minors lean toward the middle so the center of the sky never reads as empty.
+// Sumerian lower-left edge, Irish top-left corner, Yoruba lower-center-right,
+// Slavic right edge. Minors lean toward the middle so the center of the sky
+// never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
@@ -99,6 +100,16 @@ export const cultures = {
       [[58, 48], [70, 44]],
     ],
   },
+  Slavic: {
+    color: '#a3e07a',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 82, y: 46 },
+    minors: [[98, 56]],
+    lines: [
+      [[95, 44], [98, 56]],
+    ],
+  },
   Yoruba: {
     color: '#e8798a',
     lineAlpha: 0.32,
@@ -148,7 +159,7 @@ export const cultures = {
     color: '#7fd8e8',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 93, y: 42 },
+    label: { x: 94, y: 4 },
     minors: [[94, 26]],
     lines: [
       [[88, 16], [94, 26]],
@@ -187,6 +198,7 @@ export const skyPos = {
   oisin: [4, 22],
   oshun: [60, 66],
   eshu: [62, 90],
+  vasilisa: [95, 44],
 };
 
 export const myths = [
@@ -1455,6 +1467,53 @@ export const myths = [
         paras: [
           'They were dragged before the king, still shouting colors, and the case defeated the elders — for both men were honest, and everyone knew it, and honesty on both sides of a contradiction is a hole in the world. Into which, on cue, walked the stranger, cap in hand. He turned it slowly for the court: red on the one side, black on the other. Then he spun it on his finger and laughed, and the laugh told the wise ones exactly who had been walking the boundary path at noon. Some tellings give Eshu a confession with no apology in it — sowing discord, he says cheerfully, is a delight to me — but listen past the mischief to the sentence underneath: they swore that nothing could divide them, and had never once asked what the other one could see from where he stood.',
           'That is why Eshu is honored first, before any other power, at every rite: not because he is the greatest but because he holds the roads, and a message sent on unswept roads arrives as a quarrel. The two friends fed his shrine ever after, and asked each other for the view from the far field ever after, which is the same act performed twice. And when the slave ships tore the Yoruba world across the Atlantic, this god of thresholds did what thresholds do: he went along at every door. In Cuba they open the drums for him as Elegua; in Brazil he stands at the gate as Exu; in Haiti he is Papa Legba, of whom they sing open the gate for me. Every door in this hall swings on some hinge or other. If the hall itself has a doorkeeper — someone who let you in, and will decide, smiling, which way you leave — it is this one, in a cap whose color you should decline to swear to.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'vasilisa',
+    name: 'Vasilisa and the Fire',
+    short: 'Vasilisa',
+    culture: 'Slavic',
+    realm: 'Fire & Ending',
+    time: '6 min read',
+    accent: '#f2a88a',
+    pageBg: '#100809',
+    kicker: 'Slavic · Told in three nights',
+    epigraph: 'Her stepmother sent her to Baba Yaga to borrow fire. The witch sent fire home with her.',
+    about:
+      'Vasilisa the Beautiful, as collected by Alexander Afanasyev in his great gathering of Russian folk tales in the 1850s. A dying mother leaves her daughter a doll to be fed at need; the stepfamily lets every fire in the house go out and sends Vasilisa through the night forest to Baba Yaga — the iron-toothed witch who flies in a mortar and lives in a hut on hen’s legs — to beg a light. Three riders pass the girl on the road: white, red, and black, who are the witch’s day, sun, and night. Vasilisa serves, survives, and is paid with a skull full of burning coals, which looks at her stepfamily so hard there is nothing left of them by morning.',
+    doorGrad: 'linear-gradient(180deg,#2c1512,#0e0606)',
+    doorBorder: 'rgba(242,168,138,.3)',
+    emblem:
+      'width:26px;height:28px;border-radius:50% 50% 42% 42%;background:radial-gradient(circle at 32% 42%,#100809 0 3px,transparent 4px),radial-gradient(circle at 68% 42%,#100809 0 3px,transparent 4px),linear-gradient(#f2a88a,#f2a88a);box-shadow:0 0 16px rgba(242,168,138,.45);opacity:.9;animation:sunrise 5s ease-in-out infinite',
+    orb: 'radial-gradient(circle,#fad8c9 0%,#f2a88a 50%,rgba(242,168,138,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0c0a0a 0%,#1c1416 55%,#332226 100%)',
+      'linear-gradient(180deg,#080a08 0%,#141c12 55%,#26361e 100%)',
+      'linear-gradient(180deg,#120808 0%,#38140e 55%,#7c2c16 85%,#e0763a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Doll',
+        paras: [
+          'Vasilisa’s mother, dying, gave her a doll and a set of instructions, in that order, which tells you the mother knew what kind of story her daughter was in. Keep the doll with you always; show it to no one; and when trouble comes, give it a little to eat and a little to drink, and it will tell you what to do. Then she died, and the trouble arrived on schedule, wearing the shape trouble takes in Russia: a stepmother with two daughters of her own, and a heart that made the arithmetic of the household come out, always, to three against one. Vasilisa was worked like a hired hand and fed like a mistake, and every night she fed the doll her own supper, and the doll ate — the tale is matter-of-fact on this point — and the doll advised. Understand what the doll is, because the tale never says it aloud: it is a dead mother’s love, made portable, and it runs on being remembered.',
+          'One autumn evening the stepmother put out every fire in the house — hearth, candles, all of it — and arranged for the last light to fail at a convenient hour, and then discovered, theatrically, that someone must go borrow a flame. There is fire, she said, at Baba Yaga’s. Everyone in the room knew what that meant; Baba Yaga is the witch of witches, iron of tooth, who rides the night forest in a flying mortar, rowing with the pestle and sweeping her trail away behind her with a broom, and her guests are food that has walked itself over. Vasilisa was pushed out the door into the dark with no lantern, which was the point. She fed the doll in her pocket, and the doll said: walk. As she walked, a rider all in white on a white horse swept past, and day broke. Later, a rider all in red, and the sun rose. She was still walking when the light began to die again.',
+        ],
+      },
+      {
+        title: 'The Hut on Hen’s Legs',
+        paras: [
+          'The fence around the clearing was made of bones, and the posts wore skulls whose eye-sockets, as the third rider — black, on a black horse — swept past her into nothing, kindled and lit the yard like lamps. The hut behind the fence stood on hen’s legs and turned to face her, which is how the hut says who it has noticed. Out of the sky came the mortar, pestle stroking it along, broom erasing the road behind, and Baba Yaga leaned out, nose to chin, and smelled Russian blood, and asked her business. A light, said Vasilisa, for our fire has gone out. Fire has a price, said the witch. Work for me, and we shall see. Or refuse — and her iron teeth finished the sentence for her.',
+          'The tasks were built to be failed. Cook a feast; wash and sort; and — the true test — take the poppy seed and clean it grain by grain from a heap of soil by morning, and after that the wheat from the chaff, measures of it, in the dark. Vasilisa fed the doll, and slept, which took more courage than staying awake would have; and the doll did the impossible parts, which is to say: her mother’s blessing did what blessings do, quietly, at night, without applause. Baba Yaga inspected the work each morning and found nothing to eat her over, and grew — the tale allows this — almost respectful. Ask, she said finally. Vasilisa asked about the three riders, and was answered honestly: my day, my sun, my night. She did not ask about the disembodied hands that served the witch’s table. Good, said Baba Yaga. Questions about what is outside the yard, I answer. Too much knowing makes a person old. Then she asked her own question — how did you do the work? — and Vasilisa said, by my mother’s blessing. The witch went off like a kettle. No blessed anything under my roof! Out! — and she shoved her through the gate, and then, because a deal is a deal even in that clearing, snatched a skull from the fence, jammed it on a stick, kindled its eyes, and thrust it after her. Here is your fire, she said. Carry it home to your stepmother. It was, all the tellings agree, exactly what had been asked for.',
+        ],
+      },
+      {
+        title: 'The Skull',
+        paras: [
+          'She walked home a night and a day with the skull burning on its stick, and near the end of it, worn through, she considered pitching the horrible thing into the ditch and being done. Do not, said the skull — the doll and the skull agreeing, for once, dead mother and dead stranger in one policy — carry me to the ones who sent you. So she carried it in through the gate, and the household came running with genuine relief, because here is the detail the tale sharpens like a knife: since the hour she had left, no fire in that house would stay lit. Candles guttered, coals died, borrowed flames went out at the threshold. The house had been sitting in the cold dark it had ordered for somebody else, waiting for delivery.',
+          'The skull was set on the table, and its burning eyes found the stepmother and the two daughters, and followed them. Not the walls, not the girl: them. They fled to the attic and the eyes followed through the floor; they fled to the yard and the eyes were at every window; and by morning there was nothing in that house of the three of them but ash, which the tale reports with the satisfaction of a ledger balancing. Vasilisa buried the skull, gently, like the debt it was, and left. She lodged with an old woman in the town, and spun thread too fine for any loom, and wove linen too fine for any needle but her own, and the shirts that came of it reached the tsar, and the tsar, being the ending this kind of story keeps in stock, sent for the weaver. She married him. The doll stayed in her pocket to the end of her life, and was fed. Every other door in this hall’s fire realm burns a world; this one burns one household, precisely, and spares the girl carrying the light — which is the Russian note exactly: the fire you send a child to fetch will come back knowing the address.',
         ],
       },
     ],

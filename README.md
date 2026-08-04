@@ -30,14 +30,14 @@ every culture keeps its own constellation, and touching a star opens its story.
 | Realm | Doors |
 | --- | --- |
 | The Sky | The Fall of Icarus (Greek) · Amaterasu and the Cave (Japanese) · How Māui Snared the Sun (Māori) · Chang’e Flies to the Moon (Chinese) · The Weaver Girl and the Cowherd (Chinese) · Oshun’s Flight (Yoruba) |
-| Fire & Ending | Ragnarök (Norse) · The Fifth Sun (Aztec) · The Death of Baldr (Norse) · Nüwa Mends the Sky (Chinese) · The Eye of Ra (Egyptian) |
+| Fire & Ending | Ragnarök (Norse) · The Fifth Sun (Aztec) · The Death of Baldr (Norse) · Nüwa Mends the Sky (Chinese) · The Eye of Ra (Egyptian) · Vasilisa and the Fire (Slavic) |
 | The Crossroads | How Anansi Got the Stories (Akan) · The First Day of Hermes (Greek) · Anansi and the Pot of Wisdom (Akan) · The Secret Name of Ra (Egyptian) · Oisín in the Land of Youth (Irish) · Eshu’s Cap (Yoruba) |
 | The Underworld | Orpheus Looks Back (Greek) · Izanami and Izanagi (Japanese) · Savitri and the Lord of Death (Hindu) · Isis and Osiris (Egyptian) · Inanna’s Descent (Sumerian) |
 | The Deep | The Churning of the Ocean (Hindu) · Thor Goes Fishing (Norse) · How Māui Fished Up the Land (Māori) · Gilgamesh and the Plant of Youth (Sumerian) · The Children of Lir (Irish) |
 
-Twelve cultures keep constellations in the sky: Greek, Norse, Japanese, Akan,
-Aztec, Māori, Hindu, Chinese, Egyptian, Sumerian, Irish, and Yoruba. New doors
-are carved with every moon.
+Thirteen cultures keep constellations in the sky: Greek, Norse, Japanese,
+Akan, Aztec, Māori, Hindu, Chinese, Egyptian, Sumerian, Irish, Yoruba, and
+Slavic. New doors are carved with every moon.
 
 ## Project structure
 
@@ -99,8 +99,8 @@ Every named star draws its title and meta caption *below* the dot — roughly
 - Each culture owns a region of the canvas (Māori top-left, Norse top-center,
   Hindu top-right, Greek left, Japanese right, Akan bottom-center, Aztec
   bottom-left, Chinese center, Egyptian bottom-right, Sumerian lower-left
-  edge, Irish top-left corner, Yoruba lower-center-right); place new stars
-  inside their culture's region.
+  edge, Irish top-left corner, Yoruba lower-center-right, Slavic right edge);
+  place new stars inside their culture's region.
 - Lean minor stars toward the middle of the canvas so the center of the sky
   never reads as empty.
 
