@@ -106,6 +106,7 @@ export const cultures = {
     minors: [[82, 72]],
     lines: [
       [[74, 84], [82, 72]],
+      [[82, 72], [96, 68]],
     ],
   },
   Hindu: {
@@ -143,6 +144,7 @@ export const skyPos = {
   weavergirl: [58, 48],
   nuwa: [70, 44],
   osiris: [74, 84],
+  secretname: [96, 68],
 };
 
 export const myths = [
@@ -1035,6 +1037,53 @@ export const myths = [
         paras: [
           'She tried. That is the entire third act, and it is the greatest of them. Isis called her sister Nephthys — married to Set, and done with him — and the two put on the bodies of kites, the small keen falcons of the river, and flew the Nile end to end, low over every reed bed and sandbar, crying the thin high cry those birds still cry, which the old country understood to be two sisters, still looking. Piece by piece they found him. Thirteen pieces; the fourteenth a fish had taken, and the tellings let the fish keep it, because even a perfect story needs one thing missing to prove the search was real.',
           'What they assembled, Anubis bound in linen — the first mummy, the pattern for every one after. And Isis beat her wings over the bound king and drew enough breath back into him for one night, one act of love, one son: Horus, the falcon, who would grow up in the marshes and take the kingdom back from his uncle in a lawsuit the gods argued for eighty years. But mark what Osiris himself did, because it is the move no other door in this realm makes: he did not return. Orpheus turned around; Izanagi struck a light; Osiris walked the other way, down into the Duat, and took its throne — so that the dead, arriving in the dark, would find it governed. He is why the grain comes green out of the black flood-mud every single year, and why the Egyptians wrote his name, hopefully, next to their own. Some doors in this hall are about getting the dead back. This one is about what the dead do for us instead.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'secretname',
+    name: 'The Secret Name of Ra',
+    short: 'The Secret Name',
+    culture: 'Egyptian',
+    realm: 'The Crossroads',
+    time: '6 min read',
+    accent: '#e8c25e',
+    pageBg: '#110d06',
+    kicker: 'Egyptian · Told in three nights',
+    epigraph: 'The oldest god kept one name unspoken. Isis built a snake to ask for it.',
+    about:
+      'Preserved on New Kingdom papyri — most fully on a papyrus now in Turin — where the myth serves as a healing spell against snakebite. Ra, grown old, holds one hidden name in his breast, the source of his power; Isis shapes a serpent from his own fallen spittle and the dust of the path, and when it strikes him, no remedy works until he yields the name to her. The Egyptians held that the true name of a thing carried real power — heka — and the papyrus, true to its own story, never writes the name down.',
+    doorGrad: 'linear-gradient(180deg,#2b2008,#0f0a04)',
+    doorBorder: 'rgba(232,194,94,.3)',
+    emblem:
+      'width:30px;height:30px;border-radius:50%;border:3px solid #e8c25e;box-sizing:border-box;background:radial-gradient(circle,#e8c25e 0 4px,transparent 5px);opacity:.9;animation:sunrise 5.5s ease-in-out infinite',
+    orb: 'radial-gradient(circle,#faeabf 0%,#e8c25e 50%,rgba(232,194,94,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#100c05 0%,#2e2108 55%,#5c440f 100%)',
+      'linear-gradient(180deg,#0c0708 0%,#221012 55%,#42201f 100%)',
+      'linear-gradient(180deg,#140e08 0%,#3c2810 55%,#8a5c1e 85%,#e0a840 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Old Sun',
+        paras: [
+          'Ra had grown old. The Egyptians said this plainly, of the sun, and you are invited to feel how strange and how honest it is: the first of gods, maker of gods, crossing the sky in his barque with his bones gone silver and his grip gone soft, and at the corner of his mouth — the tellings are unsparing — a thread of spittle that fell, now and then, onto the path of the world. He had a name for every hour of himself: Khepri climbing the morning, Ra blazing at noon, Atum settling into evening. Those names were public. Anyone could hold them, and they weighed nothing.',
+          'But there was one more. At the bottom of all the titles, laid down at the hour he made himself out of nothing, Ra kept a true name, hidden in his own breast, never once said aloud — and that name was not a word about his power. It was the power. Whoever held it could steer the holder. And Isis — lady of every craft, whom the texts call more clever than a million gods — had counted the names of Ra the way Loki, elsewhere in this hall, counted the oaths of Frigg, and found the same thing at the bottom of the ledger: one entry missing. She was not wicked. The tellings are careful there. She was ambitious for her son, and for knowledge itself — and she had noticed what fell from the old god’s mouth onto the road.',
+        ],
+      },
+      {
+        title: 'The Serpent of Spit and Dust',
+        paras: [
+          'She gathered the spittle of Ra with the dust it had darkened, and kneaded the two together, and what she shaped was a serpent — the first thing in creation Ra had not made, built entirely out of what he had let fall. Feel the economy of that. She spoke power into it, set it on the path the sun walked every day at the border of his own fields, and stepped back, and did what the clever do at crossroads everywhere in this hall: she waited for the world to walk into its own arrangement.',
+          'Ra came out with his retinue in the morning, glorious, humming the world along its way — and the serpent struck, and sank into the god the one thing his creation had never sent back at him: pain. The texts give him symptoms, and they are terribly human. I am colder than water, said the maker of everything, I am hotter than fire. My limbs sweat. My eyes swim. I did not see what bit me, and it was nothing I made. The gods of his court gathered around him and wrung their hands, brilliant and useless, for none of them had medicine for a venom spoken into being on purpose. And through the crowd came Isis, calm as a nurse at a bedside, saying the truest sentence a trickster ever said: I can help you. Tell me your name.',
+        ],
+      },
+      {
+        title: 'The Name',
+        paras: [
+          'He tried to pay in the public coin first. I am the maker of heaven and earth, he said; I knotted the mountains; I made the bull for the cow; I am he at whose rising the river rises. Morning I am Khepri, noon I am Ra, evening I am Atum. It was all true, and the venom was not interested. Titles are what a name looks like from outside; the snake had been built from the inside, and only the inside would answer it. Isis waited — patient, correct, terrifying in the way of someone who has already won and is merely letting the fact arrive — and said again, gently: that is not your name.',
+          'So Ra sent his court away, and the name passed out of his breast into hers — not spoken, the tellings insist, but moved, the way a coal is moved between two vessels without ever touching the air. Even the story does not hear it. The papyrus that preserves all this was written as a cure for snakebite, and at the place where the name should stand, it keeps the secret it is about — which may be the most Egyptian sentence in this hall. Isis drew the venom out, and the sun rose whole the next day, minus exactly one possession. She was permitted to pass the name to Horus, and no further; it is in that family still. Other tricksters at this crossroads caught pythons, cattle, the sun itself. Isis caught the only thing the gods actually run on — and if you want to know what it was, the door closes politely in your face, as it has for three thousand years.',
         ],
       },
     ],
