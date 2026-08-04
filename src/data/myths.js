@@ -107,6 +107,7 @@ export const cultures = {
     minors: [[16, 14]],
     lines: [
       [[8, 8], [16, 14]],
+      [[8, 8], [4, 22]],
     ],
   },
   Sumerian: {
@@ -172,6 +173,7 @@ export const skyPos = {
   inanna: [6, 58],
   gilgamesh: [4, 72],
   lir: [8, 8],
+  oisin: [4, 22],
 };
 
 export const myths = [
@@ -1299,6 +1301,53 @@ export const myths = [
         paras: [
           'While they floated, Ireland changed owners. The shining people went under the hills — that is where the Tuatha Dé Danann go in the late tales, downward into the mounds, becoming the Good Neighbors — and the forts of their fathers grew grass, and one morning across the western water came a sound with no precedent in nine hundred years of listening: a small iron bell, rung by a hermit at his prayers. The swans startled. The old terror of new things took them. And then Fionnuala, who had spent nine centuries learning exactly one skill, which is how to keep three others calm, said: it is only a voice. Let us go and hear what it says.',
           'The hermit was called Mochaomhóg, and he did not try to catch them. He fed them, and talked to them daily, and they sang for him — the last music of the old world performed for the doorkeeper of the new one, neither party quite knowing what it was witnessing. And when at last the far-off marriage of the spell’s fine print came to pass and the enchantment let go, what stood on the shore were not four children. Nine hundred years came due in a moment: four human beings, ancient past ancient, held upright mostly by each other. The hermit did the kindest thing his new faith knew, and blessed them; and Fionnuala, keel to the last, arranged her own grave with the authority of a woman who had been the eldest for nine hundred years: Conn at my left, Fiachra at my right, Aodh before my face — the way they had slept on the Sea of Moyle. So it was done. The deep is a realm of monsters in most of this hall; this door tells you what else it holds. Endurance. Ireland has been gentle with swans ever since, and now you know it is not superstition. It is memory.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'oisin',
+    name: 'Oisín in the Land of Youth',
+    short: 'Oisín',
+    culture: 'Irish',
+    realm: 'The Crossroads',
+    time: '6 min read',
+    accent: '#ecd28f',
+    pageBg: '#0d0e07',
+    kicker: 'Irish · Told in three nights',
+    epigraph: 'Three hundred years passed while he was happy. The ground was waiting for his foot.',
+    about:
+      'The ride of Oisín to Tír na nÓg is best known from Michael Comyn’s eighteenth-century Irish poem Laoi Oisín ar Thír na nÓg, which gave lasting shape to much older Fenian material; the frame — an impossibly old Oisín telling the tales of the Fianna to Saint Patrick — goes back to the medieval Acallam na Senórach. Niamh of the Golden Hair carries the poet of the Fianna west over the sea on a white horse; three years in the Land of Youth are three hundred in Ireland; and when the saddle-girth breaks and his foot touches earth, the centuries arrive all at once. The stories he told the saint afterward are, the tradition winks, how we come to have them.',
+    doorGrad: 'linear-gradient(180deg,#26220f,#0d0c05)',
+    doorBorder: 'rgba(236,210,143,.3)',
+    emblem:
+      'width:24px;height:28px;border-radius:12px 12px 4px 4px;border:3px solid #ecd28f;border-bottom-color:transparent;box-sizing:border-box;opacity:.85;animation:drift 4.8s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#f8ecc9 0%,#ecd28f 50%,rgba(236,210,143,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0a0d0f 0%,#16283a 55%,#2e5068 100%)',
+      'linear-gradient(180deg,#0d0c06 0%,#2a2410 55%,#54481a 100%)',
+      'linear-gradient(180deg,#0c0e0c 0%,#1e2a22 55%,#48584a 85%,#98a890 100%)',
+    ],
+    nights: [
+      {
+        title: 'Niamh of the Golden Hair',
+        paras: [
+          'The Fianna were hunting by the lakes of Killarney on a morning of soft grey rain when the rider came out of the sea. Not along the shore — out of it, the white horse putting its hooves on the swells as if the Atlantic were a meadow with opinions. The rider was a woman, and the poem spends stanzas on her the way you would spend money you had plenty of: golden hair to the saddle, a mantle of brown silk set with stars of red gold. She rode up the beach to Fionn mac Cumhaill himself, captain of all the Fianna, and answered his question before he asked it. I am Niamh of the Golden Hair, daughter of the king of Tír na nÓg — the Land of Youth. And I have not come for you.',
+          'She had come for Oisín — Fionn’s son, the poet of the company, on the strength of the poems, which had crossed the water where no boat goes. There is a lesson in that for every maker in this hall: your work travels ahead of you into countries you do not know exist, and one day something comes back along the road it went. She described her country the way the sea describes itself, endlessly and without repetition: no death there, no withering, feasting and hunting and music, and herself for a wife. Oisín looked once at his father — the poem gives Fionn no speech here, only grief standing politely, which is worse — and mounted. The horse turned. The last thing Ireland heard of him for three hundred years was hooves on water, going west.',
+        ],
+      },
+      {
+        title: 'The Land of Youth',
+        paras: [
+          'Tír na nÓg was exactly as advertised, which no other country has ever been. The trees held fruit and blossom in the same hand; the feasts ended when you chose and not when the food did; he fought one battle for the pleasure of it, freeing a besieged princess from a giant, and even the wound he took there healed like a week closing. He married Niamh; there were children; he was happy — and the poem, honest as a ledger, lets him be happy for three whole years, which in the accounting of that country is a long time and in ours, as you have already guessed, is three hundred.',
+          'What broke it was nothing grand. Homesickness is the crossroads this door is carved at, and it does not announce itself as a choice; it arrives as a smell of rain, a certain slant of grey light, the sound in memory of his father’s hunting horn. He asked to visit Ireland — only to visit, only to see Fionn and the Fianna and the hall at Almu. And Niamh, who knew the exchange rate of the two countries and could not bring herself to quote it, refused him twice, and the third time gave him the white horse and one instruction, in the voice of a woman reading fine print she did not draft: do not set your foot upon the ground. Whatever you see, whatever you are asked — stay in the saddle. He promised easily. Promises made in the Land of Youth weigh what feathers weigh there.',
+        ],
+      },
+      {
+        title: 'The Stirrup',
+        paras: [
+          'Ireland came up over the horizon wearing the wrong face. The hall of Almu was a green mound with sheep on it. The forts of the Fianna were grass; the people he hailed on the roads were smaller than the men he remembered, and when he asked after Fionn mac Cumhaill they said — kindly, the way you speak to the confused — that Fionn was a name in the old stories, dead these three hundred years. The poet sat his horse in the middle of his own country like a man reading his own headstone, and everything he had crossed the sea to touch turned out to be behind him, in the one direction the white horse could not ride.',
+          'On the road home to the coast he passed men straining to move a great stone into a cart — small men, many of them, failing at what any one of the Fianna would have done alone before breakfast. Pity is the trap the old stories set for their best people. Oisín leaned from the saddle to shift the stone with one hand, and the saddle-girth — three hundred years old, whatever it looked like — snapped. He did not even fall grandly; he slid, and his foot touched Ireland, and Ireland collected. The horse was gone before he finished falling. What the men lifted from the road was not a warrior but a blind white-haired man older than the stone; and they carried him, the tradition says, to Patrick — the new faith’s doorkeeper, as another door in this hall was carried to a hermit’s bell. And there is the bargain this crossroads was cut for: everything he lost by touching the ground, we inherited by his losing it. The old man told the saint the whole world of the Fianna, story by story, arguing all the way — and the monks wrote it down. Stay in the saddle and you keep paradise; touch the ground and you become a book. No one is saying he chose wrong.',
         ],
       },
     ],
