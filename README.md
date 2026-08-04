@@ -30,7 +30,7 @@ every culture keeps its own constellation, and touching a star opens its story.
 | Realm | Doors |
 | --- | --- |
 | The Sky | The Fall of Icarus (Greek) · Amaterasu and the Cave (Japanese) · How Māui Snared the Sun (Māori) · Chang’e Flies to the Moon (Chinese) · The Weaver Girl and the Cowherd (Chinese) |
-| Fire & Ending | Ragnarök (Norse) · The Fifth Sun (Aztec) · The Death of Baldr (Norse) |
+| Fire & Ending | Ragnarök (Norse) · The Fifth Sun (Aztec) · The Death of Baldr (Norse) · Nüwa Mends the Sky (Chinese) |
 | The Crossroads | How Anansi Got the Stories (Akan) · The First Day of Hermes (Greek) · Anansi and the Pot of Wisdom (Akan) |
 | The Underworld | Orpheus Looks Back (Greek) · Izanami and Izanagi (Japanese) · Savitri and the Lord of Death (Hindu) |
 | The Deep | The Churning of the Ocean (Hindu) · Thor Goes Fishing (Norse) · How Māui Fished Up the Land (Māori) |

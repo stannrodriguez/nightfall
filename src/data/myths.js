@@ -95,6 +95,7 @@ export const cultures = {
     lines: [
       [[46, 42], [54, 42]],
       [[46, 42], [58, 48]],
+      [[58, 48], [70, 44]],
     ],
   },
   Hindu: {
@@ -130,6 +131,7 @@ export const skyPos = {
   wisdompot: [58, 78],
   'chang-e': [46, 42],
   weavergirl: [58, 48],
+  nuwa: [70, 44],
 };
 
 export const myths = [
@@ -928,6 +930,53 @@ export const myths = [
         paras: [
           'Heaven can draw a river, but it cannot make a rule the whole world signs. The magpies did not sign. On the seventh night of the seventh month, every magpie alive — scruffy, quarrelsome, unsentimental birds; understand that this is not their kind of gesture — rises into the dark at once, and they build a bridge of themselves across the Silver River, wing to wing, and hold. One night a year, the weaver and the cowherd cross toward each other on the backs of birds and meet in the middle of the sky.',
           'That night is called Qixi, and it is kept still: lovers keep it, and the skilled keep it too, for Zhinü is the patroness of everyone whose craft sits in their hands. If it rains that night, the old people say, the rain is the two of them weeping — either the joy of the meeting or the arithmetic of the parting, and the old people decline to rule on which. You are standing in a hall whose other lens is a star chart; step through it on a clear night and find the river running corner to corner, one bright star on either bank. Every constellation in this sky keeps a story. Theirs is the only one the sky is still actively enforcing.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'nuwa',
+    name: 'Nüwa Mends the Sky',
+    short: 'Nüwa',
+    culture: 'Chinese',
+    realm: 'Fire & Ending',
+    time: '6 min read',
+    accent: '#b8e09a',
+    pageBg: '#0b1109',
+    kicker: 'Chinese · Told in three nights',
+    epigraph: 'A god broke the pillar that held up heaven. She melted stones the colors of everything, and patched it.',
+    about:
+      'Told in the Huainanzi and the Liezi, with the war that causes the disaster filled in by later sources: the water god Gonggong, defeated in his war for heaven, rams his head against Mount Buzhou, one of the pillars holding up the sky. Nüwa — the serpent-bodied creator who in companion myths shaped humankind from river clay — smelts five-colored stones to patch the tear and props the sky on the legs of a great turtle. The mend is famously imperfect: the sky tilts northwest, which is why the stars drift that way, and the earth dips southeast, which is why China’s rivers run to that sea.',
+    doorGrad: 'linear-gradient(180deg,#1a2a14,#080f06)',
+    doorBorder: 'rgba(184,224,154,.3)',
+    emblem:
+      'width:30px;height:15px;border-radius:30px 30px 0 0;border:3px solid #b8e09a;border-bottom:none;border-left-color:transparent;box-sizing:border-box;opacity:.85;animation:drift 5s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#e8f5d2 0%,#b8e09a 50%,rgba(184,224,154,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0d0a0a 0%,#26130e 55%,#4a2413 100%)',
+      'linear-gradient(180deg,#0a0f0a 0%,#1c2a16 55%,#3a4a20 100%)',
+      'linear-gradient(180deg,#0a100c 0%,#1e3626 55%,#4a6a3e 85%,#a0c27a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Pillar',
+        paras: [
+          'The sky, in those days, rested on pillars, and nobody thought about them, which is the whole job of a pillar. Then Gonggong, the water god, went to war for the throne of heaven and lost. There are gods who lose gracefully; the water god was not among them. Rather than kneel, he put his head down and ran at Mount Buzhou — the pillar of the northwest — the way a wave runs at a cliff it has personally decided to end. The mountain snapped. And the sky, which had never once been asked to hold itself up, tore along the corner like cloth.',
+          'What poured through was everything the sky had been keeping out. Fire ran along the ridgelines and would not burn out; the waters rose and had nowhere to be told to go; black dragons came up out of the flood with opinions about the new arrangement. The world listed like a holed boat. People clung to it — small, recent, badly prepared; they had only just been invented — and the story pauses here, as it should, so you can feel the particular horror of it: not an ending by decree, like some doors in this hall, but an ending by accident. Heaven did not fall because anyone chose it. It fell because somebody lost badly.',
+        ],
+      },
+      {
+        title: 'The Five-Colored Stones',
+        paras: [
+          'Nüwa came to the mending the way its maker comes to a broken thing: personally. She was the serpent-bodied goddess who had shaped the first people out of yellow river clay — the early ones carefully, by hand, and then, when her wrists tired, whole crowds of them flicked from the drops of a muddy rope, which is the story’s sly answer to why people come out so unevenly. They were hers, all of them, hand-built and mud-flicked alike. She did not weigh the merits of the case between the fire and the flood. She went looking for stones.',
+          'Five colors of them — blue, yellow, red, white, black, the full palette the world is painted from — gathered out of the riverbeds and smelted in a furnace until stone ran like syrup. Then she went up to the torn corner of heaven and patched it, seam by seam, the way you mend a roof or a sleeve or anything else you cannot afford to replace. She killed the black dragon that would not stop feeding on the drowned. She burned reeds to ash and banked the ash against the flood until the waters remembered their beds. None of it is described as glorious. It is described as work — which is the story’s quiet heresy: that the opposite of the end of the world is not a hero. It is maintenance.',
+        ],
+      },
+      {
+        title: 'The Tilt',
+        paras: [
+          'The sky held, but a patch is not a pillar. So Nüwa took the legs of a great turtle — the tellings are brisk about the turtle, and you may spare it a thought — and set them under the four corners of heaven, and there they stand, bearing up the roof of everything. And still the mend was not perfect. The northwest corner, where the pillar broke, sits forever slightly low: which is why the sun, the moon, and all the stars slide toward the northwest as they cross. And the earth, jolted, dips to the southeast: which is why every great river of her country — ask any of them — runs east to the sea.',
+          'That is the detail to carry out of this door. Another hall would have hidden the flaw; this story points at it. The tilt of the sky is the seam of the repair, sewn into the map, running through every river you could stand beside — the scar doing what scars do, which is to go on quietly telling the story after the teller has gone. Nüwa did not make the world as good as new. She made it hold, which is a different and better miracle. You live, the door would like you to know as you leave, in a mended thing. Lean on it. It bears.',
         ],
       },
     ],
