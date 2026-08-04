@@ -32,11 +32,12 @@ every culture keeps its own constellation, and touching a star opens its story.
 | The Sky | The Fall of Icarus (Greek) · Amaterasu and the Cave (Japanese) · How Māui Snared the Sun (Māori) · Chang’e Flies to the Moon (Chinese) · The Weaver Girl and the Cowherd (Chinese) |
 | Fire & Ending | Ragnarök (Norse) · The Fifth Sun (Aztec) · The Death of Baldr (Norse) · Nüwa Mends the Sky (Chinese) |
 | The Crossroads | How Anansi Got the Stories (Akan) · The First Day of Hermes (Greek) · Anansi and the Pot of Wisdom (Akan) |
-| The Underworld | Orpheus Looks Back (Greek) · Izanami and Izanagi (Japanese) · Savitri and the Lord of Death (Hindu) |
+| The Underworld | Orpheus Looks Back (Greek) · Izanami and Izanagi (Japanese) · Savitri and the Lord of Death (Hindu) · Isis and Osiris (Egyptian) |
 | The Deep | The Churning of the Ocean (Hindu) · Thor Goes Fishing (Norse) · How Māui Fished Up the Land (Māori) |
 
-Eight cultures keep constellations in the sky: Greek, Norse, Japanese, Akan,
-Aztec, Māori, Hindu, and Chinese. New doors are carved with every moon.
+Nine cultures keep constellations in the sky: Greek, Norse, Japanese, Akan,
+Aztec, Māori, Hindu, Chinese, and Egyptian. New doors are carved with every
+moon.
 
 ## Project structure
 
@@ -97,7 +98,8 @@ Every named star draws its title and meta caption *below* the dot — roughly
   collide, and keep minor stars and culture labels out of every caption box.
 - Each culture owns a region of the canvas (Māori top-left, Norse top-center,
   Hindu top-right, Greek left, Japanese right, Akan bottom-center, Aztec
-  bottom-left, Chinese center); place new stars inside their culture's region.
+  bottom-left, Chinese center, Egyptian bottom-right); place new stars inside
+  their culture's region.
 - Lean minor stars toward the middle of the canvas so the center of the sky
   never reads as empty.
 
