@@ -107,6 +107,7 @@ export const cultures = {
     minors: [[66, 78]],
     lines: [
       [[60, 66], [66, 78]],
+      [[66, 78], [62, 90]],
     ],
   },
   Irish: {
@@ -185,6 +186,7 @@ export const skyPos = {
   lir: [8, 8],
   oisin: [4, 22],
   oshun: [60, 66],
+  eshu: [62, 90],
 };
 
 export const myths = [
@@ -1406,6 +1408,53 @@ export const myths = [
         paras: [
           'But this door stands in the realm of the sky for the other story, the one her river people tell when the first is finished. An age later, the world and heaven fell out of speaking. The rains stopped again — not sulking this time, but silence: Olodumare had withdrawn beyond asking, and the earth cracked like old paint. The orisha resolved to send a messenger up, and the birds of the world volunteered one by one, and one by one the sky sent them back down, scorched or exhausted or lost. The sun sits between here and heaven like a toll no feather can pay.',
           'Then Oshun rose from her river as a peacock — the most beautiful bird there is, which the tellings mention not as praise but as inventory, because beauty was what she was about to spend. She flew up. The sun took the colors off her feather by feather, the way fire reads a book; it blackened her wings and bared her head, and what arrived at the gate of Olodumare was not a peacock. It was a vulture — burnt bald, plain past plainness, and standing in front of the source of everything with the message still in its beak. Olodumare looked at what the flight had cost and did not need the message read aloud. The rains were released; and the vulture was made the one bird whose flight heaven always accepts, which is why offerings go up on those dark wings to this day. Every sky door in this hall is about the distance between up there and down here. This one is about what it charges — and about a goddess who paid it in beauty, without haggling, and called it a fair price for the rain.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'eshu',
+    name: 'Eshu’s Cap',
+    short: 'Eshu',
+    culture: 'Yoruba',
+    realm: 'The Crossroads',
+    time: '6 min read',
+    accent: '#e0785a',
+    pageBg: '#120808',
+    kicker: 'Yoruba · Told in three nights',
+    epigraph: 'Two friends swore nothing could divide them. He put on a hat.',
+    about:
+      'Eshu — Èṣù — is the Yoruba orisha of the crossroads: messenger between heaven and earth, carrier of every sacrifice, opener and closer of ways, honored first in any rite so that the roads of it will run true. The tale of his two-colored cap, worn down the boundary path between two inseparable friends, is among the most retold of all Yoruba moral stories. Carried across the Atlantic in the memory of the enslaved, Eshu keeps his post throughout the diaspora — as Elegua in Cuba, Exu in Brazil, Papa Legba at the crossroads of Haiti — still the one who must open the door before anything else can happen.',
+    doorGrad: 'linear-gradient(180deg,#2c1410,#0f0605)',
+    doorBorder: 'rgba(224,120,90,.3)',
+    emblem:
+      'width:26px;height:26px;border-radius:50%;background:linear-gradient(90deg,#e0785a 0 50%,#38263e 50%);opacity:.9;animation:drift 4.4s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#f5cdb8 0%,#e0785a 50%,rgba(224,120,90,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0d0a07 0%,#241a0c 55%,#463414 100%)',
+      'linear-gradient(180deg,#100707 0%,#2c0e0c 55%,#521c14 100%)',
+      'linear-gradient(180deg,#120a0c 0%,#301a20 55%,#5c3440 85%,#a06858 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Two Friends',
+        paras: [
+          'There were two farmers whose friendship was famous, which was the first mistake, though no one could have told them which of the three words held the error. They had been born in the same week; their farms lay along the same path, one to its east and one to its west; they dressed alike, planted alike, finished each other’s proverbs. When one bought a hat, the other bought its twin the same market day. People held them up to quarreling couples the way you hold a lamp up to bad handwriting. And the two of them, pleased, said the fatal sentence out loud: nothing could ever come between us.',
+          'Now, the Yoruba know something about sentences like that: they are heard. Not by malice — by Eshu, which is different, and the difference is the whole night’s lesson. Eshu is the power of the crossroads, the messenger who carries every offering up and every answer down, the keeper of doors and of the spaces between things — and the two friends, so complete in each other, had let his shrine at the fork of their path go unswept and unfed. A friendship that believes it needs no tending has already begun to be a boast; and a boast at a crossroads is a letter, correctly addressed.',
+        ],
+      },
+      {
+        title: 'The Cap',
+        paras: [
+          'One market morning a stranger came walking down the boundary path between the two farms — unhurried, pipe going, greeting each farmer pleasantly by name. He wore a cap. On the side facing the eastern field, the cap was red as palm oil; on the side facing the western field it was black as a moonless hour; and some tellings, not content, put his pipe at the back of his head and his staff slung backward over his shoulder, so that even his coming and his going could be argued about. He passed between the friends the way noon passes, seen perfectly by both, and was gone.',
+          'That evening, over the fence, one friend mentioned the amiable stranger in the red cap. Black, said the other, the way you correct a friend: comfortably. Red, said the first, less comfortably. Each of them had seen with his own two eyes, and here is the engineering of the trap: both of them were right, and neither of them could be, and the friendship had no procedure for that, having never needed one. Red became are you blind, became you have always been like this, became fists, in the old smooth grooves that anger keeps ready even in people who have never used them. By the time the neighbors pulled them out of the boundary ditch, the two most famous friends in the region were bleeding into their own path, and the whole village stood around the wreck asking the question the cap had been fitted for: how?',
+        ],
+      },
+      {
+        title: 'The Crossroads',
+        paras: [
+          'They were dragged before the king, still shouting colors, and the case defeated the elders — for both men were honest, and everyone knew it, and honesty on both sides of a contradiction is a hole in the world. Into which, on cue, walked the stranger, cap in hand. He turned it slowly for the court: red on the one side, black on the other. Then he spun it on his finger and laughed, and the laugh told the wise ones exactly who had been walking the boundary path at noon. Some tellings give Eshu a confession with no apology in it — sowing discord, he says cheerfully, is a delight to me — but listen past the mischief to the sentence underneath: they swore that nothing could divide them, and had never once asked what the other one could see from where he stood.',
+          'That is why Eshu is honored first, before any other power, at every rite: not because he is the greatest but because he holds the roads, and a message sent on unswept roads arrives as a quarrel. The two friends fed his shrine ever after, and asked each other for the view from the far field ever after, which is the same act performed twice. And when the slave ships tore the Yoruba world across the Atlantic, this god of thresholds did what thresholds do: he went along at every door. In Cuba they open the drums for him as Elegua; in Brazil he stands at the gate as Exu; in Haiti he is Papa Legba, of whom they sing open the gate for me. Every door in this hall swings on some hinge or other. If the hall itself has a doorkeeper — someone who let you in, and will decide, smiling, which way you leave — it is this one, in a cap whose color you should decline to swear to.',
         ],
       },
     ],
