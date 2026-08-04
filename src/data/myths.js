@@ -9,8 +9,9 @@
 // on at least one axis, and keep minors/labels out of that caption box, so no
 // text ever collides. Each culture owns a region of the canvas: Māori top-left,
 // Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
-// bottom-center, Aztec bottom-left, Chinese center, Egyptian bottom-right.
-// Minors lean toward the middle so the center of the sky never reads as empty.
+// bottom-center, Aztec bottom-left, Chinese center, Egyptian bottom-right,
+// Sumerian lower-left edge. Minors lean toward the middle so the center of
+// the sky never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
@@ -98,6 +99,16 @@ export const cultures = {
       [[58, 48], [70, 44]],
     ],
   },
+  Sumerian: {
+    color: '#d4c76a',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 1, y: 84 },
+    minors: [[2, 48]],
+    lines: [
+      [[2, 48], [6, 58]],
+    ],
+  },
   Egyptian: {
     color: '#6f8fe8',
     lineAlpha: 0.32,
@@ -147,6 +158,7 @@ export const skyPos = {
   osiris: [74, 84],
   secretname: [96, 68],
   eyeofra: [88, 82],
+  inanna: [6, 58],
 };
 
 export const myths = [
@@ -1133,6 +1145,53 @@ export const myths = [
         paras: [
           'You do not fight your own eye. Ra, who had been clever before mankind existed, became clever again. Runners went south through the night to Elephantine, where the red ochre is, and the brewers of Heliopolis were turned out of bed and set to work, and by darkest morning there stood seven thousand jars of beer dyed the exact, considered color of what the lioness loved. They poured it out over the fields in her path, three hands deep — a lake of it, red as the day’s work she had planned — and the gods stepped back the way brewers step back from a trap made of hospitality.',
           'She came at dawn, saw a country already flooded with what she came to spill, and stooped to drink. And drank. And her face, the texts say gently, grew glad. The Powerful One sat down in the red shallows, sang something, forgot the schedule, forgot the assignment, and slept where she sat; and what woke, hungover, in the wet gold morning was Hathor — love again, with a headache. Egypt kept the anniversary honestly: a festival of drunkenness, music, and lamps, held on the day mercy was engineered, because it could not be felt. And Ra, weary of ruling what he had nearly unmade, mounted the back of the heavenly cow and rose — the sky itself is her belly, the stars her freight — putting one cow’s height of distance between the sun and the tears he was made of. The gods have governed from up there ever since. This door’s lesson is the softest thing in the fire realm, and the hardest: the world was not saved by repentance. It was saved by seven thousand jars of good brewing, delivered on time.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'inanna',
+    name: 'Inanna’s Descent',
+    short: 'Inanna',
+    culture: 'Sumerian',
+    realm: 'The Underworld',
+    time: '6 min read',
+    accent: '#e0cf7a',
+    pageBg: '#0d0b06',
+    kicker: 'Sumerian · Told in three nights',
+    epigraph: 'She put on all her crowns to visit the dead. At each of seven gates, one was taken.',
+    about:
+      'A Sumerian poem from clay tablets of the early second millennium BCE, recovered largely at Nippur and pieced together line by line by modern scholars — the oldest written descent into the underworld we possess. Inanna, queen of heaven and the planet Venus, goes down to the realm of her sister Ereshkigal; at each of seven gates an emblem of her power is stripped away, and she is struck dead and hung on a hook. Revived by two small beings Enki makes from the dirt under his fingernails, she must send a substitute down in her place: her consort Dumuzi, who spends half of every year below. The later Akkadian telling is known as Ishtar’s Descent.',
+    doorGrad: 'linear-gradient(180deg,#292312,#0e0c05)',
+    doorBorder: 'rgba(224,207,122,.3)',
+    emblem:
+      'width:28px;height:28px;background:linear-gradient(#e0cf7a,#e0cf7a) center/100% 3px no-repeat,linear-gradient(#e0cf7a,#e0cf7a) center/3px 100% no-repeat,linear-gradient(45deg,transparent 0 calc(50% - 1.5px),#e0cf7a calc(50% - 1.5px) calc(50% + 1.5px),transparent calc(50% + 1.5px)),linear-gradient(-45deg,transparent 0 calc(50% - 1.5px),#e0cf7a calc(50% - 1.5px) calc(50% + 1.5px),transparent calc(50% + 1.5px));opacity:.85;animation:drift 4.6s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#f5ecc2 0%,#e0cf7a 50%,rgba(224,207,122,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0d0b05 0%,#26200a 55%,#4a4014 100%)',
+      'linear-gradient(180deg,#0a080a 0%,#181220 55%,#2a1e38 100%)',
+      'linear-gradient(180deg,#0e0c08 0%,#2c2410 55%,#5c4a1c 85%,#b09040 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Seven Gates',
+        paras: [
+          'Inanna was queen of heaven, and held the title the way a lamp holds fire. She was the morning star and the evening star; love answered to her, and war did too, which tells you the Sumerians were paying attention. And one day — the poem gives no reason, and four thousand years of readers have supplied dozens — she set her ear toward the great below, where her sister Ereshkigal is queen of the land of no return. She dressed for it. Understand that this was not vanity: she put on the crown of the steppe, the lapis beads, the breastplate called Come, man, come, the gold ring, the rod of lapis, her royal robe — seven emblems, seven offices, the whole architecture of who she was, worn on one body. Then she told her minister Ninshubur: if I am not back in three days, go weeping to the temples of the great gods, and make them remember me.',
+          'She knocked on the outermost gate of the dead like someone kicking a door in. Ereshkigal, told her sister was outside dressed for coronation, went pale, and thought, and gave an order of genius: let her in — through all seven gates, one at a time, and treat her per the ancient rites. At the first gate they took her crown. Why? said Inanna. And the gatekeeper gave the answer that tolls through this whole realm like a bell: Silence, Inanna. The ways of the underworld are perfect. They may not be questioned. At the second gate, the beads. At the third, the breastplate. Gate by gate they unbuilt her, politely, per the rites — and she walked on anyway, which is either the bravest thing in the poem or the proudest, and the poem, being Sumerian, declines to distinguish.',
+        ],
+      },
+      {
+        title: 'The Hook',
+        paras: [
+          'What came through the seventh gate was a woman, naked and bowed, and the underworld received her the way policy receives a person. The Anunna, the seven judges of the dead, sat in their places and fixed upon her the eyes of death; Ereshkigal rose from her throne, and her sister was struck down like a felled roof-beam — and the body of the queen of heaven was hung on a hook in the wall, where the poem leaves it for three days and three nights, with a plainness no later hell has improved on.',
+          'Above, Ninshubur did exactly what grief with instructions does: everything. She tore at herself at the doors of the great gods and begged them each in turn. Enlil of the air refused — Inanna craved the great above and the great below both, he said; who grasps at both worlds loses one. The moon god refused with the same shrug. But Enki, god of the sweet waters and of wisdom, which the Sumerians counted as one portfolio, was troubled; my daughter, he said, what has happened to her is not nothing. And he did the strangest, humblest act of rescue in this whole hall: he dug the dirt from under his fingernails and made of it two small creatures — neither man nor woman, so slight the gates had no rite for them — and gave one the food of life and the other the water of life, and told them how to slip through the cracks of seven perfect doors, and what, exactly, to say on the other side.',
+        ],
+      },
+      {
+        title: 'The Substitute',
+        paras: [
+          'They found Ereshkigal in agony — the queen of the dead moaning like a woman in labor, with no one in her whole kingdom of the obedient to sit with her. Oh, oh, my inside, groaned Ereshkigal. Oh, oh, your inside, said the little creatures. Oh, my outside. Oh, your outside. That is the entire trick, and it had never been tried: not a sword, not a bargain, but company in pain, echoed until the pain felt heard. Ask anything, said Ereshkigal at last, undone by two handfuls of fingernail dirt with good manners. They asked for the corpse on the hook. They sprinkled it with the food of life and the water of life, and Inanna stood up.',
+          'But the ways of the underworld are perfect: no one leaves unless someone arrives. Inanna walked back up into the sunlight with a escort of galla — small pitiless demons of the deep who accept no gifts, drink no beer, and cannot be distracted, the poem notes, by love — to collect her replacement. They reached for Ninshubur, who had saved her; no, said Inanna. They reached for her sons, in mourning rags; no. And then she came to her own throne room in Uruk, and there sat Dumuzi, her shepherd-king, her husband — in fine clothes, on her seat, conspicuously unweeping — and Inanna fixed on him the eye of death she had learned below, and said: him. His sister Geshtinanna, who loved him, split the sentence in half: six months below for him, six for her, forever. That is why the year has a dying half. The oldest underworld door humans ever wrote — Persephone, Orpheus, Savitri, every descent in this hall walks a road cut first by her — ends not with a moral but with a schedule; and in the sky, watch: the star of Inanna still sets below the world and always, always comes back up.',
         ],
       },
     ],
