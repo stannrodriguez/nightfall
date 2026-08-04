@@ -9,8 +9,8 @@
 // on at least one axis, and keep minors/labels out of that caption box, so no
 // text ever collides. Each culture owns a region of the canvas: Māori top-left,
 // Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
-// bottom-center, Aztec bottom-left. Minors lean toward the middle so the
-// center of the sky never reads as empty.
+// bottom-center, Aztec bottom-left, Chinese center. Minors lean toward the
+// middle so the center of the sky never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
@@ -86,6 +86,16 @@ export const cultures = {
       [[54, 16], [42, 26]],
     ],
   },
+  Chinese: {
+    color: '#d9a0f2',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 52, y: 60 },
+    minors: [[54, 42]],
+    lines: [
+      [[46, 42], [54, 42]],
+    ],
+  },
   Hindu: {
     color: '#7fd8e8',
     lineAlpha: 0.32,
@@ -117,6 +127,7 @@ export const skyPos = {
   savitri: [83, 32],
   mauifish: [42, 26],
   wisdompot: [58, 78],
+  'chang-e': [46, 42],
 };
 
 export const myths = [
@@ -825,6 +836,53 @@ export const myths = [
       },
     ],
   },
+  {
+    id: 'chang-e',
+    name: 'Chang’e Flies to the Moon',
+    short: 'Chang’e',
+    culture: 'Chinese',
+    realm: 'The Sky',
+    time: '6 min read',
+    accent: '#f0dca8',
+    pageBg: '#0c0a18',
+    kicker: 'Chinese · Told in three nights',
+    epigraph: 'Her husband shot nine suns out of the sky. She rose into it.',
+    about:
+      'One of China’s best-loved myths, first recorded in the Huainanzi in the second century BCE. After the archer Hou Yi shoots down nine of the ten suns scorching the earth, he is granted the elixir of immortality by the Queen Mother of the West; his wife Chang’e drinks it — tellings disagree on whether from longing, curiosity, or to keep it from the thief Feng Meng — and floats to the moon, where the jade rabbit keeps her company. The round cakes of the Mid-Autumn Festival are still set out under her light, and China’s lunar landers carry her name.',
+    doorGrad: 'linear-gradient(180deg,#221d3e,#0a0918)',
+    doorBorder: 'rgba(240,220,168,.3)',
+    emblem:
+      'width:28px;height:28px;border-radius:50%;background:radial-gradient(circle at 33% 33%,#0c0a18 0 57%,#f0dca8 60%);opacity:.9;animation:drift 5s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#fdf3d0 0%,#f0dca8 50%,rgba(240,220,168,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#140b08 0%,#33170a 55%,#61300f 100%)',
+      'linear-gradient(180deg,#0a0814 0%,#181430 60%,#2a2448 100%)',
+      'linear-gradient(180deg,#0c0a1c 0%,#242048 55%,#5a5680 85%,#c9c2a0 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Ten Suns',
+        paras: [
+          'In the oldest days there were ten suns, and they were well behaved. They roosted in a mulberry tree at the eastern edge of the world and crossed the sky one at a time, in an order their mother kept, so that every day was exactly one day long. Then one morning — out of boredom, or brotherhood, or whatever it is that ruins schedules — all ten rose at once. Rivers dried standing up. Stones softened like wax. The world began, gently and from the edges inward, to forget what green had ever meant.',
+          'Hou Yi was the archer the moment required: a man with a red bow, white arrows, and no talent for watching things burn. He climbed the highest peak and put an arrow through the first sun, and it burst and fell as a three-legged crow. He shot the second, and the third, and the air cooled a degree at a time like a fever breaking. Nine crows lay on the ground when he lowered the bow, and one sun — the last, the lucky one — kept the sky, having suddenly remembered its schedule. Other doors in this hall argue with the sun; this is the only one that settled the count with arrows.',
+        ],
+      },
+      {
+        title: 'The Elixir',
+        paras: [
+          'Heaven was less grateful than the earth. The ten suns had been the sons of a god, and gods keep accounts; Yi and his wife Chang’e were put out of heaven for the crime of the rescue, and made mortal, which is to say: given a deadline. So Yi walked west, past the edges of every map, to the Kunlun mountains where the Queen Mother of the West keeps her garden, and asked for the cure. She gave him a vial of elixir and the terms that came with it. Shared between two, it bought long life on the earth. Drunk whole by one, it bought heaven — a rising without return.',
+          'Yi would not rise without her, and would not stay without her, and so he did what people do with decisions that cannot be halved: he postponed it. The vial went into the rafters. But a secret in the rafters is a lamp lit in a window, and Yi’s apprentice Feng Meng — who had learned everything from the master except what the bow was for — had seen its light. He waited for a day when the hunt was long, and came to the house with a blade, and asked Chang’e, politely, for eternity.',
+        ],
+      },
+      {
+        title: 'The Moon',
+        paras: [
+          'What were her choices? Hand a man with a knife the one thing that would make him permanent — or drink. She drank. The floor let go of her feet, courteously, like a host seeing off a guest, and Chang’e rose through the roof of her own house, past the geese, past the weather, growing lighter as the earth grew smaller — and the moon, the nearest lit doorway in all that dark, took her in. There is a palace there called Vast Cold, and a jade rabbit who pounds elixir in a mortar without ever finishing, and an osmanthus tree that drops its flowers on no wind at all. It is beautiful, the tellings agree, in the way of guest rooms: perfectly, and for no one.',
+          'Yi came home to an open door and an empty rafter, and did not curse her. That is the detail the story insists on. He set a table in the courtyard with her favorite fruits and little round cakes, and looked up — and she looked down, if the roundest nights are to be believed, each of them keeping their half of a broken elixir. The table is still set: every autumn, when the moon comes full, the cakes are round for her sake. And when, in our own age, her country sent its landers to walk that cold garden at last, it did not have to search for a name. The machines are called Chang’e. The moon is the one door every culture can see from its own yard; she is why this hall keeps it open.',
+        ],
+      },
+    ],
+  },
 ];
 
 export const roman = ['I', 'II', 'III'];
@@ -832,7 +890,11 @@ export const roman = ['I', 'II', 'III'];
 const NUMBER_WORDS = [
   'Zero', 'One', 'Two', 'Three', 'Four', 'Five', 'Six', 'Seven', 'Eight',
   'Nine', 'Ten', 'Eleven', 'Twelve', 'Thirteen', 'Fourteen', 'Fifteen',
-  'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty',
+  'Sixteen', 'Seventeen', 'Eighteen', 'Nineteen', 'Twenty', 'Twenty-one',
+  'Twenty-two', 'Twenty-three', 'Twenty-four', 'Twenty-five', 'Twenty-six',
+  'Twenty-seven', 'Twenty-eight', 'Twenty-nine', 'Thirty', 'Thirty-one',
+  'Thirty-two', 'Thirty-three', 'Thirty-four', 'Thirty-five', 'Thirty-six',
+  'Thirty-seven', 'Thirty-eight', 'Thirty-nine', 'Forty',
 ];
 
 export function numberWord(n) {
