@@ -33,7 +33,7 @@ every culture keeps its own constellation, and touching a star opens its story.
 | Fire & Ending | Ragnarök (Norse) · The Fifth Sun (Aztec) · The Death of Baldr (Norse) · Nüwa Mends the Sky (Chinese) · The Eye of Ra (Egyptian) |
 | The Crossroads | How Anansi Got the Stories (Akan) · The First Day of Hermes (Greek) · Anansi and the Pot of Wisdom (Akan) · The Secret Name of Ra (Egyptian) |
 | The Underworld | Orpheus Looks Back (Greek) · Izanami and Izanagi (Japanese) · Savitri and the Lord of Death (Hindu) · Isis and Osiris (Egyptian) · Inanna’s Descent (Sumerian) |
-| The Deep | The Churning of the Ocean (Hindu) · Thor Goes Fishing (Norse) · How Māui Fished Up the Land (Māori) |
+| The Deep | The Churning of the Ocean (Hindu) · Thor Goes Fishing (Norse) · How Māui Fished Up the Land (Māori) · Gilgamesh and the Plant of Youth (Sumerian) |
 
 Ten cultures keep constellations in the sky: Greek, Norse, Japanese, Akan,
 Aztec, Māori, Hindu, Chinese, Egyptian, and Sumerian. New doors are carved
