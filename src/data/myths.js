@@ -19,7 +19,7 @@ export const cultures = {
     lineAlpha: 0.3,
     minorAlpha: 0.5,
     label: { x: 9, y: 34 },
-    minors: [[26, 42], [36, 48]],
+    minors: [[36, 48]],
     lines: [
       [[20, 30], [26, 42]],
       [[26, 42], [28, 58]],
@@ -212,6 +212,7 @@ export const skyPos = {
   vasilisa: [95, 44],
   sadko: [96, 30],
   sedna: [30, 88],
+  persephone: [26, 42],
 };
 
 export const myths = [
@@ -1621,6 +1622,53 @@ export const myths = [
         paras: [
           'She lives at the bottom still, in a house of stone and whale rib, and the hunters do not often say her name; they call her the one down there, which is not fear exactly, but the way you speak of a landlord whose terms you know by heart. All the sea animals are hers — they are her hands, remember, out swimming — and when the people above break their obligations, when the rules that keep the community alive are treated carelessly, the offenses drift down through the water and settle into her hair as grime and tangles. And she cannot comb them out. She has no fingers. Sit with that detail a moment; the story has been building it since the gunwale. The wrong done to her is permanent, and it is the exact reason the world above must keep coming back down to her, forever.',
           'So when the seals vanish and the hunting fails and the lamps go dim, the angakkuq — the shaman — makes the hardest journey in the northern world: down, through the sea floor, past guardians the tellings describe variously and none describe kindly, to the house at the bottom. And there the shaman does not fight anything. The shaman takes up a comb, and combs the mother of the sea’s hair, gently, tangle by tangle, like a daughter tending a mother, and tells her she is remembered; and Sedna, eased, releases the animals — on the understanding, always renewed and never final, that the people will keep their side. The shaman returns and names the broken obligations aloud, and the community answers for itself, and the seals come back. Every other door in this realm holds a monster or a king. The deep of this door is a wronged girl the world must keep apologizing to — and the apology is combing. The north has kept that appointment for a very long time, and when a seal surfaces in the breathing hole, it is on loan from her.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'persephone',
+    name: 'Persephone and the Seeds',
+    short: 'Persephone',
+    culture: 'Greek',
+    realm: 'The Underworld',
+    time: '6 min read',
+    accent: '#e8707c',
+    pageBg: '#120810',
+    kicker: 'Greek · Told in three nights',
+    epigraph: 'Six seeds. Half a year. The seasons are a custody arrangement.',
+    about:
+      'Told most fully in the Homeric Hymn to Demeter, composed around the seventh century BCE. Hades takes Persephone with the quiet consent of Zeus; her mother Demeter, goddess of grain, searches with torches, settles grieving at Eleusis, and finally stops the world from growing until the gods relent. Hermes is sent to fetch the girl home — but she has eaten pomegranate seeds in the land of the dead, and what is eaten there binds. The split year the gods negotiate is the Greek explanation of the seasons, and the Mysteries kept at Eleusis in Demeter and Persephone’s honor — initiation rites whose secret was never written down — endured for a thousand years.',
+    doorGrad: 'linear-gradient(180deg,#2c1220,#0e050b)',
+    doorBorder: 'rgba(232,112,124,.3)',
+    emblem:
+      'width:28px;height:28px;border-radius:50%/45% 45% 55% 55%;border:3px solid #e8707c;box-sizing:border-box;background:radial-gradient(circle at 38% 45%,#e8707c 0 2.5px,transparent 3.5px),radial-gradient(circle at 62% 52%,#e8707c 0 2.5px,transparent 3.5px),radial-gradient(circle at 48% 66%,#e8707c 0 2.5px,transparent 3.5px);opacity:.9;animation:drift 4.8s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#f8cfd4 0%,#e8707c 50%,rgba(232,112,124,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0c0e0a 0%,#1e2812 55%,#3e4a1e 100%)',
+      'linear-gradient(180deg,#0d0c0c 0%,#1e1c1a 55%,#383430 100%)',
+      'linear-gradient(180deg,#0e0c12 0%,#2a1e33 55%,#4a5a2e 85%,#9ac25a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Meadow',
+        paras: [
+          'She was called Kore then — just “the girl,” the way you don’t bother naming what you cannot imagine losing. She was gathering flowers in a meadow with the daughters of Ocean: crocus, iris, hyacinth, and then one narcissus of a hundred blooms, so beautiful that the hymn stops to say the sky smiled at it — and grown, the hymn also says, deliberately, as a snare, at the nod of Zeus. Sit with that. The trap that catches the girl who loves flowers is a flower; this hall has filed the principle before, under a cedar chest built to a sleeping king’s measurements. She reached for it with both hands, and the meadow opened like a door.',
+          'Out of the gap came the horses first, then the gold chariot, then the one god who never comes up for anything: Hades, lord of the numberless dead, who had asked his brother Zeus for the girl and been given her the way brothers give away what isn’t theirs. He took her up beside him and turned the horses home, and the earth closed over the hole with no seam. She screamed once on the way down — the hymn is precise — and the scream was heard by exactly two witnesses: Hecate in her cave, and the sun, who sees everything and files it for later. Her mother caught only the echo off the mountains, felt it in her chest the way mothers do, and began to run before she knew toward what.',
+        ],
+      },
+      {
+        title: 'The Famine',
+        paras: [
+          'Nine days Demeter crossed the earth with a burning torch in each hand, eating nothing, washing nothing, asking everyone. On the tenth, the sun told her the truth in the tone of a witness who has waited to be asked: Hades has her; Zeus consented; and — he added, disastrously — it is not a bad match, all things considered; he is a king. Grief with an address becomes something else. Demeter did not storm Olympus. She turned her back on it, put on the shape of an old woman, and sat down by a well in Eleusis, where the daughters of the king took pity on a stranger — and where, in time, she would order her temple built. The gods had misplaced the one power they could not do without: the one who makes things grow, and who had now, formally, stopped.',
+          'That year nothing came up. Not one seed germinated in the black earth; the oxen dragged plows through fields that had resigned; and the hymn names the true pressure point with the driest wit in Greek: mankind would have starved, and the gods would have lost their sacrifices — the smoke and honor they live on. Heaven can survive human suffering indefinitely; heaven cannot survive an empty altar. Zeus sent Iris to reason with her, then every god in order, with every gift in inventory. She sat in her new temple, an old woman with a jar of barley-water, and said the same sentence to each of them: nothing grows until I see my daughter. It is the greatest labor action in mythology, and it worked the way the good ones work — not by violence, but by demonstrating, calmly, whose work the world actually runs on. Her colleague in this method keeps a door two rooms down, by a river, with honey.',
+        ],
+      },
+      {
+        title: 'The Seeds',
+        paras: [
+          'So Zeus blinked, and sent Hermes down — the one god with a key to every floor of the world; his own first day is a door in this hall — to tell his uncle: give her back. And Hades, who is lawful the way winter is lawful, did not argue. He smiled — the hymn says he smiled with his brows, which will trouble you if you let it — and told Persephone she was free to go to her mother, and that she would be honored here always, queen of everything below. And then, quietly, as she rose to leave, he gave her pomegranate seeds, and she ate. Six, in most tellings. The hymn says he pressed them on her secretly; later tellers say she took them herself, knowing; and the door will not rule on it, because the ambiguity is the story now — whether the underworld caught her, or whether some part of the girl from the meadow reached for the fruit the way she had once reached for the narcissus: with both hands.',
+          'The law is one this hall has posted on other doors, in Japan and in Sumer: what you eat in the land of the dead makes you its citizen. Six seeds, six months — or a third of the year, in the hymn’s own arithmetic; the schedule varies, the principle never does. So the compromise was struck that you live inside to this day: for every seed, a share of the year below, and the rest above, with her mother. When she comes up, Demeter lets the world green — that is spring, arriving exactly as fast as a mother’s mood improves. When she goes down, the fields shut like a door: that is the fall of the year, and you have felt it in October air without knowing you were inside a custody arrangement between in-laws. But do not leave thinking she remained “the girl.” At Eleusis, for a thousand years, initiates were shown a secret about death that none of them ever wrote down, and came out unafraid. And in the oldest poems, when Odysseus sails to the land of the dead, it is not Hades he fears offending. It is dread Persephone — the queen. The meadow’s Kore ate six seeds and became the person half the year answers to. Some abductions end with a rescue. This one ended with a promotion, and the winter is her office hours.',
         ],
       },
     ],
