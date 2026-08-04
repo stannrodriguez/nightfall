@@ -11,8 +11,8 @@
 // Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
 // bottom-center, Aztec bottom-left, Chinese center, Egyptian bottom-right,
 // Sumerian lower-left edge, Irish top-left corner, Yoruba lower-center-right,
-// Slavic right edge. Minors lean toward the middle so the center of the sky
-// never reads as empty.
+// Slavic right edge, Inuit bottom left-of-center. Minors lean toward the
+// middle so the center of the sky never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
@@ -56,7 +56,7 @@ export const cultures = {
     color: '#9fe8c9',
     lineAlpha: 0.32,
     minorAlpha: 0.55,
-    label: { x: 36, y: 86 },
+    label: { x: 40, y: 88 },
     minors: [[38, 74], [48, 58]],
     lines: [
       [[46, 64], [38, 74]],
@@ -70,10 +70,10 @@ export const cultures = {
     lineAlpha: 0.32,
     minorAlpha: 0.55,
     label: { x: 9, y: 90 },
-    minors: [[10, 68], [26, 88]],
+    minors: [[14, 66], [24, 84]],
     lines: [
-      [[16, 78], [10, 68]],
-      [[16, 78], [26, 88]],
+      [[16, 78], [14, 66]],
+      [[16, 78], [24, 84]],
     ],
   },
   'Māori': {
@@ -98,6 +98,16 @@ export const cultures = {
       [[46, 42], [54, 42]],
       [[46, 42], [58, 48]],
       [[58, 48], [70, 44]],
+    ],
+  },
+  Inuit: {
+    color: '#cfe8f5',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 16, y: 94 },
+    minors: [[38, 84]],
+    lines: [
+      [[30, 88], [38, 84]],
     ],
   },
   Slavic: {
@@ -201,6 +211,7 @@ export const skyPos = {
   eshu: [62, 90],
   vasilisa: [95, 44],
   sadko: [96, 30],
+  sedna: [30, 88],
 };
 
 export const myths = [
@@ -1563,6 +1574,53 @@ export const myths = [
         paras: [
           'Sadko played, and the Tsar of the Sea began to dance. Understand what that means, physically: the floor of the ocean, dancing. His robes were current, his stamping was surge, and every figure of the dance went up through the water and arrived at the surface as weather. Above, the sea rose against ships that had done nothing; masts snapped; the drowned went down through the ceiling of Sadko’s concert like slow rain — and Sadko, watching the audience arrive, understood the economics of his own gift for the first time. The music was beautiful. The bill for it was being paid by strangers. And he could not stop, because the Tsar shouted play on, and one does not refuse the floor one is standing on.',
           'Through the reeling hall came an old man in plain dress, unwet — Saint Nicholas, whom the drowning call on, arriving as he does, without explanation — and he put a hand on the musician’s shoulder and gave him the only music criticism that matters in this hall: men are dying of your playing. Break your strings. Sadko tore them out mid-phrase, and the dance stopped with the sound, and the sea above went flat as a held breath. The Tsar, sweating current, tried the courtier’s trap instead: marry here; stay forever; choose any of my nine hundred daughters. On the saint’s whispered advice Sadko let the eight hundred and ninety-nine beauties pass and chose the last and plainest, the quiet one called Chernava — and did not so much as take her hand that night. He woke on a riverbank outside Novgorod, on the little river that bears the name Chernava, with his thirty ships coming up the water toward him, home before him. He built a church to Nicholas of the drowning, and — the singers insist — never played to open water again. The deep in this hall hoards plants, serpents, whole islands. This door is its strangest confession: it also loves music, and cannot be trusted with it.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'sedna',
+    name: 'Sedna, Mother of the Sea',
+    short: 'Sedna',
+    culture: 'Inuit',
+    realm: 'The Deep',
+    time: '6 min read',
+    accent: '#b8dff0',
+    pageBg: '#061019',
+    kicker: 'Inuit · Told in three nights',
+    epigraph: 'Her father cut her fingers from the gunwale. Every seal in the sea remembers.',
+    about:
+      'Told across the Inuit world in many forms and under many names — Sedna in Baffin Island tellings, Nuliajuk among the Netsilik, Sanna elsewhere — and written down from Inuit storytellers by ethnographers from Franz Boas in the 1880s to Knud Rasmussen in the 1920s. A young woman, deceived by a bird-spirit husband, is thrown from her father’s boat in a storm raised by the birds; her severed finger joints become the seals, the walrus, and the whales, and she sinks to the sea floor as mistress of them all. When she is wronged or the community breaks its obligations, she withholds the animals, and an angakkuq — a shaman — must travel down to comb the tangles from her hair, for she has no fingers to comb it herself. Tellings vary greatly from region to region; this one follows the widely recorded outline.',
+    doorGrad: 'linear-gradient(180deg,#0e2434,#050d14)',
+    doorBorder: 'rgba(184,223,240,.28)',
+    emblem:
+      'width:28px;height:22px;background:linear-gradient(#b8dff0,#b8dff0) top/100% 5px no-repeat,repeating-linear-gradient(90deg,#b8dff0 0 3px,transparent 3px 8px) bottom/100% 15px no-repeat;opacity:.85;animation:drift 5s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#e8f4fb 0%,#b8dff0 50%,rgba(184,223,240,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#080c10 0%,#122030 55%,#28425c 100%)',
+      'linear-gradient(180deg,#05080e 0%,#0a1420 55%,#142c42 100%)',
+      'linear-gradient(180deg,#04101a 0%,#0e2a44 55%,#265a7a 85%,#6aa8c2 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Fulmar’s Song',
+        paras: [
+          'Sedna would not marry. The hunters came from up and down the coast with good dogs and good boats, and she looked past every one of them, which in a land where a household is a survival strategy was not vanity but a kind of gamble, and everyone knew the stakes. Then a stranger kayaked out of the fog in fine furs, with a voice like weather clearing, and sang to her over the water: come to my country, where the tents are made of the softest skins, where the lamps never lack oil, where you will lie on bearskins and eat well every day. The song did not mention that he was a fulmar — a grey seabird — wearing a man the way a man wears a parka. Spirits do this in the north; the stories are full of doors that look like husbands.',
+          'She went with him, and the song fell apart at the seams the way lies do when you try to live indoors with them. The tent of soft skins was fishskin, snapping in the wind; the bearskin bed was walrus hide; the good food was what a seabird eats, and she was colder than she had ever been at home, married to a voice. When her father came along the coast in spring to visit, he found his proud daughter weeping in a fishskin tent, and he did what fathers in the old stories do, sometimes rightly and never carefully: he killed the bird-husband, put Sedna in his boat, and pushed off for home across open water. Behind them, the fulmars found the body. Seabirds mourn, it turns out. They mourn like a storm coming.',
+        ],
+      },
+      {
+        title: 'The Storm',
+        paras: [
+          'The birds came low over the water, crying, and their wings beat up a wind, and the wind stood the sea on its edges. This is the fulmars’ storm, and the old people say you can still hear the grief in a fulmar’s cry before bad weather. The little boat went up walls of water and down the far side, and the father — bailing, capsizing, capsized in his own heart — did the calculation that this door will not soften for you: the sea wanted what he had taken. To lighten the boat, to buy the calm, he took his daughter and put her over the side.',
+          'She did what the living do. She held on. Her fingers closed on the gunwale, white on the wood, and the boat tipped toward her weight and the storm screamed — and her father cut her fingers away at the first joints. What fell into the water did not sink as flesh; each joint turned in the dark swell and became a seal, sleek and whole, and dived. She gripped with what remained; he cut again at the second joints, and the pieces became the walrus. She pressed the stumps of her hands to the wood one last time, and the last cutting became the whales, going down like slow islands. Then there was nothing left to hold with, and Sedna went down after her own fingers, into the calm below the storm, which received her — this is the story’s mercy, and its justice — as what she now was: the mother of everything the sea contains that a person can eat. The storm stopped. The father rowed home to a shore that has never told his side of it.',
+        ],
+      },
+      {
+        title: 'The One Down There',
+        paras: [
+          'She lives at the bottom still, in a house of stone and whale rib, and the hunters do not often say her name; they call her the one down there, which is not fear exactly, but the way you speak of a landlord whose terms you know by heart. All the sea animals are hers — they are her hands, remember, out swimming — and when the people above break their obligations, when the rules that keep the community alive are treated carelessly, the offenses drift down through the water and settle into her hair as grime and tangles. And she cannot comb them out. She has no fingers. Sit with that detail a moment; the story has been building it since the gunwale. The wrong done to her is permanent, and it is the exact reason the world above must keep coming back down to her, forever.',
+          'So when the seals vanish and the hunting fails and the lamps go dim, the angakkuq — the shaman — makes the hardest journey in the northern world: down, through the sea floor, past guardians the tellings describe variously and none describe kindly, to the house at the bottom. And there the shaman does not fight anything. The shaman takes up a comb, and combs the mother of the sea’s hair, gently, tangle by tangle, like a daughter tending a mother, and tells her she is remembered; and Sedna, eased, releases the animals — on the understanding, always renewed and never final, that the people will keep their side. The shaman returns and names the broken obligations aloud, and the community answers for itself, and the seals come back. Every other door in this realm holds a monster or a king. The deep of this door is a wronged girl the world must keep apologizing to — and the apology is combing. The north has kept that appointment for a very long time, and when a seal surfaces in the breathing hole, it is on loan from her.',
         ],
       },
     ],
