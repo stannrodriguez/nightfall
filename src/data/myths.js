@@ -108,6 +108,7 @@ export const cultures = {
     minors: [[98, 56]],
     lines: [
       [[95, 44], [98, 56]],
+      [[96, 30], [95, 44]],
     ],
   },
   Yoruba: {
@@ -199,6 +200,7 @@ export const skyPos = {
   oshun: [60, 66],
   eshu: [62, 90],
   vasilisa: [95, 44],
+  sadko: [96, 30],
 };
 
 export const myths = [
@@ -1514,6 +1516,53 @@ export const myths = [
         paras: [
           'She walked home a night and a day with the skull burning on its stick, and near the end of it, worn through, she considered pitching the horrible thing into the ditch and being done. Do not, said the skull — the doll and the skull agreeing, for once, dead mother and dead stranger in one policy — carry me to the ones who sent you. So she carried it in through the gate, and the household came running with genuine relief, because here is the detail the tale sharpens like a knife: since the hour she had left, no fire in that house would stay lit. Candles guttered, coals died, borrowed flames went out at the threshold. The house had been sitting in the cold dark it had ordered for somebody else, waiting for delivery.',
           'The skull was set on the table, and its burning eyes found the stepmother and the two daughters, and followed them. Not the walls, not the girl: them. They fled to the attic and the eyes followed through the floor; they fled to the yard and the eyes were at every window; and by morning there was nothing in that house of the three of them but ash, which the tale reports with the satisfaction of a ledger balancing. Vasilisa buried the skull, gently, like the debt it was, and left. She lodged with an old woman in the town, and spun thread too fine for any loom, and wove linen too fine for any needle but her own, and the shirts that came of it reached the tsar, and the tsar, being the ending this kind of story keeps in stock, sent for the weaver. She married him. The doll stayed in her pocket to the end of her life, and was fed. Every other door in this hall’s fire realm burns a world; this one burns one household, precisely, and spares the girl carrying the light — which is the Russian note exactly: the fire you send a child to fetch will come back knowing the address.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'sadko',
+    name: 'Sadko and the Tsar of the Sea',
+    short: 'Sadko',
+    culture: 'Slavic',
+    realm: 'The Deep',
+    time: '6 min read',
+    accent: '#8fb8e0',
+    pageBg: '#070c12',
+    kicker: 'Slavic · Told in three nights',
+    epigraph: 'He played so well the sea itself wanted him. The sea keeps its favorites.',
+    about:
+      'A bylina — a sung epic — of the merchant city of Novgorod, taken down from oral singers in the eighteenth and nineteenth centuries. Sadko, a poor gusli player, charms the Tsar of the Sea from the shore of Lake Ilmen and wins a wager that makes him the richest merchant in the city; years later the sea stops his ships and takes him below as tribute. His playing sets the Sea Tsar dancing, the dance raises storms that drown sailors above, and it is Saint Nicholas, patron of the drowning, who tells him to break his strings. Rimsky-Korsakov made the tale into an opera, and Novgorod still shows visitors the church Sadko is said to have raised.',
+    doorGrad: 'linear-gradient(180deg,#101e30,#060b12)',
+    doorBorder: 'rgba(143,184,224,.28)',
+    emblem:
+      'width:30px;height:22px;background:repeating-linear-gradient(90deg,#8fb8e0 0 2px,transparent 2px 7px);clip-path:polygon(0 0,100% 0,72% 100%,0 100%);opacity:.85;animation:drift 4.8s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#d8e8f8 0%,#8fb8e0 50%,rgba(143,184,224,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#080b10 0%,#12202e 55%,#243e52 100%)',
+      'linear-gradient(180deg,#05080c 0%,#0c1622 55%,#182e44 100%)',
+      'linear-gradient(180deg,#061018 0%,#0e2c40 55%,#1e5468 85%,#4a94a0 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Gusli Player',
+        paras: [
+          'Sadko was the musician the feasts of Novgorod called when the better ones were busy, and then one season they stopped calling at all. So he took his gusli — the little lap-harp of the north, strings over a hollow wing of wood — down to the shore of Lake Ilmen, and played for no one, which is the concert at which every musician is at their best. He played the day down and the evening open. And the lake began to listen: the water shivered against the wind’s advice, parted, and up through it came a crowned immensity with a beard like weed and current — the Tsar of the Sea, who keeps the bottom of every water the rivers of Novgorod can reach.',
+          'Your playing reached my hall, said the Tsar, and my whole court danced. A service is owed. And he taught the poor man a wager: pledge your head against the wealth of the merchants of Novgorod that Lake Ilmen holds fish with fins of pure gold. Sadko went back to the city and made the bet at the next feast — his head, laughed the merchants, against their storehouses — and the nets went out into water that had already agreed. Three casts, three golden-finned fish, and the storehouses changed hands. The bylina is a merchant city’s poem, and it takes a merchant city’s pleasure in the itemized miracle: the poor musician of Novgorod woke up the richest man in it, on the strength of an audience he could not see. Remember, through the wealth that follows, what was actually purchased down there: the sea had heard him once, and had not finished listening.',
+        ],
+      },
+      {
+        title: 'The Tribute',
+        paras: [
+          'Years on, thirty scarlet ships of his goods ran the Volkhov to the sea, and on the open water the flagship stopped. Not becalmed — held: sails full, hull motionless, the particular horror of arrest with no officer in sight. Sadko understood before his sailors did, because a debtor knows the hand of the creditor. They threw a cask of gold overboard; the sea kept the gold and the grip both, because the sea is not a beggar and had ordered something specific. Then lots were thrown, to learn whom the water wanted, and here the bylina permits itself a rich man’s squirm: Sadko rigged the draw once, twice — hop-lots of hop wood against oak — and every honest and dishonest cast came up the same name, his own, floating when all others sank, or sinking when all others floated. The sea does not read lots. It reads passengers.',
+          'He accepted it the way he had accepted the first miracle: professionally. He dictated bequests to his wife and to the churches, took his gusli, and had them lower an oak plank over the side; and the moment he lay on it the ships tore off like released hounds, and the water closed over him gently as a curtain. He did not drown. He sank as a guest sinks, and stood at last on the floor of everything, before a palace of white stone whose windows were lit with the light that has no sun in it. Inside, on a throne of amber, sat the Tsar of the Sea, exactly as patient as he had been for twenty years. You took my wealth, said the Tsar, without malice, as one states an account. You did not come to play. Play now.',
+        ],
+      },
+      {
+        title: 'The Broken Strings',
+        paras: [
+          'Sadko played, and the Tsar of the Sea began to dance. Understand what that means, physically: the floor of the ocean, dancing. His robes were current, his stamping was surge, and every figure of the dance went up through the water and arrived at the surface as weather. Above, the sea rose against ships that had done nothing; masts snapped; the drowned went down through the ceiling of Sadko’s concert like slow rain — and Sadko, watching the audience arrive, understood the economics of his own gift for the first time. The music was beautiful. The bill for it was being paid by strangers. And he could not stop, because the Tsar shouted play on, and one does not refuse the floor one is standing on.',
+          'Through the reeling hall came an old man in plain dress, unwet — Saint Nicholas, whom the drowning call on, arriving as he does, without explanation — and he put a hand on the musician’s shoulder and gave him the only music criticism that matters in this hall: men are dying of your playing. Break your strings. Sadko tore them out mid-phrase, and the dance stopped with the sound, and the sea above went flat as a held breath. The Tsar, sweating current, tried the courtier’s trap instead: marry here; stay forever; choose any of my nine hundred daughters. On the saint’s whispered advice Sadko let the eight hundred and ninety-nine beauties pass and chose the last and plainest, the quiet one called Chernava — and did not so much as take her hand that night. He woke on a riverbank outside Novgorod, on the little river that bears the name Chernava, with his thirty ships coming up the water toward him, home before him. He built a church to Nicholas of the drowning, and — the singers insist — never played to open water again. The deep in this hall hoards plants, serpents, whole islands. This door is its strangest confession: it also loves music, and cannot be trusted with it.',
         ],
       },
     ],
