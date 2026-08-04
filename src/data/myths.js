@@ -25,6 +25,7 @@ export const cultures = {
       [[26, 42], [28, 58]],
       [[12, 46], [26, 42]],
       [[26, 42], [36, 48]],
+      [[20, 30], [20, 18]],
     ],
   },
   Norse: {
@@ -81,9 +82,9 @@ export const cultures = {
     lineAlpha: 0.32,
     minorAlpha: 0.55,
     label: { x: 24, y: 8 },
-    minors: [[26, 20], [54, 16]],
+    minors: [[24, 14], [54, 16]],
     lines: [
-      [[34, 12], [26, 20]],
+      [[34, 12], [24, 14]],
       [[34, 12], [54, 16]],
       [[54, 16], [42, 26]],
     ],
@@ -213,6 +214,7 @@ export const skyPos = {
   sadko: [96, 30],
   sedna: [30, 88],
   persephone: [26, 42],
+  phaethon: [20, 18],
 };
 
 export const myths = [
@@ -1669,6 +1671,53 @@ export const myths = [
         paras: [
           'So Zeus blinked, and sent Hermes down — the one god with a key to every floor of the world; his own first day is a door in this hall — to tell his uncle: give her back. And Hades, who is lawful the way winter is lawful, did not argue. He smiled — the hymn says he smiled with his brows, which will trouble you if you let it — and told Persephone she was free to go to her mother, and that she would be honored here always, queen of everything below. And then, quietly, as she rose to leave, he gave her pomegranate seeds, and she ate. Six, in most tellings. The hymn says he pressed them on her secretly; later tellers say she took them herself, knowing; and the door will not rule on it, because the ambiguity is the story now — whether the underworld caught her, or whether some part of the girl from the meadow reached for the fruit the way she had once reached for the narcissus: with both hands.',
           'The law is one this hall has posted on other doors, in Japan and in Sumer: what you eat in the land of the dead makes you its citizen. Six seeds, six months — or a third of the year, in the hymn’s own arithmetic; the schedule varies, the principle never does. So the compromise was struck that you live inside to this day: for every seed, a share of the year below, and the rest above, with her mother. When she comes up, Demeter lets the world green — that is spring, arriving exactly as fast as a mother’s mood improves. When she goes down, the fields shut like a door: that is the fall of the year, and you have felt it in October air without knowing you were inside a custody arrangement between in-laws. But do not leave thinking she remained “the girl.” At Eleusis, for a thousand years, initiates were shown a secret about death that none of them ever wrote down, and came out unafraid. And in the oldest poems, when Odysseus sails to the land of the dead, it is not Hades he fears offending. It is dread Persephone — the queen. The meadow’s Kore ate six seeds and became the person half the year answers to. Some abductions end with a rescue. This one ended with a promotion, and the winter is her office hours.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'phaethon',
+    name: 'Phaethon and the Chariot of the Sun',
+    short: 'Phaethon',
+    culture: 'Greek',
+    realm: 'The Sky',
+    time: '6 min read',
+    accent: '#f4cd55',
+    pageBg: '#100b06',
+    kicker: 'Greek · Told in three nights',
+    epigraph: 'His father swore by the Styx to grant him anything. He asked for the reins.',
+    about:
+      'Told at glorious length by Ovid in Book Two of the Metamorphoses, with the tale already old when he polished it. Phaethon, taunted about his parentage, walks east to the palace of the sun, where his father Helios swears by the river Styx — the one oath no god can take back — to grant him anything, and the boy asks to drive the sun’s chariot for a single day. The horses bolt with the light weight, the world burns, and Zeus ends the ride with a thunderbolt. He falls into the river Eridanus; his mourning sisters become poplar trees whose tears harden into amber; his friend Cygnus becomes the swan, and a constellation. His epitaph, in Ovid, concedes the crash and keeps the daring.',
+    doorGrad: 'linear-gradient(180deg,#2e2008,#0f0a04)',
+    doorBorder: 'rgba(244,205,85,.3)',
+    emblem:
+      'width:30px;height:30px;border-radius:50%;border:3px solid #f4cd55;box-sizing:border-box;background:linear-gradient(#f4cd55,#f4cd55) center/100% 2.5px no-repeat,linear-gradient(#f4cd55,#f4cd55) center/2.5px 100% no-repeat;opacity:.9;animation:sunrise 5s ease-in-out infinite',
+    orb: 'radial-gradient(circle,#fbedbb 0%,#f4cd55 50%,rgba(244,205,85,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0f0a05 0%,#2e1e08 55%,#5e400e 100%)',
+      'linear-gradient(180deg,#140b05 0%,#3c1c08 55%,#7c380e 100%)',
+      'linear-gradient(180deg,#0d0c08 0%,#26220e 55%,#4e4418 85%,#a08c3a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Question of the Father',
+        paras: [
+          'It started, as a remarkable amount of Greek tragedy starts, with a boy being teased. Phaethon boasted at school that his father was the sun, and Epaphus — a son of Zeus, secure in his paperwork — laughed at him: your mother invented that father to cover an ordinary story. The boy went home burning in the way only an insulted teenager burns, at temperatures the sun itself should have taken as a warning, and demanded the truth of his mother. Clymene swore it was so, and pointed east: the land where he rises is not far from ours. Go and ask him yourself. It is the only errand in mythology on which a boy has walked to the sunrise out of spite, and it worked.',
+          'The palace of the sun stood on columns of gold and carbuncle, doors of silver worked with the whole world in relief — Ovid spends lines on those doors the way the boy must have spent his staring — and on the throne, in robes of purple, sat Helios in a light no son had to squint at, because a father dims for you; that detail is the tenderest thing in the story. Why have you come, child? — and the whole playground grievance poured out of him: they say I am not yours. Prove it. And Helios, who had watched everything under heaven since the first morning and should therefore have known better than anyone what a promise costs, put off his crown of rays, embraced the boy, and swore by the black river Styx — the one oath the universe holds even gods to — to grant him any proof he named. You can hear the door of this story click shut in that sentence. The boy did not want a hug, or a declaration, or a constellation named after him. He was the son of the sun and had spent his whole life on the ground. He wanted the chariot.',
+        ],
+      },
+      {
+        title: 'The Reins',
+        paras: [
+          'What followed was the longest, most desperate no a father has ever been forbidden to say. Helios begged — Ovid gives him a full speech, and it is a route briefing and a plea braided together: the first climb is so steep the horses can barely take it fresh; the middle of the sky is so high that even I grow afraid, looking down; the descent is a fall with a schedule. The road is ambushed — you will drive past the horns of the Bull, the Lion’s jaws, the Scorpion’s arms curved on one side and the Crab’s on the other. Not even Zeus, who throws the thunder, will drive this team. Ask for anything else. Ask for the whole world. The boy heard it the way the young hear route briefings: as a description of how exciting the morning was about to be. And the oath stood behind them both like a bailiff. By the Styx, anything — the sun had said it, and the Styx does not renegotiate.',
+          'So dawn came up on the worst succession in history. The Hours yoked the four horses — Pyrois, Eous, Aethon, Phlegon, fire-footed, breathing light — while Helios did the only fathering left in reach: he rubbed sacred ointment into the boy’s face so it would not char, set the crown of rays on his head, and stood there issuing instructions past the point of listening — keep to the wheel-ruts of my track; not too high or you burn heaven; not too low or you burn earth; the middle way is safest. If the counsel sounds familiar, it should: two doors from here, another father said the same words while strapping wings of wax to another boy. The middle way. It is the oldest flight instruction in this hall, and it has never once been followed. The gates of morning opened. The horses leaned into harness, found the chariot strangely light, and understood, with one shared equine thought, that no one real was holding the reins.',
+        ],
+      },
+      {
+        title: 'The Fall',
+        paras: [
+          'They bolted off the track before the first turn. Too high, and the sky itself began to smoke — Ovid says the Moon, driving her own team below, watched her brother’s horses running above her, wrongly, and was amazed; too low, and the world caught. Mountains burned by name, a roll call of everywhere; rivers boiled in their beds or fled underground; the sea shrank back and fish kept to the bottom of what was left. The boy in the chariot could see the whole earth below him on fire and could no longer remember the horses’ names to shout at them. He had wanted proof of whose son he was. He was getting it: the inheritance, delivered all at once, with no father’s hands between him and the weight of it. And Earth herself — scorched, cracked, her voice full of ash — cried up to Zeus the oldest emergency in the world: if the sea goes, if the sky goes, everything falls into ancient chaos. Act.',
+          'Zeus acted the only way Zeus acts. The thunderbolt took the boy out of the chariot — fire, Ovid notes with terrible neatness, put out by fire — and Phaethon fell the long way down like a star that does not land so much as conclude, his hair burning, into the broad river Eridanus, which put him out and kept him. The river nymphs buried him and cut the stone that makes the whole story stand still: HERE LIES PHAETHON, WHO DROVE HIS FATHER’S CHARIOT. HE COULD NOT HOLD IT — YET HE FELL DARING GREATLY. His sisters came to weep at the bank and could not stop, and rooted there as poplar trees, and weep still: their tears harden in the sun their brother dropped, and are amber — grief you can wear, which the trade routes of the whole ancient world would carry away by the shipload. His friend Cygnus dove and dove for the body until the gods, out of pity, made him the swan, who searches water head-down to this day, and set him in the sky. This hall keeps two boys who fell out of it, a few stars apart; the other wore wax. Read both doors before you decide the moral is don’t fly. The Greeks cut a kinder one into the stone: he fell — daring greatly. And the sun, they say, refused to drive for a day, and the world went unlit, out of respect.',
         ],
       },
     ],
