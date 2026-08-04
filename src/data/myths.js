@@ -75,6 +75,7 @@ export const cultures = {
     lines: [
       [[16, 78], [14, 66]],
       [[16, 78], [24, 84]],
+      [[16, 78], [30, 70]],
     ],
   },
   'Māori': {
@@ -215,6 +216,7 @@ export const skyPos = {
   sedna: [30, 88],
   persephone: [26, 42],
   phaethon: [20, 18],
+  quetzalcoatl: [30, 70],
 };
 
 export const myths = [
@@ -1718,6 +1720,53 @@ export const myths = [
         paras: [
           'They bolted off the track before the first turn. Too high, and the sky itself began to smoke — Ovid says the Moon, driving her own team below, watched her brother’s horses running above her, wrongly, and was amazed; too low, and the world caught. Mountains burned by name, a roll call of everywhere; rivers boiled in their beds or fled underground; the sea shrank back and fish kept to the bottom of what was left. The boy in the chariot could see the whole earth below him on fire and could no longer remember the horses’ names to shout at them. He had wanted proof of whose son he was. He was getting it: the inheritance, delivered all at once, with no father’s hands between him and the weight of it. And Earth herself — scorched, cracked, her voice full of ash — cried up to Zeus the oldest emergency in the world: if the sea goes, if the sky goes, everything falls into ancient chaos. Act.',
           'Zeus acted the only way Zeus acts. The thunderbolt took the boy out of the chariot — fire, Ovid notes with terrible neatness, put out by fire — and Phaethon fell the long way down like a star that does not land so much as conclude, his hair burning, into the broad river Eridanus, which put him out and kept him. The river nymphs buried him and cut the stone that makes the whole story stand still: HERE LIES PHAETHON, WHO DROVE HIS FATHER’S CHARIOT. HE COULD NOT HOLD IT — YET HE FELL DARING GREATLY. His sisters came to weep at the bank and could not stop, and rooted there as poplar trees, and weep still: their tears harden in the sun their brother dropped, and are amber — grief you can wear, which the trade routes of the whole ancient world would carry away by the shipload. His friend Cygnus dove and dove for the body until the gods, out of pity, made him the swan, who searches water head-down to this day, and set him in the sky. This hall keeps two boys who fell out of it, a few stars apart; the other wore wax. Read both doors before you decide the moral is don’t fly. The Greeks cut a kinder one into the stone: he fell — daring greatly. And the sun, they say, refused to drive for a day, and the world went unlit, out of respect.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'quetzalcoatl',
+    name: 'Quetzalcoatl and the Bones of the Dead',
+    short: 'Quetzalcoatl',
+    culture: 'Aztec',
+    realm: 'The Underworld',
+    time: '6 min read',
+    accent: '#7de0b0',
+    pageBg: '#0a100c',
+    kicker: 'Aztec · Told in three nights',
+    epigraph: 'He went down to steal humanity’s bones back. We are made of how it went.',
+    about:
+      'From the Leyenda de los Soles, set down in Nahuatl in 1558, and echoed across the other early Nahua sources. Between the fourth world and the fifth, the bones of the drowned former people lie in Mictlan, the land of the dead. Quetzalcoatl — the Feathered Serpent, god of wind — descends to reclaim them; Mictlantecuhtli, lord of the dead, sets him the trial of sounding a conch with no holes, grants the bones, and revokes the grant; a pit and a startled flock of quail break the stolen bones into pieces. Ground like maize by the goddess Quilaztli and moistened with the blood of the penitent gods, the fragments become humankind — the macehualtin, “those earned by penance” — which is why people come in different sizes, and why, the Nahua said, every life carries a debt.',
+    doorGrad: 'linear-gradient(180deg,#0d2a1e,#050f0a)',
+    doorBorder: 'rgba(125,224,176,.3)',
+    emblem:
+      'width:26px;height:26px;border-radius:50%;border:3px solid #7de0b0;border-right-color:transparent;box-sizing:border-box;background:radial-gradient(circle at 62% 50%,#7de0b0 0 3px,transparent 4px);transform:rotate(-20deg);opacity:.85;animation:drift 4.6s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#d2f5e4 0%,#7de0b0 50%,rgba(125,224,176,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0a0d0a 0%,#182016 55%,#2e3c28 100%)',
+      'linear-gradient(180deg,#0a080c 0%,#161020 55%,#281c38 100%)',
+      'linear-gradient(180deg,#0d0a0c 0%,#241420 55%,#4e2830 85%,#a05a48 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Empty World',
+        paras: [
+          'Between the fourth world and the fifth there was a sun in the sky and no one under it. The previous people had gone down with their age when the waters took it — this hall keeps the ledger of those endings behind the door of the Fifth Sun, a few steps along — and their bones had done what bones do in that country: they had gone to Mictlan, the land of the dead, nine levels down, where Mictlantecuhtli is lord and nothing he has ever received has been returned. The gods stood in the new morning at Teotihuacan and faced the problem of a lit and furnished world with no tenants. Who will make the people? — and the harder question under it: the making requires materials, and the materials are in the one vault that does not open outward.',
+          'Quetzalcoatl said he would go. He was the Feathered Serpent — the impossible animal, plumage and coil, the sky’s bird and the earth’s snake in one body, which made him the only god shaped like the errand: someone who belongs a little to both directions. He is also the wind, and the wind is the only thing that visits everywhere and cannot be kept. Some tellings send his twin down with him — Xolotl, the dog-headed one, for every descent in every hall goes better with a dog — and the two of them went down the nine descents, past the clashing mountains, past the obsidian wind, down to the throne where the lord of the dead sits with his skeleton court, patient as inventory, and asked him, politely, for every bone he had.',
+        ],
+      },
+      {
+        title: 'The Conch',
+        paras: [
+          'Mictlantecuhtli did not say no. Lords of the dead never say no in this hall; they set terms. Very well, he said: sound my conch trumpet, and carry it four times around my kingdom, and the bones are yours — and he handed over a conch with no holes in it. A solid shell. A trumpet the way a walled-up door is a door. It is the same move the underworld always makes — the perfect rule, the impossible instrument — and it assumes the petitioner will do the honorable thing and fail. But Quetzalcoatl was the wind, and the wind has colleagues everywhere. He called the worms, who understand solid things better than lords do, and they drilled the shell through; and then he called the bees, and they went in by the wormholes, and the conch of Mictlan roared with borrowed wings until the nine levels rang like one struck bowl. The lord of the dead listened to his own unbeatable test being passed by teamwork, and said, in the flat voice of a ruler already drafting the betrayal: take them.',
+          'And then, the moment the Feathered Serpent’s back was turned, Mictlantecuhtli told his court: go and tell him the bones must stay. Death repents of its generosity; that is not villainy, it is policy — the ways of the underworld are perfect, as a gatekeeper says elsewhere in this hall, and they include the clawback. Quetzalcoatl heard the messengers coming and ran his own counter-play: he had his double call out, loudly, for the court to hear — I will leave them! — while he gathered the bones of the former people into a bundle, the long bones and the small, the men’s and the women’s, and made for the ascents at a dead sprint with the whole vault of humanity on his back. For one clean moment the heist had worked: the wind was outrunning death uphill, carrying everyone you have ever met.',
+        ],
+      },
+      {
+        title: 'The Pit and the Blood',
+        paras: [
+          'Mictlantecuhtli did not chase. Lords of the dead do not run; they landscape. Dig a pit, he said, on the road out — and the pit was dug, and then the oldest trick in the world was played on the god of wind: a flock of quail, startled up at exactly the wrong moment, burst around his head in a drum-roll of wings, and Quetzalcoatl stumbled, and fell into the pit, and the bones went down with him and broke. Not shattered into dust — worse: broken and mixed, long pieces and short pieces, and the quail gnawed at them while the god lay senseless. When he woke he wept — the sources let him weep — and then he did the thing that makes this door worth keeping in the wall: he gathered every piece anyway. Every splinter. He climbed out of death’s pit with a bundle of damaged goods and carried it the rest of the way, because the alternative was a lit world with no one in it.',
+          'He brought the bones to Tamoanchan, the misted place where things are begun, and the goddess Quilaztli — Cihuacoatl, the Snake Woman — ground them on her stone like maize, into a paste in a jade bowl, because in that country people and corn have always been one recipe. And then the gods did what the whole Mexica cosmos runs on: they paid. Quetzalcoatl first, piercing himself, bleeding into the bowl, and the others after, each a debt of blood into the meal — and from that kneading, people. The name the Nahua gave us keeps the receipt: macehualtin, “those earned by penance” — earned, not made; bought back, at cost, from a lord who keeps everything. And when you notice that people come tall and short and every size between, the Leyenda has its answer ready, dry as a codex margin: the bones broke in the pit, and were gathered anyway. We are the mended jar of this hall’s whole argument — cracked in the underworld, ground like corn, moistened with a god’s apology — and the door asks only that you carry the two facts together: how cheap the material was, and how much was paid for it.',
         ],
       },
     ],
