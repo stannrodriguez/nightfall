@@ -83,11 +83,12 @@ export const cultures = {
     lineAlpha: 0.32,
     minorAlpha: 0.55,
     label: { x: 24, y: 8 },
-    minors: [[24, 14], [54, 16]],
+    minors: [[24, 14], [50, 22]],
     lines: [
       [[34, 12], [24, 14]],
-      [[34, 12], [54, 16]],
-      [[54, 16], [42, 26]],
+      [[34, 12], [50, 22]],
+      [[50, 22], [42, 26]],
+      [[34, 12], [48, 6]],
     ],
   },
   Chinese: {
@@ -217,6 +218,7 @@ export const skyPos = {
   persephone: [26, 42],
   phaethon: [20, 18],
   quetzalcoatl: [30, 70],
+  mahuika: [48, 6],
 };
 
 export const myths = [
@@ -1767,6 +1769,53 @@ export const myths = [
         paras: [
           'Mictlantecuhtli did not chase. Lords of the dead do not run; they landscape. Dig a pit, he said, on the road out — and the pit was dug, and then the oldest trick in the world was played on the god of wind: a flock of quail, startled up at exactly the wrong moment, burst around his head in a drum-roll of wings, and Quetzalcoatl stumbled, and fell into the pit, and the bones went down with him and broke. Not shattered into dust — worse: broken and mixed, long pieces and short pieces, and the quail gnawed at them while the god lay senseless. When he woke he wept — the sources let him weep — and then he did the thing that makes this door worth keeping in the wall: he gathered every piece anyway. Every splinter. He climbed out of death’s pit with a bundle of damaged goods and carried it the rest of the way, because the alternative was a lit world with no one in it.',
           'He brought the bones to Tamoanchan, the misted place where things are begun, and the goddess Quilaztli — Cihuacoatl, the Snake Woman — ground them on her stone like maize, into a paste in a jade bowl, because in that country people and corn have always been one recipe. And then the gods did what the whole Mexica cosmos runs on: they paid. Quetzalcoatl first, piercing himself, bleeding into the bowl, and the others after, each a debt of blood into the meal — and from that kneading, people. The name the Nahua gave us keeps the receipt: macehualtin, “those earned by penance” — earned, not made; bought back, at cost, from a lord who keeps everything. And when you notice that people come tall and short and every size between, the Leyenda has its answer ready, dry as a codex margin: the bones broke in the pit, and were gathered anyway. We are the mended jar of this hall’s whole argument — cracked in the underworld, ground like corn, moistened with a god’s apology — and the door asks only that you carry the two facts together: how cheap the material was, and how much was paid for it.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'mahuika',
+    name: 'Māui and the Fire Goddess',
+    short: 'Mahuika',
+    culture: 'Māori',
+    realm: 'Fire & Ending',
+    time: '6 min read',
+    accent: '#f5915e',
+    pageBg: '#120906',
+    kicker: 'Māori · Told in three nights',
+    epigraph: 'He put out every fire in the world to see where fire comes from. His grandmother kept it under her nails.',
+    about:
+      'A Māori telling known throughout Aotearoa, with cousins across Polynesia. Curious about where fire comes from, Māui extinguishes every cooking fire in the village so that someone will have to go and ask — and the someone is him. Mahuika, the fire goddess, his own ancestress, keeps flame in her fingernails; she gives him one, and he quenches it, and returns, again and again, until in fury she hurls her last nail after him and sets the world alight. Māui escapes as a hawk and calls the rain, and Mahuika’s last fire takes refuge in the kaikōmako and its fellow trees — which is why fire is coaxed out of their dry wood by rubbing to this day. His other exploits hang elsewhere in this hall: the snared sun, and the fished-up land.',
+    doorGrad: 'linear-gradient(180deg,#331508,#100704)',
+    doorBorder: 'rgba(245,145,94,.3)',
+    emblem:
+      'width:20px;height:26px;border-radius:50% 50% 50% 0;background:#f5915e;transform:rotate(-45deg);box-shadow:0 0 14px rgba(245,145,94,.5);opacity:.9;animation:sunrise 4.6s ease-in-out infinite',
+    orb: 'radial-gradient(circle,#fad3b8 0%,#f5915e 50%,rgba(245,145,94,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0b0908 0%,#1c1210 55%,#33201a 100%)',
+      'linear-gradient(180deg,#100806 0%,#2e1408 55%,#5c280c 100%)',
+      'linear-gradient(180deg,#120a06 0%,#38180a 55%,#7c3c12 85%,#d98a3a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Fires Go Out',
+        paras: [
+          'You have met Māui twice in this hall already — beating the sun into a slower orbit at one door, hauling a country out of the sea at another — so you know the shape of him by now: youngest brother, chin first, solver of problems the world had not yet agreed were problems. This time the problem was a question. Fire came from the embers, and the embers came from yesterday’s embers, and yesterday’s from the day before — but where did fire come from? Nobody knew. Everybody tended; nobody knew. And Māui discovered that the question had a terrible property: it could not be answered while a single fire still burned, because as long as the embers held, no one would ever have to go and find out.',
+          'So that night he went from house to house through the sleeping village and put every fire in the world out. Cooking fires, watch fires, the banked coals under their blankets of ash — all of it, dark by morning. The village woke to cold food and colder fury, and the elders held the exact meeting Māui had scheduled for them: someone must go to Mahuika, the goddess of fire, and beg a new flame. Silence. Mahuika lived in a burning cave at the edge of the world, and her temper was considered part of the landscape. Then Māui — who had, remember, created this vacancy — volunteered for it, with the modesty of an arsonist offering to fetch water. His mother agreed, because he would go anyway, and gave him the only protection that ever works in these stories: etiquette. She is your ancestress, Māui. Fire is in the family. Be respectful. He promised. She had raised him; she knew what his promises weighed; she sent him anyway, because that, too, is in the family.',
+        ],
+      },
+      {
+        title: 'The Fingernail',
+        paras: [
+          'Mahuika filled her cave the way heat fills an oven. Her hair moved without wind; her breath came visible, like the shimmer above stones at noon; and when she spread her hands, Māui saw where fire came from at last: it lived in her fingernails — ten nails, ten flames, the whole world’s supply of beginning kept at the ends of an old woman’s hands. She looked down at the small visitor and asked who he was, in a voice like a settling log, and he gave his genealogy — in Aotearoa you arrive as your ancestors or you have not arrived — and the fire goddess softened, because at the end of the recitation stood herself. A grandson. Come for fire, as family should. She drew out one nail, one whole flame of the ten, and laid it in his hands like an inheritance.',
+          'He thanked her beautifully — he did everything beautifully — walked around the first bend, and drowned the flame in a stream. Then he came back, arranging his face. Grandmother, I stumbled; it fell in the water. She clicked her tongue and gave him a second nail. The second nail met the same stream. A third. A fourth. Understand what he was doing, because the tale is exact about it: he was not greedy, and he was not clumsy. He was counting. He wanted to know where fire ends — whether the source had a bottom — and the only way to sound that depth was to keep asking it for more. It is the scientist’s vice wearing the trickster’s face, and it has burned down more than one world since. Nail after nail she pulled for her limping, apologetic, unlucky grandson, until Mahuika stood in her cave with one fingernail left alight — and did the arithmetic of nine identical accidents, and understood, all at once and completely, what had been visiting her.',
+        ],
+      },
+      {
+        title: 'The Last Nail',
+        paras: [
+          'She did not hand over the tenth nail. She tore it out and dashed it to the ground at his feet, and said something the tellings render variously but always with the same shape: you want fire, descendant? Have all of it. The world caught. The cave, the scrub, the ridgelines, the horizon — fire with no hearth to it, fire returned to what it is when nobody’s grandmother is holding it. Māui ran, and the fire ran faster, and he did the thing he keeps in reserve for the moments his cleverness catches up with him: he changed. As the kāhu, the hawk, he went up over the burning country — and the fire reached up after him, which is why the hawk’s feathers are scorched brown at the edges to this day; every bird wears the story it survived.',
+          'Even wings were not going to be enough. So Māui called on the ancestors he had not yet exhausted — to Tāwhirimātea of the winds and the rain gods of the long names — and the sky answered for the boy the way the sky answers family: with everything. Rain fell until the fire that had been ten fingernails was beaten down out of the hills, until Mahuika herself was nearly quenched in her own cave. And here is the pivot the whole door turns on: dying, the last of her fire fled — and she flung it into the trees. Into the kaikōmako, the māhoe, the tōtara, the dry-hearted whānau of the forest, who took the sparks in and hid them in their wood, where water could not follow. That is where fire has lived ever since. When a firemaker rubs a stick of kaikōmako against a softer board and the dust begins to smoke, that is Mahuika’s fingernail being asked for, politely, one more time — and given, note, to anyone who does the work. Before this story, fire belonged to one goddess with a temper. After it, fire lives in every dry branch in the world, and the price of it is friction and patience. The hall will let you decide whether the grandson robbed his grandmother, or ran the world’s roughest errand of decentralization. Māui, at his third door, declines to comment.',
         ],
       },
     ],
