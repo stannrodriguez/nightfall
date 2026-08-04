@@ -107,6 +107,7 @@ export const cultures = {
     minors: [[2, 48]],
     lines: [
       [[2, 48], [6, 58]],
+      [[6, 58], [4, 72]],
     ],
   },
   Egyptian: {
@@ -159,6 +160,7 @@ export const skyPos = {
   secretname: [96, 68],
   eyeofra: [88, 82],
   inanna: [6, 58],
+  gilgamesh: [4, 72],
 };
 
 export const myths = [
@@ -1192,6 +1194,53 @@ export const myths = [
         paras: [
           'They found Ereshkigal in agony — the queen of the dead moaning like a woman in labor, with no one in her whole kingdom of the obedient to sit with her. Oh, oh, my inside, groaned Ereshkigal. Oh, oh, your inside, said the little creatures. Oh, my outside. Oh, your outside. That is the entire trick, and it had never been tried: not a sword, not a bargain, but company in pain, echoed until the pain felt heard. Ask anything, said Ereshkigal at last, undone by two handfuls of fingernail dirt with good manners. They asked for the corpse on the hook. They sprinkled it with the food of life and the water of life, and Inanna stood up.',
           'But the ways of the underworld are perfect: no one leaves unless someone arrives. Inanna walked back up into the sunlight with a escort of galla — small pitiless demons of the deep who accept no gifts, drink no beer, and cannot be distracted, the poem notes, by love — to collect her replacement. They reached for Ninshubur, who had saved her; no, said Inanna. They reached for her sons, in mourning rags; no. And then she came to her own throne room in Uruk, and there sat Dumuzi, her shepherd-king, her husband — in fine clothes, on her seat, conspicuously unweeping — and Inanna fixed on him the eye of death she had learned below, and said: him. His sister Geshtinanna, who loved him, split the sentence in half: six months below for him, six for her, forever. That is why the year has a dying half. The oldest underworld door humans ever wrote — Persephone, Orpheus, Savitri, every descent in this hall walks a road cut first by her — ends not with a moral but with a schedule; and in the sky, watch: the star of Inanna still sets below the world and always, always comes back up.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'gilgamesh',
+    name: 'Gilgamesh and the Plant of Youth',
+    short: 'Gilgamesh',
+    culture: 'Sumerian',
+    realm: 'The Deep',
+    time: '6 min read',
+    accent: '#8fcfc0',
+    pageBg: '#061110',
+    kicker: 'Sumerian · Told in three nights',
+    epigraph: 'At the bottom of the sea grows a plant that undoes old age. He held it in his hand.',
+    about:
+      'From Tablet XI of the Epic of Gilgamesh in its Standard Babylonian version, recovered from the library of Ashurbanipal at Nineveh — though tales of Bilgames, king of Uruk, were told in Sumerian a thousand years before that. Grieving Enkidu, Gilgamesh crosses the waters of death to question Utnapishtim, the survivor of the flood, and is told as a parting gift of a thorny plant of renewed youth growing at the bottom of the sea. He dives for it with stones tied to his feet and wins it — then loses it to a snake while he bathes, which is why snakes shed their skins and people do not. The epic is the oldest long story humankind still owns.',
+    doorGrad: 'linear-gradient(180deg,#0c2624,#04100f)',
+    doorBorder: 'rgba(143,207,192,.28)',
+    emblem:
+      'width:24px;height:30px;background:linear-gradient(#8fcfc0,#8fcfc0) center/3px 100% no-repeat,radial-gradient(circle at 20% 30%,#8fcfc0 0 4px,transparent 5px),radial-gradient(circle at 80% 45%,#8fcfc0 0 4px,transparent 5px);opacity:.85;animation:drift 5s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#d8f2ea 0%,#8fcfc0 50%,rgba(143,207,192,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0a0c0a 0%,#16241a 55%,#2a4630 100%)',
+      'linear-gradient(180deg,#050a0c 0%,#0c1c22 55%,#16383e 100%)',
+      'linear-gradient(180deg,#081012 0%,#1c3a38 55%,#3e7060 85%,#8fb894 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Friend',
+        paras: [
+          'Gilgamesh was two-thirds god, which is a fraction to make you feel the missing third every day of your life. He was king of Uruk of the great walls, strong past all sense, and restless in the way of men built one size too large for their circumstances — until the gods made Enkidu, a wild man raised among gazelles, specifically to be his match. They met as a collision and finished as a friendship, which is the oldest trick in the epic and still one of the best. Together they killed the guardian of the cedar forest and the Bull of Heaven itself; together they became the kind of story neighbors complain about. Then the gods, doing arithmetic on all that glory, decided one of the two had to die, and it was Enkidu — slowly, by sickness, in bed, the one way neither of them had ever practiced.',
+          'Gilgamesh refused it. Refusal is a door this hall keeps oiled — Orpheus went down a cave with a lyre, Izanagi with a comb — but the king of Uruk refused longer and worse than anyone: he would not give up the body for burial until a worm dropped from his friend’s nose. That detail has survived four thousand years because it deserves to. In that moment the strongest man alive understood that the thing in the bed was no longer his friend, and that the thing in the mirror was next. He did not weep like a king. He pulled out his hair, put on a lion’s skin, and walked off the map — because somewhere past the edge of it, rumor said, lived Utnapishtim: the one man death had ever agreed to skip.',
+        ],
+      },
+      {
+        title: 'The Far Side of the Water',
+        paras: [
+          'The road out of the world is itinerized like a real road, which is the epic’s strange mercy. Scorpion-beings guard the mountain where the sun goes in; Gilgamesh ran the sun’s own tunnel through the dark and beat it to the far mouth, coming out into a garden where the trees carry carnelian for fruit and lapis for leaves — beauty with nothing to eat in it. There an alewife named Siduri, keeping the last tavern in existence, gave him the most sensible advice anyone in this hall has ever refused: You will not find the life you seek. Fill your belly. Make music. Wash your hair, wear clean clothes, love the child who holds your hand. That, too, is the work of the living. He said no — the bereaved always say no to Siduri, the first time — and she told him where the boatman was.',
+          'Urshanabi poled him across the waters of death, where a single splash unmakes you, on a hundred and twenty poles used once each and dropped. And on the far shore sat Utnapishtim the Faraway — not radiant, not enthroned, just an old man with an old wife, which was the first disappointment of the truth. He told Gilgamesh how the gods had flooded the world and regretted it, how immortality had been handed to him once, at a funeral of everything, and would not be offered twice. Then he set the fair test: stay awake six days and seven nights, you who want to outlast sleep’s big brother. Gilgamesh sat down, and sleep took him before the sentence ended. His week of sleeping was counted out in loaves of bread staling by his head — proof laid in a row, because heroes argue. He woke, saw the seventh loaf fresh and the first one stone, and stopped arguing.',
+        ],
+      },
+      {
+        title: 'The Plant and the Snake',
+        paras: [
+          'It was the old wife who said: he came all this way; give him something. So Utnapishtim opened the last secret of the gods like a man emptying his pockets. At the bottom of the deep grows a plant like a boxthorn, with thorns that will prick your hands, and its name is its function: Old Man Grown Young. Gilgamesh went out over the deep, tied stones to his feet in the manner of the pearl divers, and went down — past light, past warmth, to the floor of everything, where he took hold of the plant and it bit his hands and he held on. He cut the stones loose and the sea itself threw him back into the world, bleeding and grinning, holding the end of old age.',
+          'Mark what he planned, because it is the measure of the man the journey had made: he did not eat it on the beach. He would carry it home to Uruk, he told the boatman, and give it first to an elder, and watch youth come back to an old man — a test, yes, but read it again: the king who had begun this story as an appetite planned to share the cure for death before tasting it. Then, on the road home, he stopped at a cool pool to bathe. He set the plant down. You know what happens; you have known since the epigraph. A snake came up on the scent of it, took the plant, and shed its papery old skin as it slid away — snakes have been young ever since, and men have not. Gilgamesh sat down by the pool and wept, and then he did the thing that makes him the first human being in literature: he went home anyway. Urshanabi, he said at the gates, climb the wall of Uruk and walk its length. Study the brickwork. Is it not good? The deep kept the plant. He kept the city, and the story — and the story, please notice, has outlived every wall in Mesopotamia.',
         ],
       },
     ],
