@@ -32,7 +32,7 @@ export const cultures = {
     color: '#d96b2f',
     lineAlpha: 0.35,
     minorAlpha: 0.55,
-    label: { x: 70, y: 9 },
+    label: { x: 58, y: 10 },
     minors: [[63, 42]],
     lines: [
       [[62, 16], [56, 30]],
@@ -179,6 +179,7 @@ export const cultures = {
       [[88, 16], [94, 26]],
       [[88, 16], [83, 32]],
       [[83, 32], [94, 26]],
+      [[88, 16], [76, 8]],
     ],
   },
 };
@@ -219,6 +220,7 @@ export const skyPos = {
   phaethon: [20, 18],
   quetzalcoatl: [30, 70],
   mahuika: [48, 6],
+  ganesha: [76, 8],
 };
 
 export const myths = [
@@ -1816,6 +1818,53 @@ export const myths = [
         paras: [
           'She did not hand over the tenth nail. She tore it out and dashed it to the ground at his feet, and said something the tellings render variously but always with the same shape: you want fire, descendant? Have all of it. The world caught. The cave, the scrub, the ridgelines, the horizon — fire with no hearth to it, fire returned to what it is when nobody’s grandmother is holding it. Māui ran, and the fire ran faster, and he did the thing he keeps in reserve for the moments his cleverness catches up with him: he changed. As the kāhu, the hawk, he went up over the burning country — and the fire reached up after him, which is why the hawk’s feathers are scorched brown at the edges to this day; every bird wears the story it survived.',
           'Even wings were not going to be enough. So Māui called on the ancestors he had not yet exhausted — to Tāwhirimātea of the winds and the rain gods of the long names — and the sky answered for the boy the way the sky answers family: with everything. Rain fell until the fire that had been ten fingernails was beaten down out of the hills, until Mahuika herself was nearly quenched in her own cave. And here is the pivot the whole door turns on: dying, the last of her fire fled — and she flung it into the trees. Into the kaikōmako, the māhoe, the tōtara, the dry-hearted whānau of the forest, who took the sparks in and hid them in their wood, where water could not follow. That is where fire has lived ever since. When a firemaker rubs a stick of kaikōmako against a softer board and the dust begins to smoke, that is Mahuika’s fingernail being asked for, politely, one more time — and given, note, to anyone who does the work. Before this story, fire belonged to one goddess with a temper. After it, fire lives in every dry branch in the world, and the price of it is friction and patience. The hall will let you decide whether the grandson robbed his grandmother, or ran the world’s roughest errand of decentralization. Māui, at his third door, declines to comment.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'ganesha',
+    name: 'Ganesha and the Race Around the World',
+    short: 'Ganesha',
+    culture: 'Hindu',
+    realm: 'The Crossroads',
+    time: '6 min read',
+    accent: '#efab52',
+    pageBg: '#120d07',
+    kicker: 'Hindu · Told in three nights',
+    epigraph: 'His brother circled the world on a peacock. He walked a circle around his parents.',
+    about:
+      'Told in the Puranas — the Shiva Purana among them — and retold in countless spoken versions across India: a single fruit of wisdom, one prize between two brothers, and a race three times around the world. Kartikeya, general of the gods’ armies, mounts his peacock; Ganesha, elephant-headed and mounted on a mouse, walks three circles around his parents, Shiva and Parvati, and says: you are my world. The judgment in his favor is why Ganesha is honored first at every beginning — invoked at the top of weddings, journeys, account books, and first pages — as the remover of obstacles and lord of thresholds, feasted every year at Ganesh Chaturthi.',
+    doorGrad: 'linear-gradient(180deg,#2e2009,#0f0a04)',
+    doorBorder: 'rgba(239,171,82,.3)',
+    emblem:
+      'width:28px;height:28px;border-radius:50%;border:3px solid #efab52;border-bottom-color:transparent;box-sizing:border-box;background:radial-gradient(circle at 50% 55%,#efab52 0 3.5px,transparent 4.5px);opacity:.9;animation:drift 4.6s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#f9e2bb 0%,#efab52 50%,rgba(239,171,82,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0e0b06 0%,#241a0a 55%,#463312 100%)',
+      'linear-gradient(180deg,#0a0c12 0%,#182238 55%,#2e4260 100%)',
+      'linear-gradient(180deg,#120d08 0%,#33200c 55%,#6a4416 85%,#d9963a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Fruit',
+        paras: [
+          'On Mount Kailasa lived the strangest happy family in any mythology: Shiva, who dances worlds down; Parvati, the mountain’s daughter, who civilizes him; and their two sons, opposites down to the mounts they rode. Kartikeya was the general of the armies of heaven, six-faced, spear-bright, and his mount was a war peacock, which is the only kind of peacock that deserves the adjective. Ganesha had the head of an elephant and the body of someone who enjoys his food, and his mount — the tradition sets this joke down with a straight face and dares you to laugh — was a mouse. One brother built for velocity, one for thought, in a household where both were loved and neither was about to concede anything.',
+          'Into this arrangement came the sage Narada, whom you have met at another door in this hall — he escorted a death sentence into Savitri’s story — and who arrives, always, precisely when knowledge will cause the maximum disturbance. He carried one fruit: the fruit of wisdom, of knowledge and immortality by some tellings, and — this is the load-bearing detail — indivisible. It could not be split, shared, or diplomatically alternated. One fruit, two sons. The parents, cornered by arithmetic, set a contest, and Shiva announced terms that sounded fair the way most disasters do at the announcement stage: whoever circles the whole world three times and returns first shall have it.',
+        ],
+      },
+      {
+        title: 'The Race',
+        paras: [
+          'Kartikeya was gone before the sentence finished — a streak of iridescence off the mountain, the peacock’s wings hammering the sky. And credit where due: he did it properly. Down the spine of the Himalaya, across the plains and the deltas, over oceans that noted his shadow, around the curve of everything at the speed of a god with a point to prove. Three times around the actual world, every river forded, every coastline honored. If the contest was what it claimed to be, he had won it before his brother reached a decision about standing up.',
+          'Because Ganesha had not moved. He sat exactly where the terms had been read, ears fanning gently, doing the thing that looks most like losing and is most often winning: he was reading the rules again. His situation was not subtle — an elephant on a mouse does not place in a footrace against a peacock, and everyone on the mountain knew it, and the tradition does not insult him by pretending otherwise. What it gives him instead is the question that unlocks the door: what, exactly, had his father meant by the world? The globe is one answer — the obvious one, the one currently being circled at great expense. But the scriptures his big ears had absorbed said something else, in more than one place and more than one meter: that one’s parents are the whole world; that all pilgrimage, all geography, everything worth circling, is contained in them. He looked at Shiva and Parvati, seated together on the high seat — the destroyer of worlds and the mountain’s daughter, the entire cosmos on one bench, technically — and stood up, unhurried, and dusted the modak crumbs from his lap.',
+        ],
+      },
+      {
+        title: 'The Circle',
+        paras: [
+          'He walked around his parents. Once, with his palms together. Twice, reciting. Three times, and then he bowed and said the sentence the whole door swings on: you are my world, and I have circled it. There was a silence on Kailasa of the kind that follows either a scandal or a proof, and then Shiva — who as the patron of logicians was cornered, and as a father was delighted — laughed the laugh that shakes glaciers loose, and Parvati’s expression settled the verdict before it was spoken. The fruit went to Ganesha. Somewhere over an ocean, a peacock was on lap three.',
+          'Kartikeya arrived home to a decided contest and did what proud sons do in the oldest families: he was furious, and he was not wrong, and the south of India still keeps tellings in which he stalks off to a hill of his own to cool down for an age or two. The tradition holds both brothers gently — the one who circled the world deserves the fruit; so does the one who understood the question — but the ruling stood, and the ruling is why this door closes the hall’s crossroads. From that day, Ganesha is worshipped first. Before every wedding, every journey, every ledger’s first line, every book’s first page, his name goes at the top, so that the beginning will go well; he is the remover of obstacles because he is the god who found the shortest honest path and took it at a walk. Twenty doors have been carved into this hall since the last moon, and this is the last of them — the door of beginnings, hung at the end, which its owner would find entirely correct. If the hall opened smoothly for you tonight — every hinge, every threshold — now you know which god got walked around before the carving started.',
         ],
       },
     ],
