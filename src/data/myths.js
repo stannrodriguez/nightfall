@@ -120,8 +120,8 @@ export const cultures = {
     label: { x: 82, y: 46 },
     minors: [[98, 56]],
     lines: [
-      [[95, 44], [98, 56]],
-      [[96, 30], [95, 44]],
+      [[94, 44], [98, 56]],
+      [[95, 30], [94, 44]],
     ],
   },
   Yoruba: {
@@ -143,7 +143,7 @@ export const cultures = {
     minors: [[16, 14]],
     lines: [
       [[8, 8], [16, 14]],
-      [[8, 8], [4, 22]],
+      [[8, 8], [7, 22]],
     ],
   },
   Sumerian: {
@@ -153,8 +153,8 @@ export const cultures = {
     label: { x: 1, y: 84 },
     minors: [[2, 48]],
     lines: [
-      [[2, 48], [6, 58]],
-      [[6, 58], [4, 72]],
+      [[2, 48], [8, 58]],
+      [[8, 58], [4, 72]],
     ],
   },
   Egyptian: {
@@ -165,7 +165,7 @@ export const cultures = {
     minors: [[82, 72]],
     lines: [
       [[74, 84], [82, 72]],
-      [[82, 72], [96, 68]],
+      [[82, 72], [93, 68]],
       [[74, 84], [88, 82]],
     ],
   },
@@ -205,16 +205,16 @@ export const skyPos = {
   weavergirl: [58, 48],
   nuwa: [70, 44],
   osiris: [74, 84],
-  secretname: [96, 68],
+  secretname: [93, 68],
   eyeofra: [88, 82],
-  inanna: [6, 58],
+  inanna: [8, 58],
   gilgamesh: [4, 72],
   lir: [8, 8],
-  oisin: [4, 22],
+  oisin: [7, 22],
   oshun: [60, 66],
   eshu: [62, 90],
-  vasilisa: [95, 44],
-  sadko: [96, 30],
+  vasilisa: [94, 44],
+  sadko: [95, 30],
   sedna: [30, 88],
   persephone: [26, 42],
   phaethon: [20, 18],
