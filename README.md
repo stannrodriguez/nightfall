@@ -29,7 +29,7 @@ every culture keeps its own constellation, and touching a star opens its story.
 
 | Realm | Doors |
 | --- | --- |
-| The Sky | The Fall of Icarus (Greek) · Amaterasu and the Cave (Japanese) · How Māui Snared the Sun (Māori) · Chang’e Flies to the Moon (Chinese) · The Weaver Girl and the Cowherd (Chinese) · Oshun’s Flight (Yoruba) |
+| The Sky | The Fall of Icarus (Greek) · Amaterasu and the Cave (Japanese) · How Māui Snared the Sun (Māori) · Chang’e Flies to the Moon (Chinese) · The Weaver Girl and the Cowherd (Chinese) · Oshun’s Flight (Yoruba) · Phaethon and the Chariot of the Sun (Greek) |
 | Fire & Ending | Ragnarök (Norse) · The Fifth Sun (Aztec) · The Death of Baldr (Norse) · Nüwa Mends the Sky (Chinese) · The Eye of Ra (Egyptian) · Vasilisa and the Fire (Slavic) |
 | The Crossroads | How Anansi Got the Stories (Akan) · The First Day of Hermes (Greek) · Anansi and the Pot of Wisdom (Akan) · The Secret Name of Ra (Egyptian) · Oisín in the Land of Youth (Irish) · Eshu’s Cap (Yoruba) |
 | The Underworld | Orpheus Looks Back (Greek) · Izanami and Izanagi (Japanese) · Savitri and the Lord of Death (Hindu) · Isis and Osiris (Egyptian) · Inanna’s Descent (Sumerian) · Persephone and the Seeds (Greek) |
