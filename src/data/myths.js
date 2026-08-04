@@ -10,8 +10,8 @@
 // text ever collides. Each culture owns a region of the canvas: Māori top-left,
 // Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
 // bottom-center, Aztec bottom-left, Chinese center, Egyptian bottom-right,
-// Sumerian lower-left edge. Minors lean toward the middle so the center of
-// the sky never reads as empty.
+// Sumerian lower-left edge, Irish top-left corner. Minors lean toward the
+// middle so the center of the sky never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
@@ -99,6 +99,16 @@ export const cultures = {
       [[58, 48], [70, 44]],
     ],
   },
+  Irish: {
+    color: '#7fd98a',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 3, y: 2 },
+    minors: [[16, 14]],
+    lines: [
+      [[8, 8], [16, 14]],
+    ],
+  },
   Sumerian: {
     color: '#d4c76a',
     lineAlpha: 0.32,
@@ -161,6 +171,7 @@ export const skyPos = {
   eyeofra: [88, 82],
   inanna: [6, 58],
   gilgamesh: [4, 72],
+  lir: [8, 8],
 };
 
 export const myths = [
@@ -1241,6 +1252,53 @@ export const myths = [
         paras: [
           'It was the old wife who said: he came all this way; give him something. So Utnapishtim opened the last secret of the gods like a man emptying his pockets. At the bottom of the deep grows a plant like a boxthorn, with thorns that will prick your hands, and its name is its function: Old Man Grown Young. Gilgamesh went out over the deep, tied stones to his feet in the manner of the pearl divers, and went down — past light, past warmth, to the floor of everything, where he took hold of the plant and it bit his hands and he held on. He cut the stones loose and the sea itself threw him back into the world, bleeding and grinning, holding the end of old age.',
           'Mark what he planned, because it is the measure of the man the journey had made: he did not eat it on the beach. He would carry it home to Uruk, he told the boatman, and give it first to an elder, and watch youth come back to an old man — a test, yes, but read it again: the king who had begun this story as an appetite planned to share the cure for death before tasting it. Then, on the road home, he stopped at a cool pool to bathe. He set the plant down. You know what happens; you have known since the epigraph. A snake came up on the scent of it, took the plant, and shed its papery old skin as it slid away — snakes have been young ever since, and men have not. Gilgamesh sat down by the pool and wept, and then he did the thing that makes him the first human being in literature: he went home anyway. Urshanabi, he said at the gates, climb the wall of Uruk and walk its length. Study the brickwork. Is it not good? The deep kept the plant. He kept the city, and the story — and the story, please notice, has outlived every wall in Mesopotamia.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'lir',
+    name: 'The Children of Lir',
+    short: 'The Swans',
+    culture: 'Irish',
+    realm: 'The Deep',
+    time: '6 min read',
+    accent: '#9fdcae',
+    pageBg: '#081210',
+    kicker: 'Irish · Told in three nights',
+    epigraph: 'Nine hundred years on three waters, wearing feathers. What the spell could not take was their voices.',
+    about:
+      'Oidheadh Chloinne Lir — the Fate of the Children of Lir — is counted among the Three Sorrows of Irish storytelling, set down in manuscripts of the late medieval period from older telling. The stepmother Aoife strikes the four children of Lir with a druid’s wand and makes them swans: three hundred years on Lough Derravaragh, three hundred on the stormy Sea of Moyle, three hundred on the western water by Inishglora, keeping only their human voices and their gift of song. The spell holds until the sound of a Christian bell reaches Ireland, and the ending — four ancient bodies, one grave — is told with the tenderness the Irish reserve for their saddest material. Swans have been treated gently in Ireland ever since.',
+    doorGrad: 'linear-gradient(180deg,#0d2a1a,#050f0a)',
+    doorBorder: 'rgba(159,220,174,.28)',
+    emblem:
+      'width:32px;height:20px;background:radial-gradient(circle at 30% 65%,#9fdcae 0 7px,transparent 8px),radial-gradient(circle at 78% 25%,#9fdcae 0 3px,transparent 4px),linear-gradient(#9fdcae,#9fdcae) 68% 40%/3px 12px no-repeat;opacity:.85;animation:drift 5.2s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#def5e2 0%,#9fdcae 50%,rgba(159,220,174,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0a0d0a 0%,#14261a 55%,#28482e 100%)',
+      'linear-gradient(180deg,#060a0c 0%,#0e1e26 55%,#1c3a48 100%)',
+      'linear-gradient(180deg,#0a100e 0%,#1e3c2e 55%,#4a7050 85%,#a0c9a0 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Stepmother',
+        paras: [
+          'Lir was a lord of the Tuatha Dé Danann, the shining people of Ireland, and he had four children who were the pleasure of his eyes: Fionnuala the eldest, steady as a keel; Aodh; and the twins, Fiachra and Conn, whose mother died bearing them. He married again — Aoife, his dead wife’s sister — and for a while she loved the children honestly, which the story admits, because the story is fair, and because a villain who once loved is worth two who never did. But love kept in the same room as a dead sister’s children can sour into measurement: whom does he look at first when he comes home. Aoife began to keep that ledger, and a kept ledger always finds its debt.',
+          'She took the four in her chariot to Lough Derravaragh, telling their father it was an outing. On the shore she ordered her servants to kill them; the servants refused, and here the tale notes she could not do it with her own hand either — remember that; it is the last human thing she does. Instead she sent the children in to bathe, and when they were in the water she struck it with a druid’s rod and spoke the shape of the spell: swans, nine hundred years — three hundred on this lake, three hundred on the Sea of Moyle between Ireland and Scotland, three hundred on the western water by Inishglora — until a woman of the south is joined to a man of the north, and a new sound is heard in Ireland. Fionnuala, treading water inside a body growing strange, asked only: leave us something. And whether it was mercy or a flaw in the working, the spell left them their voices — their own, human, and sweeter now than any music under heaven. When it was known what she had done, Aoife was struck into a demon of the air by her own kin, and the wind has her yet. The children she could not unfeather; the wand does not run backward.',
+        ],
+      },
+      {
+        title: 'The Three Waters',
+        paras: [
+          'The first three hundred years were almost kind. On Derravaragh the four swam close to shore, and their father came, and all Ireland came, for it became known that the swans of Lir would talk with you — four white birds with the conversation of princes — and sing you to a sleep with no bad dreams in it. Grief, given three hundred years and an audience, wears into something like a festival; the tale lets that first age glow deliberately, so that you will feel the second one properly.',
+          'The Sea of Moyle is the strait where Ireland and Scotland grind at each other, and the second age was that. Storm, black frost, salt that froze their feathers to the rock; and one law the four kept against all of it — when the sea scattered them, they had named a meeting rock, and each storm ended with Fionnuala on it, counting. One brother under each wing, she sang, and one against my breast; that is how the poem itself says they slept, on nights when the water stood up like walls. Three hundred years of that. Then three hundred gentler ones in the west, by Inishglora, where the fishermen knew them and no one raised a hand — for by now the swans were older than the kingdoms on either shore, and it is bad luck the world over to trouble what has outlasted you.',
+        ],
+      },
+      {
+        title: 'The Bell',
+        paras: [
+          'While they floated, Ireland changed owners. The shining people went under the hills — that is where the Tuatha Dé Danann go in the late tales, downward into the mounds, becoming the Good Neighbors — and the forts of their fathers grew grass, and one morning across the western water came a sound with no precedent in nine hundred years of listening: a small iron bell, rung by a hermit at his prayers. The swans startled. The old terror of new things took them. And then Fionnuala, who had spent nine centuries learning exactly one skill, which is how to keep three others calm, said: it is only a voice. Let us go and hear what it says.',
+          'The hermit was called Mochaomhóg, and he did not try to catch them. He fed them, and talked to them daily, and they sang for him — the last music of the old world performed for the doorkeeper of the new one, neither party quite knowing what it was witnessing. And when at last the far-off marriage of the spell’s fine print came to pass and the enchantment let go, what stood on the shore were not four children. Nine hundred years came due in a moment: four human beings, ancient past ancient, held upright mostly by each other. The hermit did the kindest thing his new faith knew, and blessed them; and Fionnuala, keel to the last, arranged her own grave with the authority of a woman who had been the eldest for nine hundred years: Conn at my left, Fiachra at my right, Aodh before my face — the way they had slept on the Sea of Moyle. So it was done. The deep is a realm of monsters in most of this hall; this door tells you what else it holds. Endurance. Ireland has been gentle with swans ever since, and now you know it is not superstition. It is memory.',
         ],
       },
     ],
