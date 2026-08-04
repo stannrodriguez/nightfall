@@ -9,8 +9,8 @@
 // on at least one axis, and keep minors/labels out of that caption box, so no
 // text ever collides. Each culture owns a region of the canvas: Māori top-left,
 // Norse top-center, Hindu top-right, Greek left, Japanese right, Akan
-// bottom-center, Aztec bottom-left, Chinese center. Minors lean toward the
-// middle so the center of the sky never reads as empty.
+// bottom-center, Aztec bottom-left, Chinese center, Egyptian bottom-right.
+// Minors lean toward the middle so the center of the sky never reads as empty.
 export const cultures = {
   Greek: {
     color: '#8fb8ff',
@@ -98,6 +98,16 @@ export const cultures = {
       [[58, 48], [70, 44]],
     ],
   },
+  Egyptian: {
+    color: '#6f8fe8',
+    lineAlpha: 0.32,
+    minorAlpha: 0.55,
+    label: { x: 70, y: 96 },
+    minors: [[82, 72]],
+    lines: [
+      [[74, 84], [82, 72]],
+    ],
+  },
   Hindu: {
     color: '#7fd8e8',
     lineAlpha: 0.32,
@@ -132,6 +142,7 @@ export const skyPos = {
   'chang-e': [46, 42],
   weavergirl: [58, 48],
   nuwa: [70, 44],
+  osiris: [74, 84],
 };
 
 export const myths = [
@@ -977,6 +988,53 @@ export const myths = [
         paras: [
           'The sky held, but a patch is not a pillar. So Nüwa took the legs of a great turtle — the tellings are brisk about the turtle, and you may spare it a thought — and set them under the four corners of heaven, and there they stand, bearing up the roof of everything. And still the mend was not perfect. The northwest corner, where the pillar broke, sits forever slightly low: which is why the sun, the moon, and all the stars slide toward the northwest as they cross. And the earth, jolted, dips to the southeast: which is why every great river of her country — ask any of them — runs east to the sea.',
           'That is the detail to carry out of this door. Another hall would have hidden the flaw; this story points at it. The tilt of the sky is the seam of the repair, sewn into the map, running through every river you could stand beside — the scar doing what scars do, which is to go on quietly telling the story after the teller has gone. Nüwa did not make the world as good as new. She made it hold, which is a different and better miracle. You live, the door would like you to know as you leave, in a mended thing. Lean on it. It bears.',
+        ],
+      },
+    ],
+  },
+  {
+    id: 'osiris',
+    name: 'Isis and Osiris',
+    short: 'Osiris',
+    culture: 'Egyptian',
+    realm: 'The Underworld',
+    time: '6 min read',
+    accent: '#82d9a2',
+    pageBg: '#071009',
+    kicker: 'Egyptian · Told in three nights',
+    epigraph: 'His brother measured him for a box. His wife searched a whole river for the pieces.',
+    about:
+      'The fullest connected telling is Plutarch’s On Isis and Osiris, from the second century CE — but the myth is far older, alluded to in the Pyramid Texts more than two thousand years before him. Set traps his brother Osiris in a chest made to his measure and throws it in the Nile; Isis retrieves it from Byblos; Set cuts the body into fourteen pieces, and Isis and her sister Nephthys, in the form of kites, gather them again. Osiris becomes lord of the Duat, the Egyptian land of the dead, and the green of sprouting grain was his sign — the dead hoped each to “become an Osiris,” and the Nile’s flood renewed his story every year.',
+    doorGrad: 'linear-gradient(180deg,#0e2618,#050f08)',
+    doorBorder: 'rgba(130,217,162,.28)',
+    emblem:
+      'width:24px;height:30px;background:linear-gradient(#82d9a2,#82d9a2) center/6px 100% no-repeat,repeating-linear-gradient(180deg,#82d9a2 0 3px,transparent 3px 8px) center top/24px 14px no-repeat;opacity:.85;animation:drift 5s ease-in-out infinite alternate',
+    orb: 'radial-gradient(circle,#d2f5e0 0%,#82d9a2 50%,rgba(130,217,162,0) 72%)',
+    heroGrads: [
+      'linear-gradient(180deg,#0d0b07 0%,#241a08 55%,#4a350f 100%)',
+      'linear-gradient(180deg,#060d0d 0%,#0e2424 55%,#1a4438 100%)',
+      'linear-gradient(180deg,#07100a 0%,#14301c 55%,#2e5c36 85%,#68a86a 100%)',
+    ],
+    nights: [
+      {
+        title: 'The Chest',
+        paras: [
+          'Osiris was the king the world gets once, early, before it has learned what to expect. He taught his people grain and beer and the shape of a law; the Nile rose on time for him, as if the river also had a king; and his brother Set watched all of it with the patience of a man taking measurements. That is not a figure of speech. Set had measured him — secretly, exactly, while he slept — and had built to those numbers a chest of cedar and gold so beautiful that describing it started arguments.',
+          'He brought it to a banquet, the way you bring a game. Whoever fits the chest, laughed Set, may keep it. One by one the guests lay down in it, and were each an insult too short or too broad, and climbed out to comfortable jeering — until Osiris, who was a good sport, which is a virtue with no armor on it, lay down and fit like a seed in its husk. The lid came down. The nails went in. Molten lead sealed the seams, and the beautiful box went into the Nile before the music had stopped. That is the whole first act, and its lesson is one this hall files under fire and endings too: the trap that works is built to the exact dimensions of what you love.',
+        ],
+      },
+      {
+        title: 'The Search',
+        paras: [
+          'Isis heard, and cut a lock of her hair, and put on mourning, and then did the thing that makes her the equal of any god in this hall: she declined to let the river have the last word. She walked the banks asking everyone — fishermen, washerwomen, children, none of whom is beneath a goddess who wants something found — which way the water had carried a box worth describing. The chest had gone out the delta’s mouth and across the sea to Byblos, where it lodged in a tamarisk sapling; and the tree, growing around the coffin of a god, grew so fragrant and so vast that the king of Byblos cut it down for the pillar of his hall, knowing nothing of what his palace now held up.',
+          'Isis sat by the palace well in plain clothes until the queen’s women fetched her in as a nursemaid. She was patient; she braided hair; she was beloved by everyone who had no idea who she was. When at last she stood revealed and asked for the pillar — only the pillar — they gave it to her, bewildered, and she split the wood and lifted out the chest and wept a weeping that struck the youngest prince dead, which the tellings report without apology: grief of that size is weather, and weather has casualties. She sailed the box home and hid it in the marshes of the delta. And Set, hunting by moonlight, as the worst luck in every story hunts, stumbled on it — and this time he did not trust a lid. Fourteen pieces, scattered the length of the Nile. Try, said the second act to the widow, finding him now.',
+        ],
+      },
+      {
+        title: 'The Kite',
+        paras: [
+          'She tried. That is the entire third act, and it is the greatest of them. Isis called her sister Nephthys — married to Set, and done with him — and the two put on the bodies of kites, the small keen falcons of the river, and flew the Nile end to end, low over every reed bed and sandbar, crying the thin high cry those birds still cry, which the old country understood to be two sisters, still looking. Piece by piece they found him. Thirteen pieces; the fourteenth a fish had taken, and the tellings let the fish keep it, because even a perfect story needs one thing missing to prove the search was real.',
+          'What they assembled, Anubis bound in linen — the first mummy, the pattern for every one after. And Isis beat her wings over the bound king and drew enough breath back into him for one night, one act of love, one son: Horus, the falcon, who would grow up in the marshes and take the kingdom back from his uncle in a lawsuit the gods argued for eighty years. But mark what Osiris himself did, because it is the move no other door in this realm makes: he did not return. Orpheus turned around; Izanagi struck a light; Osiris walked the other way, down into the Duat, and took its throne — so that the dead, arriving in the dark, would find it governed. He is why the grain comes green out of the black flood-mud every single year, and why the Egyptians wrote his name, hopefully, next to their own. Some doors in this hall are about getting the dead back. This one is about what the dead do for us instead.',
         ],
       },
     ],
