@@ -1,7 +1,7 @@
 {
-  "name": "Nightfall — A World Tour of Myth & Fable",
+  "name": "Nightfall: A World Tour of Myth & Fable",
   "short_name": "Nightfall",
-  "description": "World myths and fables retold across three nights.",
+  "description": "World myths and fables retold in three nights each.",
   "start_url": "/nightfall/",
   "scope": "/nightfall/",
   "display": "standalone",
