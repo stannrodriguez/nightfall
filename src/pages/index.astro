@@ -49,8 +49,8 @@ const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
 ---
 
 <Base
-  title="Nightfall — A World Tour of Myth & Fable"
-  description={`World myths and fables retold in three nights each. ${countWord} doors hang open tonight — step through one.`}
+  title="Nightfall: A World Tour of Myth & Fable"
+  description={`World myths and fables, each retold in three nights. ${countWord} stories are open to read by constellation or realm, plus a daily featured pick.`}
 >
   <script is:inline>
     // Restore the persisted Doors/Sky lens before the hall paints.
@@ -71,22 +71,22 @@ const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
       <div class="kicker">A world tour of myth &amp; fable</div>
       <h1 class="hall-title">Nightfall</h1>
       <p class="hall-subtitle">
-        {countWord} doors hang open tonight.<br />New ones are carved with every moon.
+        {countWord} myths, each told in three nights.<br />Choose a star or a door to begin.
       </p>
       <a class="tonight-pill" id="tonight-pill" href={mythUrl(myths[0].id)}>
-        <span class="pill-label">✦ Tonight's door</span>
+        <span class="pill-label">✦ Tonight's story</span>
         <span class="pill-name" id="tonight-name">{myths[0].short}</span>
       </a>
     </header>
 
     <div class="lens-toggle-row">
-      <div class="lens-toggle" role="group" aria-label="Hall lens">
+      <div class="lens-toggle" role="group" aria-label="Browse view">
         <button type="button" class="lens-btn" data-lens-btn="doors" aria-pressed="false">⌂ Doors</button>
         <button type="button" class="lens-btn" data-lens-btn="sky" aria-pressed="true">✦ Sky</button>
       </div>
     </div>
 
-    <section class="sky-view" aria-label="The sky">
+    <section class="sky-view" aria-label="Myths by constellation">
       <div class="sky-canvas">
         <svg class="sky-lines" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
           {desktopSky.map((c) => (
@@ -118,7 +118,7 @@ const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
           </div>
         ))}
         <div class="sky-caption">
-          Each culture keeps its own constellation — touch a star to open its story.
+          Each culture has its own constellation. Select a star to open its story.
         </div>
       </div>
 
@@ -149,14 +149,14 @@ const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
           </div>
         ))}
         <div class="sky-caption">
-          Each culture keeps its own constellation — touch a star to open its story.
+          Each culture has its own constellation. Select a star to open its story.
         </div>
       </div>
     </section>
 
-    <section class="doors-view" aria-label="The doors">
-      <div class="chips" role="group" aria-label="Filter doors">
-        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All doors</button>
+    <section class="doors-view" aria-label="Myths by realm">
+      <div class="chips" role="group" aria-label="Filter myths by realm">
+        <button type="button" class="chip is-active" data-filter="all" aria-pressed="true">All realms</button>
         {groups.map((g) => (
           <button type="button" class="chip" data-filter={g} aria-pressed="false">{g}</button>
         ))}
@@ -182,7 +182,7 @@ const tonightShorts = Object.fromEntries(myths.map((m) => [m.id, m.short]));
         ))}
       </div>
 
-      <div class="hall-footer">The hall is longer than it looks.</div>
+      <div class="hall-footer">Select any door to open its story.</div>
     </section>
   </main>
 
