@@ -10,13 +10,13 @@ const { myth } = Astro.props;
 const base = import.meta.env.BASE_URL.replace(/\/$/, '');
 const hallUrl = `${base}/`;
 
-const description = `${myth.epigraph} ${myth.name} — a ${myth.culture} myth from Nightfall, retold across three nights.`;
+const description = `${myth.epigraph} ${myth.name}: a ${myth.culture} myth from Nightfall, retold in three nights.`;
 
 // One star field per night (the prototype reseeds the hero stars each night).
 const nightStarFields = myth.nights.map((_, i) => starField(40 + i, 14));
 ---
 
-<Base title={`${myth.name} — Nightfall`} description={description}>
+<Base title={`${myth.name} | Nightfall`} description={description}>
   <main
     class="story"
     id="story"
@@ -32,7 +32,7 @@ const nightStarFields = myth.nights.map((_, i) => starField(40 + i, 14));
         </div>
       ))}
       <div class="story-orb" style={`background:${myth.orb}`} aria-hidden="true"></div>
-      <a class="back-link" href={hallUrl}>← The Hall</a>
+      <a class="back-link" href={hallUrl}>← All myths</a>
       <div class="hero-center">
         <div class="hero-kicker">{myth.kicker.toUpperCase()}</div>
         <h1 class="hero-title">{myth.name}</h1>
@@ -41,13 +41,13 @@ const nightStarFields = myth.nights.map((_, i) => starField(40 + i, 14));
       <div class="hero-fade"></div>
     </div>
 
-    <nav class="night-tabs" aria-label="Nights">
+    <nav class="night-tabs" aria-label="Story chapters">
       {myth.nights.map((n, i) => (
         <button
           type="button"
           class:list={['night-tab', { 'is-active': i === 0 }]}
           data-night-tab={i}
-          aria-label={`Night ${roman[i]} · ${n.title}`}
+          aria-label={`Night ${roman[i]}: ${n.title}`}
         >
           <span class="bar"></span>
         </button>
@@ -82,7 +82,7 @@ const nightStarFields = myth.nights.map((_, i) => starField(40 + i, 14));
       </div>
       <div>
         <button type="button" class="next-night" id="next-night">Night II →</button>
-        <a class="return-hall" id="return-hall" href={hallUrl} hidden>Return to the Hall ✦</a>
+        <a class="return-hall" id="return-hall" href={hallUrl} hidden>Back to all myths ✦</a>
       </div>
     </div>
 
